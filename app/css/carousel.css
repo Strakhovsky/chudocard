@@ -1,0 +1,546 @@
+.slide1 {
+  background: url(../img/slide1-1.jpg); }
+
+.slide2 {
+  background: url(../img/slide2.jpg); }
+
+.slide3 {
+  background: url(../img/slide3.jpg); }
+
+.slide4 {
+  background: url(../img/slide4.jpg); }
+
+.slide5 {
+  background: url(../img/slide5.jpg); }
+
+.slide6 {
+  background: url(../img/slide6.jpg); }
+
+.top-slide {
+  height: 660px;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center; }
+
+.carousel-control.left {
+  background-image: none; }
+
+.carousel-control.right {
+  background-image: none; }
+
+.carousel-top .carousel-indicators {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  z-index: 15;
+  width: auto;
+  margin-left: 0%;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  list-style: none;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  line-height: 0%; }
+
+.carousel-top .carousel-indicators li {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #ebebeb;
+  -webkit-border-radius: 10px;
+          border-radius: 10px; }
+
+.carousel-top .carousel-indicators .active {
+  width: 13px;
+  height: 13px;
+  margin: 0;
+  background-color: #9837b1; }
+
+.slide1-content-img {
+  display: none; }
+
+.slide2-content-img {
+  display: none; }
+
+.slide3-content-img {
+  display: none; }
+
+.slide-content-description {
+  margin-top: 215px;
+  letter-spacing: 0.054em; }
+  .slide-content-description h2 {
+    font-family: "MyriadProLight";
+    color: #ffffff;
+    font-size: 30px; }
+  .slide-content-description p {
+    font-family: "MyriadProLight";
+    color: #ffffff;
+    font-size: 20px;
+    text-align: justify; }
+  .slide-content-description button {
+    display: block;
+    margin: 30px auto 0px;
+    padding: 10px 25px;
+    -webkit-border-radius: 50px;
+            border-radius: 50px;
+    line-height: 17px;
+    text-align: center;
+    font-family: "MyriadProLight";
+    color: #ffffff;
+    font-size: 20px;
+    background: #550abf;
+    /* Old Browsers */
+    /* FF3.6+ */
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #550abf), color-stop(100%, #9937b1));
+    /* Chrome, Safari4+ */
+    background: -webkit-linear-gradient(75deg, #550abf 0%, #9937b1 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(75deg, #550abf 0%, #9937b1 100%);
+    /* Opera 11.10+ */
+    /* IE 10+ */
+    background: -webkit-linear-gradient(15deg, #550abf 0%, #9937b1 100%);
+    background: -o-linear-gradient(15deg, #550abf 0%, #9937b1 100%);
+    background: linear-gradient(75deg, #550abf 0%, #9937b1 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#550abf', endColorstr='#9937b1', GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */ }
+  .slide-content-description img {
+    display: none; }
+
+.specials {
+  background-color: #f5f7f7; }
+  .specials h1 {
+    text-align: center;
+    margin: 15px auto;
+    font-family: "MyriadProLight";
+    font-size: 35px;
+    line-height: 35px; }
+  .specials h4 {
+    font-family: "MyriadProLight";
+    font-size: 10px;
+    line-height: 20%;
+    margin-bottom: 7px; }
+  .specials p {
+    font-family: "UniSansHeavyCaps";
+    font-size: 10px;
+    color: #8546e7; }
+  .specials .white-text {
+    color: white; }
+
+.specials-btn {
+  margin: 15px auto;
+  font-size: 14px;
+  line-height: 17px;
+  display: block;
+  padding: 8px;
+  color: #8546e7;
+  border: 1px solid #550abf;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  background-color: transparent; }
+  .specials-btn span {
+    padding-right: 10px;
+    padding-left: 10px; }
+
+.specials-bg1 {
+  margin-top: 10px;
+  margin-bottom: 30px; }
+
+.specials-box1 {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0px auto; }
+  .specials-box1 img {
+    width: 100%;
+    height: 100%; }
+
+.specials-text1 {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  padding: 0px 30px 0px 15px; }
+
+.carousel-control .leftarrow {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+  margin-top: -20px;
+  left: 50%;
+  margin-left: -10px; }
+
+.carousel-control .rightarrow {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+  margin-top: -20px;
+  right: 50%;
+  margin-right: -10px; }
+
+.carousel-indicators-align {
+  margin: 0 auto;
+  width: 100%; }
+
+.specials .carousel-control {
+  margin-top: 10px;
+  margin-bottom: 30px; }
+
+.specials .carousel-indicators {
+  position: absolute;
+  bottom: -14px;
+  left: 50%;
+  z-index: 15;
+  width: auto;
+  margin-left: 0%;
+  padding: 13px 13px 13px 13px;
+  text-align: center;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  list-style: none;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  line-height: 0%; }
+
+.specials .carousel-indicators li {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #ebebeb;
+  border: none;
+  -webkit-border-radius: 10px;
+          border-radius: 10px; }
+
+.specials .carousel-indicators .active {
+  width: 13px;
+  height: 13px;
+  margin: 0;
+  background-color: #9837b1;
+  border: none; }
+
+.press {
+  background-color: #f5f7f7; }
+  .press h1 {
+    text-align: center;
+    margin: 15px auto;
+    font-family: "MyriadProLight";
+    font-size: 35px; }
+
+.press-logo {
+  width: 100%;
+  height: 65px; }
+  .press-logo img {
+    display: block;
+    margin: 0 auto; }
+
+.press-review {
+  margin: 20px 30px 40px 30px; }
+  .press-review p {
+    font-family: "MyriadProLight";
+    font-size: 16px;
+    text-align: center;
+    height: 110px; }
+
+.press .carousel-indicators {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  z-index: 15;
+  width: auto;
+  margin-left: 0%;
+  padding: 13px 13px 13px 13px;
+  text-align: center;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  list-style: none;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  line-height: 0%; }
+
+.press .carousel-indicators li {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #ebebeb;
+  border: none;
+  -webkit-border-radius: 10px;
+          border-radius: 10px; }
+
+.press .carousel-indicators .active {
+  width: 13px;
+  height: 13px;
+  margin: 0;
+  background-color: #9837b1;
+  border: none; }
+
+.press .carousel-control {
+  margin-bottom: 40px; }
+
+@media screen and (min-width: 480px) {
+  .slide-content-description {
+    margin-top: 100px; }
+    .slide-content-description h2 {
+      font-size: 34px;
+      padding: 0px 40px; }
+    .slide-content-description p {
+      text-align: left;
+      padding: 0px 40px; }
+    .slide-content-description button {
+      margin: 40px auto 0px;
+      padding: 10px 25px; }
+    .slide-content-description img {
+      display: block;
+      margin: 40px auto 0px; }
+  .specials h1 {
+    font-size: 40px; }
+  .specials h4 {
+    font-size: 16px;
+    margin-bottom: 10px; }
+  .specials p {
+    font-size: 16px; }
+  .specials-btn {
+    font-size: 16px; }
+  .press {
+    background-color: #f5f7f7; }
+    .press h1 {
+      text-align: center;
+      margin: 15px auto;
+      font-family: "MyriadProLight";
+      font-size: 35px; }
+  .press-logo img {
+    margin: auto auto; }
+  .press-review {
+    margin: 20px 80px 40px 80px; }
+    .press-review p {
+      font-size: 16px;
+      text-align: center;
+      height: 110px; }
+  .press .carousel-indicators {
+    bottom: -8px; }
+  .press .carousel-indicators li {
+    width: 13px;
+    height: 13px; }
+  .press .carousel-indicators .active {
+    width: 13px;
+    height: 13px; } }
+
+@media screen and (min-width: 768px) {
+  .slide1-content-img {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 660px; }
+    .slide1-content-img .slide1-content-img1 {
+      display: block;
+      position: absolute;
+      bottom: 0px; }
+      .slide1-content-img .slide1-content-img1 img {
+        width: 110%; }
+    .slide1-content-img .slide1-content-img2 {
+      display: block;
+      position: absolute;
+      bottom: 90px;
+      left: 275px; }
+      .slide1-content-img .slide1-content-img2 img {
+        width: 250%; }
+  .slide2-content-img {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 660px; }
+    .slide2-content-img .slide2-content-img1 {
+      display: block;
+      position: absolute;
+      bottom: 120px;
+      left: 60px; }
+    .slide2-content-img .slide2-content-img2 {
+      display: block;
+      position: absolute;
+      bottom: 100px;
+      left: 185px; }
+  .slide3-content-img {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 660px; }
+    .slide3-content-img .slide3-content-img1 {
+      display: block;
+      position: absolute;
+      bottom: 105px;
+      left: -75px; }
+    .slide3-content-img .slide3-content-img2 {
+      display: block;
+      position: absolute;
+      bottom: 145px;
+      left: 175px; }
+  .slide-content-description {
+    margin-top: 215px;
+    letter-spacing: 0.054em; }
+    .slide-content-description h2 {
+      font-family: "MyriadProLight";
+      color: #ffffff;
+      font-size: 28px; }
+    .slide-content-description p {
+      font-size: 18px; }
+    .slide-content-description button {
+      float: right;
+      margin-top: 40px;
+      margin-right: 20px; }
+    .slide-content-description img {
+      display: none; }
+  .specials h1 {
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 10px; }
+  .specials-btn {
+    float: right;
+    margin: 30px auto 10px;
+    font-size: 16px;
+    line-height: 17px; }
+  .specials-bg1 {
+    margin-top: 20px;
+    margin-bottom: 55px; }
+  .specials .carousel-control {
+    margin-top: 20px;
+    margin-bottom: 55px; }
+  .specials .carousel-indicators {
+    bottom: -3px; }
+  .specials .carousel-indicators li {
+    width: 15px;
+    height: 15px; }
+  .specials .carousel-indicators .active {
+    width: 15px;
+    height: 15px; }
+  .press h1 {
+    font-size: 35px;
+    margin: 60px auto 20px; }
+  .press-logo img {
+    margin: 0px auto;
+    width: 60%; }
+  .press-review {
+    margin: 0px 40px 0px 0px; }
+    .press-review p {
+      font-size: 18px;
+      text-align: left;
+      height: 135px; }
+  .press .carousel-indicators {
+    bottom: -8px; }
+  .press .carousel-indicators li {
+    width: 15px;
+    height: 15px; }
+  .press .carousel-indicators .active {
+    width: 15px;
+    height: 15px; } }
+
+@media screen and (min-width: 992px) {
+  .carousel-top .carousel-indicators {
+    bottom: -32px;
+    padding: 13px 13px 13px 13px; }
+  .carousel-top .carousel-indicators li {
+    width: 15px;
+    height: 15px; }
+  .carousel-top .carousel-indicators .active {
+    width: 15px;
+    height: 15px; }
+  .slide1-content-img {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 660px; }
+    .slide1-content-img .slide1-content-img1 {
+      display: block;
+      position: absolute;
+      bottom: 0px; }
+      .slide1-content-img .slide1-content-img1 img {
+        width: auto; }
+    .slide1-content-img .slide1-content-img2 {
+      display: block;
+      position: absolute;
+      bottom: 90px;
+      left: 275px; }
+      .slide1-content-img .slide1-content-img2 img {
+        width: auto; }
+  .slide2-content-img .slide2-content-img1 {
+    bottom: 120px;
+    left: 130px; }
+  .slide2-content-img .slide2-content-img2 {
+    bottom: 100px;
+    left: 255px; }
+  .slide3-content-img .slide3-content-img1 {
+    bottom: 105px;
+    left: -75px; }
+  .slide3-content-img .slide3-content-img2 {
+    bottom: 145px;
+    left: 195px; }
+  .slide-content-description h2 {
+    padding: 0px;
+    font-size: 34px; }
+  .slide-content-description p {
+    font-size: 20px;
+    padding: 0px; }
+  .slide-content-description button {
+    float: right;
+    margin-top: 50px;
+    font-size: 20px;
+    margin-right: 0px; }
+  .slide-content-description img {
+    display: none; }
+  .specials-bg1 {
+    margin-top: 33px;
+    margin-bottom: 110px; }
+  .specials .carousel-control {
+    margin-top: 33px;
+    margin-bottom: 110px; }
+  .specials .carousel-indicators {
+    bottom: 24px; }
+  .specials h1 {
+    text-align: left;
+    margin-top: 60px;
+    margin-bottom: 0px; }
+  .specials-btn {
+    float: right;
+    margin: 60px auto 0px;
+    font-size: 16px;
+    line-height: 17px; }
+  .press h1 {
+    font-size: 40px;
+    margin: 120px auto 40px; }
+  .press-logo img {
+    float: right;
+    width: auto; }
+  .press-review {
+    margin: 0px 0px 140px 0px; }
+    .press-review p {
+      font-size: 20px;
+      height: auto;
+      width: 540px; }
+  .press .carousel-indicators {
+    bottom: 30px; }
+  .press .carousel-control {
+    margin-bottom: 140px; } }
+
+@media screen and (min-width: 1200px) {
+  .specials h4 {
+    font-size: 18px;
+    margin-bottom: 10px; }
+  .specials p {
+    font-size: 18px; } }

@@ -1,4 +1,6 @@
-// ------------------------------ TOP BAR BEGIN ---------------------------------
+// Styles only for blocks without the presence of a slider
+
+// TOP BAR BEGIN
 
 .top-bar {
     background-color: #301259;
@@ -11,46 +13,40 @@
         text-align: right;
         margin: 8px auto;
     }
-    .btn {
-        color: #f0cb91;
-    }
+
+    .btn { color: #f0cb91; }
 
     .btn-menu {
         float: right;
-        outline: none;
-        
+        outline: none;    
     }
-
 }
+
 .btn-top-bar {
     background-color: #301259;
     color: #f1c47d;
     font-size: 16px;
     padding: 6px 0px;
-     
     
-     
     &:active {
         background-color: #301259;
         color: #f1c47d;
         outline: none;
-
     }
-    &:hover {
+
+    &:hover,
+    &:focus {
         background-color: #402467;
-        
         color: #f0cb91;
     }
 
     &:visited {
         background-color: #301259;
         color: #f0cb91;
-
     }
         
     .dotted-underline {
-    border-bottom: 1px dotted #936d6c;
-    }
+    border-bottom: 1px dotted #936d6c;}
 }
 
 .help-number {
@@ -64,42 +60,30 @@
     background-color: #301259;
     color: #f1c47d;
     font-size: 16px;
-
      
     &:active {
         background-color: #301259;
         color: #f1c47d;
-
-
     }
-    &:hover {
+
+    &:hover,
+    &:focus {
         background-color: #402467;
         outline: none;
         color: #f0cb91;
-
     }
 
     &:visited {
         background-color: #301259;
         color: #f0cb91;
-    }
-        
+    }      
 }
 
+// TOP BAR END
 
+// SCROLL-BAR BEGIN
 
-
-//
-
-// ------------------------------ TOP BAR END ---------------------------------
-
-//=============================================================================
-
-// ------------------------------ SCROLL-BAR END ------------------------------
-
-.item-point {
-    display: none;
-}
+.item-point {display: none;}
 
 .scroll-bar {
     width: 100%;
@@ -110,12 +94,10 @@
         text-align: center;
         padding-top: 5px }
 
-
     img {
         display: block;
         margin: 0px auto 0px;
     }
-
 
     p {
         display: none;
@@ -134,7 +116,6 @@
         .btn-get {
 
             display: inline-block;
-            //margin: 0px auto 0px;
             padding: 7px 10px;
             border: none;
             border-radius: 50px;
@@ -166,7 +147,6 @@
             background-color: transparent;
         }
     }
-
 }
 
 
@@ -195,8 +175,6 @@
         color: #ffffff;
         border: 1px solid #ffffff;
         transition: color 1s, border 1s;
-
-        
     }
 }
 
@@ -225,17 +203,13 @@
     .btn-login {
         color: #943bbe;
         border: 1px solid #943bbe;
-        transition: color 1s, border 1s;
-        
-    }
-    
+        transition: color 1s, border 1s;    
+    }  
 }
 
-// ------------------------------ SCROLL-BAR BEGIN ----------------------------
+// SCROLL-BAR END
 
-//=============================================================================
-
-// ------------------------------ INFO LINE BEGIN -----------------------------
+// INFO LINE BEGIN
 
 .info-case {
     text-align: center;
@@ -252,33 +226,29 @@
         font-size: 16px;
         margin: 0 auto;
         width: 140px;
-        //padding: 0 29%;
         color: #a9a9a9;
     }
 }
 
-.info-img {
-    margin: 0 auto;
-}
+.info-img {margin: 0 auto;}
 
-// ------------------------------ INFO LINE END -------------------------------
+// INFO LINE END
 
-// ------------------------------ PARTNERS BEGIN ------------------------------
+// PARTNERS BEGIN
 
 .partners {
+    
     h1{
         text-align: center;
         margin: 15px auto;
         font-family: "MyriadProLight";
         font-size: 35px;
     }
-
 }
 
 .partners-logo {
     width: 100%;
     margin-bottom: 15px;
-
 
     img {
         display: block;
@@ -291,7 +261,6 @@
 }
 
 .partners-btn {
-    
         margin: 15px auto; 
         font-size: 14px;
         line-height: 17px;
@@ -306,69 +275,46 @@
         background-color: transparent;
 }
 
-// ------------------------------ PARTNERS END --------------------------------
+// PARTNERS END
 
-//=============================================================================
-
-
-// +++++++++++++++++++++++++++++@MEDIA QUERIES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-// -------------------------- /-/ TOP BAR BEGIN \-\ ---------------------------
+// @MEDIA QUERIES BEGIN
 
 @media screen and (min-width:480px) {
 
-    // -------------------------- /-/ PARTNERS BEGIN \-\ ------------------------
+// PARTNERS BEGIN
 
-    .partners-btn { 
-            font-size: 16px;
-        }
+    .partners-btn {font-size: 16px;}
 
-        .partners-logo {
-            margin-bottom: 65px;
-        }
+    .partners-logo {margin-bottom: 65px;}
 
-    // -------------------------- /-/ PARTNERS END \-\ -------------------------
-
+// PARTNERS END
 }
 
 @media screen and (min-width:768px) {
 
-    // -------------------------- /-/ TOP BAR BEGIN \-\ -------------------------
+// TOP BAR BEGIN
 
-    .help-number {
-        display: block;
-    }   
-    .phone-help {
-        display: none;
-    }
+    .help-number {display: block;}  
 
-    // -------------------------- /-/ TOP BAR END \-\ ---------------------------
+    .phone-help {display: none;}
 
-    // -------------------------- /-/ SCROLL BAR BEGIN \-\ ---------------------------
+// TOP BAR END
 
-
+// SCROLL BAR BEGIN
 
     .scroll-bar {
-        
-    
-    
+
         .logo {
             text-align: left;
             padding: 15px 0px 16px 0px;
         }
     
-    
-        img {
-            margin: 0px 0px;
-        }
-    
+        img { margin: 0px 0px;}
     
         p {
             display: block;
             margin-left: 27px;
             margin-bottom: 0px;
-
-
         }
     
         .order {
@@ -383,34 +329,27 @@
             .btn-login {
                 padding: 8px 10px;
                 font-size: 16px;
-
             }
         }
-    
     }
     
     
     .affix-top {
 
         .logo-w {
-
             left: auto;
             transform: none;
-
         }
 
         p {
             color: #ffffff;
             transition: color 1s;
         }
-    
     }
     
     .affix {
 
-    
         .logo-w {
-
             left: auto;
             transform: none;
         }
@@ -419,23 +358,21 @@
             color: #943bbe;
             transition: color 1s;
         }
-    
-        
     }
 
 
-    // -------------------------- /-/ SCROLL BAR END \-\ ------------------------
+// SCROLL BAR END 
 
-    // -------------------------- /-/ PARTNERS BEGIN \-\ ------------------------
+// PARTNERS BEGIN
 
     .partners {
+        
         h1{
             margin-top: 30px;
             margin-bottom: 20px; 
             line-height: 35px;
             text-align: left;
         }
-    
     }
 
     .partners-btn {        
@@ -445,20 +382,21 @@
         line-height: 17px;
     }
 
-    // -------------------------- /-/ PARTNERS END \-\ -------------------------
+// PARTNERS END
 
 }
 
 @media screen and (min-width:992px) {
-    // -------------------------- /-/ PARTNERS BEGIN \-\ ------------------------
+
+// PARTNERS BEGIN 
 
     .partners {
+        
         h1{
             margin-top: 60px;
             margin-bottom: 25px; 
             line-height: 35px;
         }
-    
     }    
 
     .partners-btn {        
@@ -468,130 +406,109 @@
         line-height: 17px;
 }
 
-// -------------------------- /-/ PARTNERS END \-\ -------------------------
+// PARTNERS END
 
-// -------------------------- /-/ SCROLL BAR BEGIN \-\ ----------------------
+// SCROLL BAR BEGIN
 
-.item-point {
-    z-index: 222;
-    position: absolute;
-    top: 38px;
-    left: 155px;
-    display: block;
+    .item-point {
+        z-index: 222;
+        position: absolute;
+        top: 38px;
+        left: 155px;
+        display: block;
 
-    p {
-        display: inline-block;
-        font-size: 14px;
-        width: 185px;
-        font-family: "MyriadProLight";
-        text-align: right;
-        color: #ffffff;
-
-
-    }
-
-    img {
-        display: inline-block;
-
-        margin-bottom: 80px;
-
-    }
-}
-
-.affix-top {
-    .item-point {  
         p {
-        opacity: 1;
-        transition: opacity 1s; 
-
+            display: inline-block;
+            font-size: 14px;
+            width: 185px;
+            font-family: "MyriadProLight";
+            text-align: right;
+            color: #ffffff;
         }
 
         img {
-        opacity: 1;
-        transition: opacity 1s;
-
+            display: inline-block;
+            margin-bottom: 80px;
         }
     }
-}
 
-.affix {
-    .item-point {   
-        visibility: hidden;
-        transition: visibility 1s; 
-        p {
-            opacity: 0;
+    .affix-top {
+        
+        .item-point {  
+            
+            p {
+            opacity: 1;
             transition: opacity 1s; 
+            }
 
-        }
-
-        img {
-            opacity: 0;
+            img {
+            opacity: 1;
             transition: opacity 1s;
-
-        }
-    }    
-}
-
-.scroll-bar {
-
-
-    p {
-        margin-left: -22px;
-
-    }
-
-    .order {
-        padding: 15px 0px 16px 0px;
-
-        .btn-get {
-            padding: 12px 32px;
-            font-size: 20px;
-        }
-
-        .btn-login {
-            padding: 11px 16px;
-            font-size: 20px;
-
+            }
         }
     }
 
-}
+    .affix {
+        
+        .item-point {   
+            visibility: hidden;
+            transition: visibility 1s; 
+            
+            p {
+                opacity: 0;
+                transition: opacity 1s; 
+            }
 
-// -------------------------- /-/ SCROLL BAR BEGIN \-\ ----------------------
+            img {
+                opacity: 0;
+                transition: opacity 1s;
+            }
+        }    
+    }
 
-    
+    .scroll-bar {
+
+        p {margin-left: -22px;}
+
+        .order {
+            padding: 15px 0px 16px 0px;
+
+            .btn-get {
+                padding: 12px 32px;
+                font-size: 20px;
+            }
+
+            .btn-login {
+                padding: 11px 16px;
+                font-size: 20px;
+            }
+        }
+    }
+
+// SCROLL BAR END
+   
 }
 
 @media screen and (min-width:1200px) {
 
-// -------------------------- /-/ SCROLL BAR BEGIN \-\ ----------------------
+// SCROLL BAR BEGIN
 
-.scroll-bar {
-    
-    
-        p {
-            margin-left: -72px;
-    
+    .scroll-bar {
+        
+            p {margin-left: -72px;}
         }
-    
-    }
 
-.item-point {
+    .item-point {left: 305px;}
 
-    left: 305px;
-}
-
-// -------------------------- /-/ SCROLL BAR END \-\ ----------------------
+// SCROLL BAR END
 
 }
 
 
 
-// NEW FONTS ===================================================================
+// NEW FONTS 
 @font-face {
-    // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
     font-family: "MyriadProLight"; 
-    // адрес шрифта и тип 
     src: url('../fonts/MyriadProLight.woff2') format('woff2'),
     url("../fonts/MyriadProLight.ttf") format("truetype"),
     url('../fonts/MyriadProLight.woff') format('woff');
@@ -602,7 +519,7 @@ font-weight: normal;
 @font-face {
     font-family: "UniSansHeavyCaps";
     src: url('../fonts/UniSansHeavyCaps.woff2') format('woff2'), 
-    url('../fonts/UniSansHeavyCaps.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
+    url('../fonts/UniSansHeavyCaps.ttf')  format('truetype'),
     url('../fonts/UniSansHeavyCaps.woff') format('woff'); 
 font-weight: normal; 
 font-style: normal;

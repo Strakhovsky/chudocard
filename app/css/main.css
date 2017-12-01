@@ -22,7 +22,7 @@
     background-color: #301259;
     color: #f1c47d;
     outline: none; }
-  .btn-top-bar:hover {
+  .btn-top-bar:hover, .btn-top-bar:focus {
     background-color: #402467;
     color: #f0cb91; }
   .btn-top-bar:visited {
@@ -43,7 +43,7 @@
   .phone-help:active {
     background-color: #301259;
     color: #f1c47d; }
-  .phone-help:hover {
+  .phone-help:hover, .phone-help:focus {
     background-color: #402467;
     outline: none;
     color: #f0cb91; }

@@ -14,11 +14,12 @@
         margin: 8px auto;
     }
 
-    .btn { color: #f0cb91; }
+    .btn {color: #f0cb91;}
 
-    .btn-menu {
-        float: right;
-        outline: none;    
+    .btn-menu {float: right;}
+
+    .glyphicon-menu-hamburger {
+        top: 3px;
     }
 }
 
@@ -27,17 +28,17 @@
     color: #f1c47d;
     font-size: 16px;
     padding: 6px 0px;
+    outline: none !important;
     
     &:active {
         background-color: #301259;
         color: #f1c47d;
-        outline: none;
     }
 
     &:hover,
     &:focus {
-        background-color: #402467;
-        color: #f0cb91;
+        background-color: #301259;
+        color: #ffffff;
     }
 
     &:visited {
@@ -60,6 +61,7 @@
     background-color: #301259;
     color: #f1c47d;
     font-size: 16px;
+    outline: none !important;
      
     &:active {
         background-color: #301259;
@@ -69,7 +71,6 @@
     &:hover,
     &:focus {
         background-color: #402467;
-        outline: none;
         color: #f0cb91;
     }
 
@@ -107,6 +108,8 @@
         color: #ffffff;
         font-size: 14px;
     }
+    
+    a {color: #ffffff;}
 
     .order {
         text-align: center;
@@ -119,6 +122,7 @@
             padding: 7px 10px;
             border: none;
             border-radius: 50px;
+            outline: none !important;
     
             line-height: 17px;
             text-align: center;
@@ -270,7 +274,7 @@
         border: 1px solid #550abf;
         border-radius: 50px;
         text-align: center;
-        outline: none;
+        outline: none !important;
         text-decoration: none;
         background-color: transparent;
 }
@@ -358,6 +362,10 @@
             color: #943bbe;
             transition: color 1s;
         }
+        
+        a {
+            color: #943bbe;
+            transition: color 1s}
     }
 
 
@@ -430,6 +438,23 @@
             display: inline-block;
             margin-bottom: 80px;
         }
+
+        .tor-pulsate {
+            border:7px solid #e8e8e838;
+            border-radius:30px;
+            height:35px;
+            left:90.5%;
+            margin:-15px 0 0 -15px;
+            opacity:0;
+            position:absolute;
+            top:11.3%;
+            width:35px;
+            animation: pulsate 1s ease-out;
+            animation-iteration-count:infinite;
+            }
+            @-webkit-keyframes pulsate {0% {transform:scale(.1);opacity: 0.0;} 50% {opacity:1;} 100% {transform:scale(1.2);opacity:0;}}
+            @keyframes pulsate {0% {transform:scale(.1);opacity: 0.0;} 50% {opacity:1;} 100% {transform:scale(1.2);opacity:0;}}
+
     }
 
     .affix-top {
@@ -498,7 +523,14 @@
             p {margin-left: -72px;}
         }
 
-    .item-point {left: 305px;}
+    .item-point {
+        left: 305px;
+
+        .tor-pulsate {
+            left:88.4%;
+            top:11.6%;
+        }
+    }
 
 // SCROLL BAR END
 

@@ -1,5 +1,4 @@
 // Styles only for blocks with the presence of a slider
-
 // CAROUSEL TOP SLIDES BEGIN
 
 .slide1 {background:url(../img/slide1-1.jpg);}
@@ -22,9 +21,15 @@
 }
 // slide control style
 
-.carousel-control.left {background-image: none;}
+.carousel-control.left {
+    background-image: none;
+    margin: 210px 0px 210px 0px;
+}
 
-.carousel-control.right {background-image: none;}
+.carousel-control.right {
+    background-image: none;
+    margin: 210px 0px 210px 0px;
+}
 //
 
 .carousel-top {
@@ -90,11 +95,13 @@
         text-align: justify;
     }
 
-    button {
+    .btn-description {
         display: block;
         margin: 30px auto 0px;
         padding: 10px 25px;
         border-radius: 50px;
+        outline: none !important;
+        border: none;
 
         line-height: 17px;
         text-align: center;
@@ -159,7 +166,7 @@
     border: 1px solid #550abf;
     border-radius: 50px;
     text-align: center;
-    outline: none;
+    outline: none !important;
     text-decoration: none;
     background-color: transparent;
 
@@ -376,7 +383,7 @@
         padding: 0px 40px;
     }
 
-    button {
+    .btn-description {
 
         margin: 40px auto 0px;
         padding: 10px 25px;
@@ -539,7 +546,7 @@
     
         p {font-size: 18px;}
     
-        button {
+        .btn-description {
             float: right;
             margin-top: 40px;
             margin-right: 20px;
@@ -736,7 +743,7 @@
         padding: 0px;
     }
 
-    button {
+    .btn-description {
 
         float: right;
         margin-top: 50px;

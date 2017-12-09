@@ -6939,21 +6939,22 @@ button.close {
   .top-bar .btn {
     color: #f0cb91; }
   .top-bar .btn-menu {
-    float: right;
-    outline: none; }
+    float: right; }
+  .top-bar .glyphicon-menu-hamburger {
+    top: 3px; }
 
 .btn-top-bar {
   background-color: #301259;
   color: #f1c47d;
   font-size: 16px;
-  padding: 6px 0px; }
+  padding: 6px 0px;
+  outline: none !important; }
   .btn-top-bar:active {
     background-color: #301259;
-    color: #f1c47d;
-    outline: none; }
+    color: #f1c47d; }
   .btn-top-bar:hover, .btn-top-bar:focus {
-    background-color: #402467;
-    color: #f0cb91; }
+    background-color: #301259;
+    color: #ffffff; }
   .btn-top-bar:visited {
     background-color: #301259;
     color: #f0cb91; }
@@ -6968,13 +6969,13 @@ button.close {
   margin: 2px auto 0px;
   background-color: #301259;
   color: #f1c47d;
-  font-size: 16px; }
+  font-size: 16px;
+  outline: none !important; }
   .phone-help:active {
     background-color: #301259;
     color: #f1c47d; }
   .phone-help:hover, .phone-help:focus {
     background-color: #402467;
-    outline: none;
     color: #f0cb91; }
   .phone-help:visited {
     background-color: #301259;
@@ -6999,6 +7000,8 @@ button.close {
     font-family: "MyriadProLight";
     color: #ffffff;
     font-size: 14px; }
+  .scroll-bar a {
+    color: #ffffff; }
   .scroll-bar .order {
     text-align: center;
     padding: 5px 0 10px 0;
@@ -7009,6 +7012,7 @@ button.close {
       border: none;
       -webkit-border-radius: 50px;
               border-radius: 50px;
+      outline: none !important;
       line-height: 17px;
       text-align: center;
       color: #ffffff;
@@ -7151,7 +7155,7 @@ button.close {
   -webkit-border-radius: 50px;
           border-radius: 50px;
   text-align: center;
-  outline: none;
+  outline: none !important;
   text-decoration: none;
   background-color: transparent; }
 
@@ -7204,6 +7208,11 @@ button.close {
     -webkit-transition: color 1s;
     -o-transition: color 1s;
     transition: color 1s; }
+  .affix a {
+    color: #943bbe;
+    -webkit-transition: color 1s;
+    -o-transition: color 1s;
+    transition: color 1s; }
   .partners h1 {
     margin-top: 30px;
     margin-bottom: 20px;
@@ -7241,6 +7250,43 @@ button.close {
     .item-point img {
       display: inline-block;
       margin-bottom: 80px; }
+    .item-point .tor-pulsate {
+      border: 7px solid #e8e8e838;
+      -webkit-border-radius: 30px;
+              border-radius: 30px;
+      height: 35px;
+      left: 90.5%;
+      margin: -15px 0 0 -15px;
+      opacity: 0;
+      position: absolute;
+      top: 11.3%;
+      width: 35px;
+      -webkit-animation: pulsate 1s ease-out;
+              animation: pulsate 1s ease-out;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite; }
+  @-webkit-keyframes pulsate {
+    0% {
+      -webkit-transform: scale(0.1);
+              transform: scale(0.1);
+      opacity: 0.0; }
+    50% {
+      opacity: 1; }
+    100% {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+      opacity: 0; } }
+  @keyframes pulsate {
+    0% {
+      -webkit-transform: scale(0.1);
+              transform: scale(0.1);
+      opacity: 0.0; }
+    50% {
+      opacity: 1; }
+    100% {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+      opacity: 0; } }
   .affix-top .item-point p {
     opacity: 1;
     -webkit-transition: opacity 1s;
@@ -7281,7 +7327,10 @@ button.close {
   .scroll-bar p {
     margin-left: -72px; }
   .item-point {
-    left: 305px; } }
+    left: 305px; }
+    .item-point .tor-pulsate {
+      left: 88.4%;
+      top: 11.6%; } }
 
 @font-face {
   font-family: "MyriadProLight";
@@ -7321,10 +7370,12 @@ button.close {
   background-position: center; }
 
 .carousel-control.left {
-  background-image: none; }
+  background-image: none;
+  margin: 210px 0px 210px 0px; }
 
 .carousel-control.right {
-  background-image: none; }
+  background-image: none;
+  margin: 210px 0px 210px 0px; }
 
 .carousel-top .carousel-indicators {
   position: absolute;
@@ -7382,12 +7433,14 @@ button.close {
     color: #ffffff;
     font-size: 20px;
     text-align: justify; }
-  .slide-content-description button {
+  .slide-content-description .btn-description {
     display: block;
     margin: 30px auto 0px;
     padding: 10px 25px;
     -webkit-border-radius: 50px;
             border-radius: 50px;
+    outline: none !important;
+    border: none;
     line-height: 17px;
     text-align: center;
     font-family: "MyriadProLight";
@@ -7443,7 +7496,7 @@ button.close {
   -webkit-border-radius: 50px;
           border-radius: 50px;
   text-align: center;
-  outline: none;
+  outline: none !important;
   text-decoration: none;
   background-color: transparent; }
   .specials-btn span {
@@ -7601,7 +7654,7 @@ button.close {
     .slide-content-description p {
       text-align: left;
       padding: 0px 40px; }
-    .slide-content-description button {
+    .slide-content-description .btn-description {
       margin: 40px auto 0px;
       padding: 10px 25px; }
     .slide-content-description img {
@@ -7698,7 +7751,7 @@ button.close {
       font-size: 28px; }
     .slide-content-description p {
       font-size: 18px; }
-    .slide-content-description button {
+    .slide-content-description .btn-description {
       float: right;
       margin-top: 40px;
       margin-right: 20px; }
@@ -7794,7 +7847,7 @@ button.close {
   .slide-content-description p {
     font-size: 20px;
     padding: 0px; }
-  .slide-content-description button {
+  .slide-content-description .btn-description {
     float: right;
     margin-top: 50px;
     font-size: 20px;

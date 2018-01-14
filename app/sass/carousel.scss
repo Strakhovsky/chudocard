@@ -117,6 +117,12 @@
         background: -ms-linear-gradient(75deg, rgba(85,10,191,1) 0%, rgba(153,55,177,1) 100%); /* IE 10+ */
         background: linear-gradient(75deg, rgba(85,10,191,1) 0%, rgba(153,55,177,1) 100%);/* W3C */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#550abf', endColorstr='#9937b1', GradientType=1 );/* IE6-9 fallback on horizontal gradient */
+
+        &:active {
+            transform: scale(.98);
+            box-shadow: none;
+            
+        }
     }
 
     img {display: none;}
@@ -169,6 +175,12 @@
     outline: none !important;
     text-decoration: none;
     background-color: transparent;
+
+    &:active {
+        transform: scale(.98); // Уменьшение кнопки через скайл
+        box-shadow: none;
+        
+    }
 
     span {
         padding-right: 10px;

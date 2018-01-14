@@ -116,6 +116,12 @@
     /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#550abf', endColorstr='#9937b1', GradientType=1 );
     /* IE6-9 fallback on horizontal gradient */ }
+    .slide-content-description .btn-description:active {
+      -webkit-transform: scale(0.98);
+          -ms-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-box-shadow: none;
+              box-shadow: none; }
   .slide-content-description img {
     display: none; }
 
@@ -153,6 +159,12 @@
   outline: none !important;
   text-decoration: none;
   background-color: transparent; }
+  .specials-btn:active {
+    -webkit-transform: scale(0.98);
+        -ms-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-box-shadow: none;
+            box-shadow: none; }
   .specials-btn span {
     padding-right: 10px;
     padding-left: 10px; }

@@ -21,15 +21,29 @@
 }
 // slide control style
 
+.carousel-control {width: 7%;}
+
+.carousel-top {
+
+    .carousel-control.left {
+        background-image: none;
+        margin: 250px 0px;
+    }
+
+    .carousel-control.right {
+        background-image: none;
+        margin: 250px 0px;
+    }
+}
+
 .carousel-control.left {
     background-image: none;
-    margin: 210px 0px 210px 0px;
 }
 
 .carousel-control.right {
     background-image: none;
-    margin: 210px 0px 210px 0px;
 }
+
 //
 
 .carousel-top {
@@ -372,7 +386,7 @@
     .carousel-control {margin-bottom: 40px;}
 }
 
-// PRESS BEGIN 
+// PRESS END 
 
 // @MEDIA QUERIES BEGIN
 

@@ -7055,14 +7055,14 @@ button.close {
   position: absolute;
   top: 40px;
   background-color: transparent;
-  -webkit-transition: background-color 1s;
-  -o-transition: background-color 1s;
-  transition: background-color 1s; }
+  -webkit-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s; }
   .affix-top .logo-v {
     opacity: 0;
-    -webkit-transition: opacity 1s;
-    -o-transition: opacity 1s;
-    transition: opacity 1s; }
+    -webkit-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
   .affix-top .logo-w {
     position: absolute;
     top: 0;
@@ -7072,26 +7072,26 @@ button.close {
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
     opacity: 1;
-    -webkit-transition: opacity 1s;
-    -o-transition: opacity 1s;
-    transition: opacity 1s; }
+    -webkit-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
   .affix-top .btn-login {
     color: #ffffff;
     border: 1px solid #ffffff;
-    -webkit-transition: color 1s, border 1s;
-    -o-transition: color 1s, border 1s;
-    transition: color 1s, border 1s; }
+    -webkit-transition: color 0.5s, border 0.5s;
+    -o-transition: color 0.5s, border 0.5s;
+    transition: color 0.5s, border 0.5s; }
 
 .affix {
   top: 0px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 6px 12px 0px rgba(50, 50, 50, 0.2);
           box-shadow: 0px 6px 12px 0px rgba(50, 50, 50, 0.2);
-  -webkit-transition: background-color 1s, -webkit-box-shadow 1s;
-  transition: background-color 1s, -webkit-box-shadow 1s;
-  -o-transition: box-shadow 1s, background-color 1s;
-  transition: box-shadow 1s, background-color 1s;
-  transition: box-shadow 1s, background-color 1s, -webkit-box-shadow 1s; }
+  -webkit-transition: background-color 0.5s, -webkit-box-shadow 0.5s;
+  transition: background-color 0.5s, -webkit-box-shadow 0.5s;
+  -o-transition: box-shadow 0.5s, background-color 0.5s;
+  transition: box-shadow 0.5s, background-color 0.5s;
+  transition: box-shadow 0.5s, background-color 0.5s, -webkit-box-shadow 0.5s; }
   .affix .logo-w {
     position: absolute;
     top: 0;
@@ -7101,20 +7101,20 @@ button.close {
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
     opacity: 0;
-    -webkit-transition: opacity 1s;
-    -o-transition: opacity 1s;
-    transition: opacity 1s; }
+    -webkit-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
   .affix .logo-v {
     opacity: 1;
-    -webkit-transition: opacity 1s;
-    -o-transition: opacity 1s;
-    transition: opacity 1s; }
+    -webkit-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
   .affix .btn-login {
     color: #943bbe;
     border: 1px solid #943bbe;
-    -webkit-transition: color 1s, border 1s;
-    -o-transition: color 1s, border 1s;
-    transition: color 1s, border 1s; }
+    -webkit-transition: color 0.5s, border 0.5s;
+    -o-transition: color 0.5s, border 0.5s;
+    transition: color 0.5s, border 0.5s; }
 
 .info-case {
   text-align: center;
@@ -7171,6 +7171,13 @@ button.close {
     -webkit-box-shadow: none;
             box-shadow: none; }
 
+.footer {
+  background: url(../img/footer-bg.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center; }
+
 @media screen and (min-width: 480px) {
   .partners-btn {
     font-size: 16px; }
@@ -7207,9 +7214,9 @@ button.close {
             transform: none; }
   .affix-top p {
     color: #ffffff;
-    -webkit-transition: color 1s;
-    -o-transition: color 1s;
-    transition: color 1s; }
+    -webkit-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    transition: color 0.5s; }
   .affix .logo-w {
     left: auto;
     -webkit-transform: none;
@@ -7217,14 +7224,14 @@ button.close {
             transform: none; }
   .affix p {
     color: #943bbe;
-    -webkit-transition: color 1s;
-    -o-transition: color 1s;
-    transition: color 1s; }
+    -webkit-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    transition: color 0.5s; }
   .affix a {
     color: #943bbe;
-    -webkit-transition: color 1s;
-    -o-transition: color 1s;
-    transition: color 1s; }
+    -webkit-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    transition: color 0.5s; }
   .partners h1 {
     margin-top: 30px;
     margin-bottom: 20px;
@@ -7294,44 +7301,61 @@ button.close {
       background-color: #e8e8e838;
       -webkit-border-radius: 30px;
               border-radius: 30px;
-      height: 20px;
-      right: -6px;
-      top: 9px;
+      height: 35px;
+      right: -14px;
+      top: 1px;
       margin: -15px 0 0 -15px;
       opacity: 0;
       position: absolute;
-      width: 20px;
+      width: 35px;
       -webkit-animation: pulsate 1s ease-out;
               animation: pulsate 1s ease-out;
       -webkit-animation-iteration-count: infinite;
               animation-iteration-count: infinite;
       -webkit-animation-delay: 0s;
               animation-delay: 0s; }
+    .item-point .tor-pulsate2 {
+      background-color: #e8e8e838;
+      -webkit-border-radius: 30px;
+              border-radius: 30px;
+      height: 35px;
+      right: -14px;
+      top: 1px;
+      margin: -15px 0 0 -15px;
+      opacity: 0;
+      position: absolute;
+      width: 35px;
+      -webkit-animation: pulsate 1.5s ease-out;
+              animation: pulsate 1.5s ease-out;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-delay: 1s;
+              animation-delay: 1s; }
   .affix-top .item-point p {
     opacity: 1;
-    -webkit-transition: opacity 1s;
-    -o-transition: opacity 1s;
-    transition: opacity 1s; }
+    -webkit-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
   .affix-top .item-point img {
     opacity: 1;
-    -webkit-transition: opacity 1s;
-    -o-transition: opacity 1s;
-    transition: opacity 1s; }
+    -webkit-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
   .affix .item-point {
     visibility: hidden;
-    -webkit-transition: visibility 1s;
-    -o-transition: visibility 1s;
-    transition: visibility 1s; }
+    -webkit-transition: visibility 0.5s;
+    -o-transition: visibility 0.5s;
+    transition: visibility 0.5s; }
     .affix .item-point p {
       opacity: 0;
-      -webkit-transition: opacity 1s;
-      -o-transition: opacity 1s;
-      transition: opacity 1s; }
+      -webkit-transition: opacity 0.5s;
+      -o-transition: opacity 0.5s;
+      transition: opacity 0.5s; }
     .affix .item-point img {
       opacity: 0;
-      -webkit-transition: opacity 1s;
-      -o-transition: opacity 1s;
-      transition: opacity 1s; }
+      -webkit-transition: opacity 0.5s;
+      -o-transition: opacity 0.5s;
+      transition: opacity 0.5s; }
   .scroll-bar p {
     margin-left: -22px; }
   .scroll-bar .order {
@@ -7386,13 +7410,22 @@ button.close {
           background-size: cover;
   background-position: center; }
 
-.carousel-control.left {
+.carousel-control {
+  width: 7%; }
+
+.carousel-top .carousel-control.left {
   background-image: none;
-  margin: 210px 0px 210px 0px; }
+  margin: 250px 0px; }
+
+.carousel-top .carousel-control.right {
+  background-image: none;
+  margin: 250px 0px; }
+
+.carousel-control.left {
+  background-image: none; }
 
 .carousel-control.right {
-  background-image: none;
-  margin: 210px 0px 210px 0px; }
+  background-image: none; }
 
 .carousel-top .carousel-indicators {
   position: absolute;

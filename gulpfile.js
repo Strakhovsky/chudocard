@@ -5,7 +5,7 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglifyjs'),
     cssnano = require('gulp-cssnano'),
     rename = require('gulp-rename'),
-    del = require ('del'),
+    del = require('del'),
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
     cache = require('gulp-cache'),
@@ -14,7 +14,7 @@ var gulp = require('gulp'),
 gulp.task('sass', function(){
     return gulp.src('app/sass/**/*.scss') // get all scss file in our project
         .pipe(sass()) // transform scss in css
-        .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true }))
+        .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true}))
         .pipe(gulp.dest('app/css')) // Whera must be a result
         .pipe(browserSync.reload({stream: true}))
 });
@@ -26,9 +26,9 @@ gulp.task('scripts', function() {
         'app/libs/bootstrap/dist/js/bootstrap.js',
         'app/js/main.js'
     ])
-        .pipe(concat('libs.min.js')) // Collect them in one file(libs.min.js)
-        .pipe(uglify()) // Squeeze in one file
-        .pipe(gulp.dest('app/js')); // Unload in folder app/js
+    .pipe(concat('libs.min.js')) // Collect them in one file(libs.min.js)
+    .pipe(uglify()) // Squeeze in one file
+    .pipe(gulp.dest('app/js')); // Unload in folder app/js
 });
 
 gulp.task('css-libs', ['sass'], function() {
@@ -75,7 +75,7 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
         'app/css/main.css',
         'app/css/libs.min.css'
     ])
-        .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest('dist/css'))
     
     var buildFonts = gulp.src('app/fonts/**/*')
         .pipe(gulp.dest('dist/fonts'))

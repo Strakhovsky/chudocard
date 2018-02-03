@@ -113,7 +113,7 @@
 
     .order {
         text-align: center;
-        padding: 5px 0 10px 0;
+        padding: 5px 0 5px 0;
         font-family: "MyriadProLight";
 
         .btn-get {
@@ -138,10 +138,11 @@
             background: linear-gradient(75deg, rgba(85,10,191,1) 0%, rgba(153,55,177,1) 100%);/* W3C */
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#550abf', endColorstr='#9937b1', GradientType=1 );/* IE6-9 fallback on horizontal gradient */
 
+            .downsize {display:none;}
         }
 
         .btn-login {
-            margin: 0px 0px 0px 20px; 
+            margin: 0px 0px 0px 15px; 
             font-size: 14px;
             line-height: 17px;
             display: inline-block;
@@ -168,11 +169,38 @@
     transition: background-color 0.5s;
 
     .logo-v {
+        position: absolute;
+        top:0;
+        left: 50%;
+        margin-top: 0px; 
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: opacity 0.5s;
+        display: none;
+    }
+
+    .logo-w {
+        position: absolute;
+        top:0;
+        left: 50%;
+        margin-top: 0px; 
+        transform: translateX(-50%);
+        opacity: 1;
+        transition: opacity 0.5s;
+        display: none;
+    }
+
+    .logo-v-m {
+        position: absolute;
+        top:0;
+        left: 50%;
+        margin-top: 0px; 
+        transform: translateX(-50%);
         opacity: 0;
         transition: opacity 0.5s;
     }
 
-    .logo-w {
+    .logo-w-m {
         position: absolute;
         top:0;
         left: 50%;
@@ -197,6 +225,16 @@
     box-shadow:         0px 6px 12px 0px rgba(50, 50, 50, 0.2);
     transition: box-shadow 0.5s, background-color 0.5s;
 
+    .logo-v {
+        position: absolute;
+        top:0;
+        left: 50%;
+        margin-top: 0px; 
+        transform: translateX(-50%);
+        opacity: 1;
+        transition: opacity 0.5s;
+        display: none;
+    }
 
     .logo-w {
         position: absolute;
@@ -206,12 +244,29 @@
         transform: translateX(-50%);
         opacity: 0;
         transition: opacity 0.5s;
+        display: none;
     }
 
-    .logo-v {
+    .logo-v-m {
+        position: absolute;
+        top:0;
+        left: 50%;
+        margin-top: 0px; 
+        transform: translateX(-50%);
         opacity: 1;
         transition: opacity 0.5s;
     }
+
+    .logo-w-m {
+        position: absolute;
+        top:0;
+        left: 50%;
+        margin-top: 0px; 
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+
 
     .btn-login {
         color: #943bbe;
@@ -298,19 +353,158 @@
 // FOOTER BEGIN
 
 .footer {
-
     background:url(../img/footer-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    color: white;
+    font-family: "MyriadProLight";
+    font-size: 16px;
+
+    .footer-body {
+        margin-top: 25px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0px;
+    }
     
 }
 
+.footer-body {margin-bottom: 20px}
+
+.footer-list {
+    
+    text-align: center;
+    
+    li {margin-bottom: 5px;}
+
+    a {
+        border-bottom: 1px solid #789ab2;
+        color: #ffffff;
+        font-family: "MyriadProLight";
+        font-size: 20px;
+
+        &:active {
+            color: #a4b8c8;
+            border-bottom: 1px solid #a4b8c8;            
+        }
+    
+        &:hover,
+        &:focus {
+            text-decoration: none;
+            color: #ffffff;
+            border-bottom: 1px solid #ffffff;
+            
+        }
+    
+        &:visited {color: #ffffff;}
+    }
+}
+
+.footer-phone {
+    width: 200px;
+    margin: 25px auto 0px;
+    text-align: center;
+
+    .phone-number {font-size: 22px};
+}
+
+.footer-social {
+
+    width: 200px;
+    margin: 25px auto 0px;
+    text-align: center;
+
+    li {
+        display: inline;
+    }
+    img {
+        margin-right: 15px;
+    }
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 13px;
+    
+    .popel-logo {display: none;}
+    .popel-logo-mini {float: right;}
+}
+
+.long-line {
+    position: absolute;
+    left: 0px; // непозволяет вылезти за пределы экрана    
+    width: 100%;
+    height: 2px;
+    opacity: 0.3;
+
+    background-color: #ffffff;
+}
 
 // FOOTER END
 // @MEDIA QUERIES BEGIN
 
 @media screen and (min-width:480px) {
+
+// SCROLL BAR BEGIN
+
+.btn-login {
+    margin: 0px 0px 0px 20px;
+} 
+.scroll-bar {
+.order {
+    padding: 10px 0px 10px 0px;
+}
+}
+
+.downsize {display:inline!important;}
+.downsize1 {display: none;}
+
+.affix-top {
+
+    .logo-v {
+        
+        display: block;
+    }
+
+    .logo-w {
+
+        display: block;
+    }
+
+    .logo-v-m {
+        display: none;
+    }
+
+    .logo-w-m {
+        display: none;
+    }
+}
+
+.affix {
+
+    .logo-v {
+
+        display: block;
+    }
+
+    .logo-w {
+        display: block;
+    }
+
+    .logo-v-m {
+        display: none;
+    }
+
+    .logo-w-m {
+        display: none;
+    }
+}
+
+// SCROLL BAR END
 
 // PARTNERS BEGIN
 
@@ -319,6 +513,24 @@
     .partners-logo {margin-bottom: 65px;}
 
 // PARTNERS END
+// FOOTER BEGIN
+.footer-body {margin-bottom: 40px}
+
+.footer-bottom {
+    
+    .popel-logo {
+        display: block;
+        float: right;
+        margin-right: 40px;
+    }
+
+    .chudocard-right {margin-left:40px;}
+
+    .popel-logo-mini {display: none;}    
+}
+
+// FOOTER END
+
 }
 
 @media screen and (min-width:768px) {
@@ -330,8 +542,9 @@
     .phone-help {display: none;}
 
 // TOP BAR END
-
 // SCROLL BAR BEGIN
+
+    .downsize1 {display: inline;}
 
     .scroll-bar {
 
@@ -367,6 +580,11 @@
     
     .affix-top {
 
+        .logo-v {
+            left: auto;
+            transform: none;
+        }
+
         .logo-w {
             left: auto;
             transform: none;
@@ -379,6 +597,11 @@
     }
     
     .affix {
+
+        .logo-v {
+            left: auto;
+            transform: none;
+        }
 
         .logo-w {
             left: auto;
@@ -397,7 +620,6 @@
 
 
 // SCROLL BAR END 
-
 // PARTNERS BEGIN
 
     .partners {
@@ -418,6 +640,30 @@
     }
 
 // PARTNERS END
+// FOOTER BEGIN
+.footer-body {margin-bottom: 90px}
+
+.footer-list {
+    
+    text-align: left;
+    margin-top: 25px;
+    margin-left: 40px;
+
+    a {font-size: 16px;}
+}
+
+.footer-phone {text-align:left;}
+
+.footer-social {text-align: left;}
+
+.footer-bottom {
+    
+    .popel-logo {margin-right: 40px;}
+
+    .chudocard-right {margin-left:40px;}    
+}
+
+// FOOTER END
 
 }
 
@@ -593,6 +839,18 @@
     }
 
 // SCROLL BAR END
+// FOOTER BEGIN
+
+.footer-list {margin-left: 80px;}
+
+.footer-bottom {
+    
+    .popel-logo {margin-right: 80px;}
+
+    .chudocard-right {margin-left:80px;}    
+}
+
+// FOOTER END
    
 }
 

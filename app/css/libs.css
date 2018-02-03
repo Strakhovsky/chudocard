@@ -7004,7 +7004,7 @@ button.close {
     color: #ffffff; }
   .scroll-bar .order {
     text-align: center;
-    padding: 5px 0 10px 0;
+    padding: 5px 0 5px 0;
     font-family: "MyriadProLight"; }
     .scroll-bar .order .btn-get {
       display: inline-block;
@@ -7033,8 +7033,10 @@ button.close {
       /* W3C */
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#550abf', endColorstr='#9937b1', GradientType=1 );
       /* IE6-9 fallback on horizontal gradient */ }
+      .scroll-bar .order .btn-get .downsize {
+        display: none; }
     .scroll-bar .order .btn-login {
-      margin: 0px 0px 0px 20px;
+      margin: 0px 0px 0px 15px;
       font-size: 14px;
       line-height: 17px;
       display: inline-block;
@@ -7059,11 +7061,44 @@ button.close {
   -o-transition: background-color 0.5s;
   transition: background-color 0.5s; }
   .affix-top .logo-v {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-top: 0px;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+    display: none; }
+  .affix-top .logo-w {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-top: 0px;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    opacity: 1;
+    -webkit-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+    display: none; }
+  .affix-top .logo-v-m {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-top: 0px;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     opacity: 0;
     -webkit-transition: opacity 0.5s;
     -o-transition: opacity 0.5s;
     transition: opacity 0.5s; }
-  .affix-top .logo-w {
+  .affix-top .logo-w-m {
     position: absolute;
     top: 0;
     left: 50%;
@@ -7092,6 +7127,19 @@ button.close {
   -o-transition: box-shadow 0.5s, background-color 0.5s;
   transition: box-shadow 0.5s, background-color 0.5s;
   transition: box-shadow 0.5s, background-color 0.5s, -webkit-box-shadow 0.5s; }
+  .affix .logo-v {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-top: 0px;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    opacity: 1;
+    -webkit-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+    display: none; }
   .affix .logo-w {
     position: absolute;
     top: 0;
@@ -7103,9 +7151,29 @@ button.close {
     opacity: 0;
     -webkit-transition: opacity 0.5s;
     -o-transition: opacity 0.5s;
-    transition: opacity 0.5s; }
-  .affix .logo-v {
+    transition: opacity 0.5s;
+    display: none; }
+  .affix .logo-v-m {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-top: 0px;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     opacity: 1;
+    -webkit-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
+  .affix .logo-w-m {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-top: 0px;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    opacity: 0;
     -webkit-transition: opacity 0.5s;
     -o-transition: opacity 0.5s;
     transition: opacity 0.5s; }
@@ -7176,19 +7244,117 @@ button.close {
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
-  background-position: center; }
+  background-position: center;
+  color: white;
+  font-family: "MyriadProLight";
+  font-size: 16px; }
+  .footer .footer-body {
+    margin-top: 25px; }
+  .footer ul {
+    list-style-type: none;
+    padding-left: 0px; }
+
+.footer-body {
+  margin-bottom: 20px; }
+
+.footer-list {
+  text-align: center; }
+  .footer-list li {
+    margin-bottom: 5px; }
+  .footer-list a {
+    border-bottom: 1px solid #789ab2;
+    color: #ffffff;
+    font-family: "MyriadProLight";
+    font-size: 20px; }
+    .footer-list a:active {
+      color: #a4b8c8;
+      border-bottom: 1px solid #a4b8c8; }
+    .footer-list a:hover, .footer-list a:focus {
+      text-decoration: none;
+      color: #ffffff;
+      border-bottom: 1px solid #ffffff; }
+    .footer-list a:visited {
+      color: #ffffff; }
+
+.footer-phone {
+  width: 200px;
+  margin: 25px auto 0px;
+  text-align: center; }
+  .footer-phone .phone-number {
+    font-size: 22px; }
+
+.footer-social {
+  width: 200px;
+  margin: 25px auto 0px;
+  text-align: center; }
+  .footer-social li {
+    display: inline; }
+  .footer-social img {
+    margin-right: 15px; }
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 13px; }
+  .footer-bottom .popel-logo {
+    display: none; }
+  .footer-bottom .popel-logo-mini {
+    float: right; }
+
+.long-line {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  opacity: 0.3;
+  background-color: #ffffff; }
 
 @media screen and (min-width: 480px) {
+  .btn-login {
+    margin: 0px 0px 0px 20px; }
+  .scroll-bar .order {
+    padding: 10px 0px 10px 0px; }
+  .downsize {
+    display: inline !important; }
+  .downsize1 {
+    display: none; }
+  .affix-top .logo-v {
+    display: block; }
+  .affix-top .logo-w {
+    display: block; }
+  .affix-top .logo-v-m {
+    display: none; }
+  .affix-top .logo-w-m {
+    display: none; }
+  .affix .logo-v {
+    display: block; }
+  .affix .logo-w {
+    display: block; }
+  .affix .logo-v-m {
+    display: none; }
+  .affix .logo-w-m {
+    display: none; }
   .partners-btn {
     font-size: 16px; }
   .partners-logo {
-    margin-bottom: 65px; } }
+    margin-bottom: 65px; }
+  .footer-body {
+    margin-bottom: 40px; }
+  .footer-bottom .popel-logo {
+    display: block;
+    float: right;
+    margin-right: 40px; }
+  .footer-bottom .chudocard-right {
+    margin-left: 40px; }
+  .footer-bottom .popel-logo-mini {
+    display: none; } }
 
 @media screen and (min-width: 768px) {
   .help-number {
     display: block; }
   .phone-help {
     display: none; }
+  .downsize1 {
+    display: inline; }
   .scroll-bar .logo {
     text-align: left;
     padding: 15px 0px 16px 0px; }
@@ -7207,6 +7373,11 @@ button.close {
     .scroll-bar .order .btn-login {
       padding: 8px 10px;
       font-size: 16px; }
+  .affix-top .logo-v {
+    left: auto;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none; }
   .affix-top .logo-w {
     left: auto;
     -webkit-transform: none;
@@ -7217,6 +7388,11 @@ button.close {
     -webkit-transition: color 0.5s;
     -o-transition: color 0.5s;
     transition: color 0.5s; }
+  .affix .logo-v {
+    left: auto;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none; }
   .affix .logo-w {
     left: auto;
     -webkit-transform: none;
@@ -7241,7 +7417,23 @@ button.close {
     float: right;
     margin: 30px auto 20px;
     font-size: 16px;
-    line-height: 17px; } }
+    line-height: 17px; }
+  .footer-body {
+    margin-bottom: 90px; }
+  .footer-list {
+    text-align: left;
+    margin-top: 25px;
+    margin-left: 40px; }
+    .footer-list a {
+      font-size: 16px; }
+  .footer-phone {
+    text-align: left; }
+  .footer-social {
+    text-align: left; }
+  .footer-bottom .popel-logo {
+    margin-right: 40px; }
+  .footer-bottom .chudocard-right {
+    margin-left: 40px; } }
 
 @media screen and (min-width: 992px) {
   .partners h1 {
@@ -7365,7 +7557,13 @@ button.close {
       font-size: 20px; }
     .scroll-bar .order .btn-login {
       padding: 11px 16px;
-      font-size: 20px; } }
+      font-size: 20px; }
+  .footer-list {
+    margin-left: 80px; }
+  .footer-bottom .popel-logo {
+    margin-right: 80px; }
+  .footer-bottom .chudocard-right {
+    margin-left: 80px; } }
 
 @media screen and (min-width: 1200px) {
   .scroll-bar p {

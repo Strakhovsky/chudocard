@@ -48,8 +48,9 @@ gulp.task('browser-sync', function() { //Creating new task
 });
 
 gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function() {
-    gulp.watch('app/sass/**/*.scss', ['sass', 'css-libs']); // watching for scss files
-    gulp.watch('app/css/**/*.css', browserSync.reload);
+    gulp.watch('app/sass/**/*.scss', ['sass']); // watching for scss files
+    //gulp.watch('app/sass/**/*.scss', ['sass', 'css-libs']); // watching for scss files
+    //gulp.watch('app/css/**/*.css', browserSync.reload);
     gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('app/js/**/*.js', browserSync.reload);
 });

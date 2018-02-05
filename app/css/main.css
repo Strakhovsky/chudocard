@@ -424,6 +424,67 @@
     display: block; }
   .phone-help {
     display: none; }
+  .item-point {
+    z-index: 222;
+    position: absolute;
+    top: 49px;
+    left: 24px;
+    display: block; }
+    .item-point .item-text {
+      display: inline-block;
+      font-size: 14px;
+      width: 185px;
+      font-family: "MyriadProLight";
+      text-align: right;
+      color: #ffffff; }
+    .item-point .item-img {
+      display: inline-block;
+      margin-bottom: 70px; }
+    .item-point .top-pulsate {
+      background-color: #e8e8e838;
+      -webkit-border-radius: 30px;
+              border-radius: 30px;
+      height: 35px;
+      width: 35px;
+      right: -14px;
+      top: 1px;
+      margin: -15px 0 0 -15px;
+      opacity: 0;
+      position: absolute;
+      -webkit-animation: pulsate 1.5s ease-out;
+              animation: pulsate 1.5s ease-out;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-delay: 0s;
+              animation-delay: 0s; }
+  @-webkit-keyframes pulsate {
+    0% {
+      -webkit-transform: scale(0.1);
+              transform: scale(0.1);
+      opacity: 0; }
+    50% {
+      opacity: 1; }
+    100% {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+      opacity: 0; } }
+    .item-point .top-pulsate1 {
+      background-color: #e8e8e838;
+      -webkit-border-radius: 30px;
+              border-radius: 30px;
+      height: 23px;
+      width: 23px;
+      right: -8px;
+      top: 7px;
+      margin: -15px 0 0 -15px;
+      opacity: 0;
+      position: absolute;
+      -webkit-animation: pulsate 1.5s ease-out;
+              animation: pulsate 1.5s ease-out;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-delay: 0s;
+              animation-delay: 0s; }
   .downsize1 {
     display: inline; }
   .scroll-bar .logo {
@@ -459,6 +520,16 @@
     -webkit-transition: color 0.5s;
     -o-transition: color 0.5s;
     transition: color 0.5s; }
+  .affix-top .item-point .item-text {
+    opacity: 1;
+    -webkit-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
+  .affix-top .item-point .item-img {
+    opacity: 1;
+    -webkit-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
   .affix .logo-v {
     left: auto;
     -webkit-transform: none;
@@ -479,6 +550,21 @@
     -webkit-transition: color 0.5s;
     -o-transition: color 0.5s;
     transition: color 0.5s; }
+  .affix .item-point {
+    visibility: hidden;
+    -webkit-transition: visibility 0.5s;
+    -o-transition: visibility 0.5s;
+    transition: visibility 0.5s; }
+    .affix .item-point .item-text {
+      opacity: 0;
+      -webkit-transition: opacity 0.5s;
+      -o-transition: opacity 0.5s;
+      transition: opacity 0.5s; }
+    .affix .item-point .item-img {
+      opacity: 0;
+      -webkit-transition: opacity 0.5s;
+      -o-transition: opacity 0.5s;
+      transition: opacity 0.5s; }
   .partners h1 {
     margin-top: 30px;
     margin-bottom: 20px;
@@ -517,110 +603,10 @@
     font-size: 16px;
     line-height: 17px; }
   .item-point {
-    z-index: 222;
-    position: absolute;
     top: 51px;
-    left: 155px;
-    display: block; }
-    .item-point p {
-      display: inline-block;
-      font-size: 14px;
-      width: 185px;
-      font-family: "MyriadProLight";
-      text-align: right;
-      color: #ffffff; }
-    .item-point img {
-      display: inline-block;
-      margin-bottom: 80px; }
-    .item-point .tor-pulsate {
-      background-color: #e8e8e838;
-      -webkit-border-radius: 30px;
-              border-radius: 30px;
-      height: 35px;
-      right: -14px;
-      top: 1px;
-      margin: -15px 0 0 -15px;
-      opacity: 0;
-      position: absolute;
-      width: 35px;
-      -webkit-animation: pulsate 1.5s ease-out;
-              animation: pulsate 1.5s ease-out;
-      -webkit-animation-iteration-count: infinite;
-              animation-iteration-count: infinite;
-      -webkit-animation-delay: .5s;
-              animation-delay: .5s; }
-  @-webkit-keyframes pulsate {
-    0% {
-      -webkit-transform: scale(0.1);
-              transform: scale(0.1);
-      opacity: 0; }
-    50% {
-      opacity: 1; }
-    100% {
-      -webkit-transform: scale(1.2);
-              transform: scale(1.2);
-      opacity: 0; } }
-    .item-point .tor-pulsate1 {
-      background-color: #e8e8e838;
-      -webkit-border-radius: 30px;
-              border-radius: 30px;
-      height: 35px;
-      right: -14px;
-      top: 1px;
-      margin: -15px 0 0 -15px;
-      opacity: 0;
-      position: absolute;
-      width: 35px;
-      -webkit-animation: pulsate 1s ease-out;
-              animation: pulsate 1s ease-out;
-      -webkit-animation-iteration-count: infinite;
-              animation-iteration-count: infinite;
-      -webkit-animation-delay: 0s;
-              animation-delay: 0s; }
-    .item-point .tor-pulsate2 {
-      background-color: #e8e8e838;
-      -webkit-border-radius: 30px;
-              border-radius: 30px;
-      height: 35px;
-      right: -14px;
-      top: 1px;
-      margin: -15px 0 0 -15px;
-      opacity: 0;
-      position: absolute;
-      width: 35px;
-      -webkit-animation: pulsate 1.5s ease-out;
-              animation: pulsate 1.5s ease-out;
-      -webkit-animation-iteration-count: infinite;
-              animation-iteration-count: infinite;
-      -webkit-animation-delay: 1s;
-              animation-delay: 1s; }
-  .affix-top .item-point p {
-    opacity: 1;
-    -webkit-transition: opacity 0.5s;
-    -o-transition: opacity 0.5s;
-    transition: opacity 0.5s; }
-  .affix-top .item-point img {
-    opacity: 1;
-    -webkit-transition: opacity 0.5s;
-    -o-transition: opacity 0.5s;
-    transition: opacity 0.5s; }
-  .affix .item-point {
-    visibility: hidden;
-    -webkit-transition: visibility 0.5s;
-    -o-transition: visibility 0.5s;
-    transition: visibility 0.5s; }
-    .affix .item-point p {
-      opacity: 0;
-      -webkit-transition: opacity 0.5s;
-      -o-transition: opacity 0.5s;
-      transition: opacity 0.5s; }
-    .affix .item-point img {
-      opacity: 0;
-      -webkit-transition: opacity 0.5s;
-      -o-transition: opacity 0.5s;
-      transition: opacity 0.5s; }
-  .scroll-bar p {
-    margin-left: -22px; }
+    left: 110px; }
+  .scroll-bar .top-more-info {
+    margin-left: -10px; }
   .scroll-bar .order {
     padding: 15px 0px 16px 0px; }
     .scroll-bar .order .btn-get {
@@ -637,10 +623,10 @@
     margin-left: 80px; } }
 
 @media screen and (min-width: 1200px) {
-  .scroll-bar p {
-    margin-left: -72px; }
+  .scroll-bar .top-more-info {
+    margin-left: -60px; }
   .item-point {
-    left: 305px; } }
+    left: 210px; } }
 
 @font-face {
   font-family: "MyriadProLight";

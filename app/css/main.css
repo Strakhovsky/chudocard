@@ -126,7 +126,7 @@
 
 .affix-top {
   position: absolute;
-  top: 40px;
+  top: 60px;
   background-color: transparent;
   -webkit-transition: background-color 0.5s;
   -o-transition: background-color 0.5s;
@@ -506,12 +506,12 @@
       padding: 8px 10px;
       font-size: 16px; }
   .affix-top .logo-v {
-    left: auto;
+    left: 0px;
     -webkit-transform: none;
         -ms-transform: none;
             transform: none; }
   .affix-top .logo-w {
-    left: auto;
+    left: 0px;
     -webkit-transform: none;
         -ms-transform: none;
             transform: none; }
@@ -531,12 +531,12 @@
     -o-transition: opacity 0.5s;
     transition: opacity 0.5s; }
   .affix .logo-v {
-    left: auto;
+    left: 0px;
     -webkit-transform: none;
         -ms-transform: none;
             transform: none; }
   .affix .logo-w {
-    left: auto;
+    left: 0px;
     -webkit-transform: none;
         -ms-transform: none;
             transform: none; }

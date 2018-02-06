@@ -7055,7 +7055,7 @@ button.close {
 
 .affix-top {
   position: absolute;
-  top: 40px;
+  top: 60px;
   background-color: transparent;
   -webkit-transition: background-color 0.5s;
   -o-transition: background-color 0.5s;
@@ -7435,12 +7435,12 @@ button.close {
       padding: 8px 10px;
       font-size: 16px; }
   .affix-top .logo-v {
-    left: auto;
+    left: 0px;
     -webkit-transform: none;
         -ms-transform: none;
             transform: none; }
   .affix-top .logo-w {
-    left: auto;
+    left: 0px;
     -webkit-transform: none;
         -ms-transform: none;
             transform: none; }
@@ -7460,12 +7460,12 @@ button.close {
     -o-transition: opacity 0.5s;
     transition: opacity 0.5s; }
   .affix .logo-v {
-    left: auto;
+    left: 0px;
     -webkit-transform: none;
         -ms-transform: none;
             transform: none; }
   .affix .logo-w {
-    left: auto;
+    left: 0px;
     -webkit-transform: none;
         -ms-transform: none;
             transform: none; }
@@ -8140,3 +8140,103 @@ button.close {
     margin-bottom: 10px; }
   .specials p {
     font-size: 18px; } }
+
+.modal-menu .row {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.modal-menu .col-lg-1, .modal-menu .col-lg-2, .modal-menu .col-lg-3, .modal-menu .col-lg-4, .modal-menu .col-lg-5,
+.modal-menu .col-lg-6, .modal-menu .col-lg-7, .modal-menu .col-lg-8, .modal-menu .col-lg-9, .modal-menu .col-lg-10,
+.modal-menu .col-lg-11, .modal-menu .col-lg-12, .modal-menu .col-md-1, .modal-menu .col-md-2, .modal-menu .col-md-3,
+.modal-menu .col-md-4, .modal-menu .col-md-5, .modal-menu .col-md-6, .modal-menu .col-md-7, .modal-menu .col-md-8,
+.modal-menu .col-md-9, .modal-menu .col-md-10, .modal-menu .col-md-11, .modal-menu .col-md-12, .modal-menu .col-sm-1,
+.modal-menu .col-sm-2, .modal-menu .col-sm-3, .modal-menu .col-sm-4, .modal-menu .col-sm-5, .modal-menu .col-sm-6,
+.modal-menu .col-sm-7, .modal-menu .col-sm-8, .modal-menu .col-sm-9, .modal-menu .col-sm-10, .modal-menu .col-sm-11,
+.modal-menu .col-sm-12, .modal-menu .col-xs-1, .modal-menu .col-xs-2, .modal-menu .col-xs-3, .modal-menu .col-xs-4,
+.modal-menu .col-xs-5, .modal-menu .col-xs-6, .modal-menu .col-xs-7, .modal-menu .col-xs-8, .modal-menu .col-xs-9,
+.modal-menu .col-xs-10, .modal-menu .col-xs-11, .modal-menu .col-xs-12 {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.modal-menu .modal-content {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none; }
+
+.modal-transparent {
+  background: transparent; }
+
+.modal-transparent .modal-content {
+  background: transparent; }
+
+.modal-backdrop.modal-backdrop-transparent {
+  background: transparent; }
+
+.modal-backdrop.modal-backdrop-transparent.in {
+  opacity: .9;
+  filter: alpha(opacity=90); }
+
+.modal-open .affix-top {
+  padding-right: 17px; }
+
+.test1 {
+  background-color: #7c42a6;
+  height: 140px; }
+
+.test2 {
+  background-color: #4db5b2;
+  height: 140px; }
+
+.test3 {
+  background-color: #522e99;
+  height: 140px; }
+
+.test4 {
+  background-color: #c06a71;
+  height: 140px; }
+
+.test5 {
+  background-color: #6342a6;
+  height: 140px; }
+
+.test6 {
+  background-color: #541137;
+  height: 140px; }
+
+.test7 {
+  background-color: #6342a6;
+  height: 140px; }
+
+.test8 {
+  background-color: #793380;
+  height: 140px; }
+
+.test9 {
+  background-color: #618c9c;
+  height: 140px; }
+
+@media screen and (min-width: 480px) {
+  .modal-menu .modal-dialog {
+    margin: 30px auto; } }
+
+@media screen and (min-width: 768px) {
+  .modal-lg-custom {
+    width: 736px; }
+  .modal-menu .modal-dialog {
+    margin: 50px auto; } }
+
+@media screen and (min-width: 992px) {
+  .modal-lg-custom {
+    width: 960px; } }
+
+@font-face {
+  font-family: "MyriadProLight";
+  src: url("../fonts/MyriadProLight.woff2") format("woff2"), url("../fonts/MyriadProLight.ttf") format("truetype"), url("../fonts/MyriadProLight.woff") format("woff");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "UniSansHeavyCaps";
+  src: url("../fonts/UniSansHeavyCaps.woff2") format("woff2"), url("../fonts/UniSansHeavyCaps.ttf") format("truetype"), url("../fonts/UniSansHeavyCaps.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }

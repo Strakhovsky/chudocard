@@ -164,7 +164,7 @@
 
 .affix-top {
     position: absolute;
-    top: 40px;
+    top: 60px;
     background-color: transparent;
     transition: background-color 0.5s;
 
@@ -651,12 +651,12 @@
     .affix-top {
 
         .logo-v {
-            left: auto;
+            left: 0px;
             transform: none;
         }
 
         .logo-w {
-            left: auto;
+            left: 0px;
             transform: none;
         }
 
@@ -683,12 +683,12 @@
     .affix {
 
         .logo-v {
-            left: auto;
+            left: 0px;
             transform: none;
         }
 
         .logo-w {
-            left: auto;
+            left: 0px;
             transform: none;
         }
 

@@ -22,7 +22,7 @@ gulp.task('sass', function(){
 gulp.task('scripts', function() {
     return gulp.src([ // Get all nedest libraries
         'app/libs/jquery/dist/jquery.js', // Get jQuery
-        'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js', // Get Magnific Popup
+        // 'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js', // Get Magnific Popup
         'app/libs/bootstrap/dist/js/bootstrap.js',
         'app/js/main.js'
     ])
@@ -52,7 +52,7 @@ gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function() {
     //gulp.watch('app/sass/**/*.scss', ['sass', 'css-libs']); // watching for scss files
     //gulp.watch('app/css/**/*.css', browserSync.reload);
     gulp.watch('app/*.html', browserSync.reload);
-    gulp.watch('app/js/**/*.js', browserSync.reload);
+    gulp.watch(['app/js/**/*.js', "!app/js/libs.min.js"], ['scripts']);
 });
 
 gulp.task('clean', function() {

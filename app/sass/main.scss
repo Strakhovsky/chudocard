@@ -164,7 +164,7 @@
 
 .affix-top {
     position: absolute;
-    top: 60px;
+    top: 40px;
     background-color: transparent;
     transition: background-color 0.5s;
 
@@ -865,6 +865,15 @@
     src: url('../fonts/UniSansHeavyCaps.woff2') format('woff2'), 
     url('../fonts/UniSansHeavyCaps.ttf')  format('truetype'),
     url('../fonts/UniSansHeavyCaps.woff') format('woff'); 
+    font-weight: normal; 
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MyriadProBold";
+    src: url('../fonts/MyriadProBold.woff2') format('woff2'), 
+    url('../fonts/MyriadProBold.ttf')  format('truetype'),
+    url('../fonts/MyriadProBold.woff') format('woff'); 
     font-weight: normal; 
     font-style: normal;
 }

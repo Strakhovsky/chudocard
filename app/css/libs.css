@@ -7055,7 +7055,7 @@ button.close {
 
 .affix-top {
   position: absolute;
-  top: 60px;
+  top: 40px;
   background-color: transparent;
   -webkit-transition: background-color 0.5s;
   -o-transition: background-color 0.5s;
@@ -7566,6 +7566,12 @@ button.close {
 @font-face {
   font-family: "UniSansHeavyCaps";
   src: url("../fonts/UniSansHeavyCaps.woff2") format("woff2"), url("../fonts/UniSansHeavyCaps.ttf") format("truetype"), url("../fonts/UniSansHeavyCaps.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "MyriadProBold";
+  src: url("../fonts/MyriadProBold.woff2") format("woff2"), url("../fonts/MyriadProBold.ttf") format("truetype"), url("../fonts/MyriadProBold.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -8163,6 +8169,12 @@ button.close {
           box-shadow: none;
   border: none; }
 
+.modal-menu .modal-header {
+  border: none; }
+
+.modal-menu .glyphicon {
+  background: transparent; }
+
 .modal-transparent {
   background: transparent; }
 
@@ -8170,50 +8182,129 @@ button.close {
   background: transparent; }
 
 .modal-backdrop.modal-backdrop-transparent {
-  background: transparent; }
+  -webkit-transition: opacity 0.9s ease-out;
+  -o-transition: opacity 0.9s ease-out;
+  transition: opacity 0.9s ease-out;
+  opacity: 0; }
 
 .modal-backdrop.modal-backdrop-transparent.in {
-  opacity: .9;
-  filter: alpha(opacity=90); }
+  -webkit-transition: opacity 0.4s ease-out;
+  -o-transition: opacity 0.4s ease-out;
+  transition: opacity 0.4s ease-out;
+  opacity: .8; }
 
 .modal-open .affix-top {
   padding-right: 17px; }
 
-.test1 {
+.point-title-bold-lg p {
+  font-family: "MyriadProBold";
+  font-size: 30px;
+  color: #ffffff; }
+
+.point-link:active {
+  color: #ffffff;
+  text-decoration: none; }
+
+.point-link:hover, .point-link:focus {
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8); }
+
+.point-link:visited {
+  color: #ffffff; }
+
+.modal.fade .modal-dialog {
+  -webkit-transition: -webkit-transform .3s ease-out;
+  transition: -webkit-transform .3s ease-out;
+  -o-transition: transform .3s ease-out;
+  transition: transform .3s ease-out;
+  transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0); }
+
+.point-box1, .point-box2, .point-box3, .point-box4, .point-box5, .point-box6, .point-box7, .point-box8, .point-box9 {
+  -webkit-transition: all .9s ease-out;
+  -o-transition: all .9s ease-out;
+  transition: all .9s ease-out;
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
+  opacity: 0; }
+
+.point-test {
+  -webkit-transition: all .9s ease-out;
+  -o-transition: all .9s ease-out;
+  transition: all .9s ease-out;
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
+  opacity: 0; }
+
+.fade.in .point-box-1 {
+  -webkit-transition: all .9s ease-out;
+  -o-transition: all .9s ease-out;
+  transition: all .9s ease-out;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  opacity: 1; }
+
+.point1 {
   background-color: #7c42a6;
-  height: 140px; }
+  height: 140px;
+  -webkit-box-shadow: inset 0px -1px 0px 0px rgba(255, 255, 255, 0.5);
+          box-shadow: inset 0px -1px 0px 0px rgba(255, 255, 255, 0.5); }
 
-.test2 {
+.point2 {
   background-color: #4db5b2;
-  height: 140px; }
+  height: 140px;
+  -webkit-box-shadow: inset 0px -1px 0px 0px rgba(255, 255, 255, 0.5);
+          box-shadow: inset 0px -1px 0px 0px rgba(255, 255, 255, 0.5); }
 
-.test3 {
+.point3 {
   background-color: #522e99;
-  height: 140px; }
+  height: 140px;
+  -webkit-box-shadow: inset 0px -1px 0px 0px rgba(255, 255, 255, 0.5);
+          box-shadow: inset 0px -1px 0px 0px rgba(255, 255, 255, 0.5); }
 
-.test4 {
+.point4 {
   background-color: #c06a71;
-  height: 140px; }
+  height: 140px;
+  -webkit-box-shadow: inset 0px -1px 0px 0px rgba(255, 255, 255, 0.5);
+          box-shadow: inset 0px -1px 0px 0px rgba(255, 255, 255, 0.5); }
 
-.test5 {
+.point5 {
   background-color: #6342a6;
-  height: 140px; }
+  height: 140px;
+  -webkit-box-shadow: inset 0px -1px 0px 0px rgba(255, 255, 255, 0.5);
+          box-shadow: inset 0px -1px 0px 0px rgba(255, 255, 255, 0.5); }
 
-.test6 {
+.point6 {
   background-color: #541137;
-  height: 140px; }
+  height: 140px;
+  -webkit-box-shadow: inset 0px -1px 0px 0px rgba(255, 255, 255, 0.5);
+          box-shadow: inset 0px -1px 0px 0px rgba(255, 255, 255, 0.5); }
 
-.test7 {
+.point7 {
   background-color: #6342a6;
-  height: 140px; }
+  height: 140px;
+  -webkit-box-shadow: inset 0px -1px 0px 0px rgba(255, 255, 255, 0.5);
+          box-shadow: inset 0px -1px 0px 0px rgba(255, 255, 255, 0.5); }
 
-.test8 {
+.point8 {
   background-color: #793380;
-  height: 140px; }
+  height: 140px;
+  -webkit-box-shadow: inset 0px -1px 0px 0px rgba(255, 255, 255, 0.5);
+          box-shadow: inset 0px -1px 0px 0px rgba(255, 255, 255, 0.5); }
 
-.test9 {
+.point9 {
   background-color: #618c9c;
-  height: 140px; }
+  height: 140px;
+  -webkit-box-shadow: inset 0px -1px 0px 0px rgba(255, 255, 255, 0.5);
+          box-shadow: inset 0px -1px 0px 0px rgba(255, 255, 255, 0.5); }
 
 @media screen and (min-width: 480px) {
   .modal-menu .modal-dialog {

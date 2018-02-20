@@ -19,6 +19,15 @@ gulp.task('sass', function(){
         .pipe(browserSync.reload({stream: true}))
 });
 
+gulp.task('browser-sync', function() { //Creating new task
+    browserSync({ // Perform browser Sync(reloading page)
+        server: { //define servers options
+            baseDir: 'app' // Directory for the server - app
+        },
+        notify: false // Disable notify
+    });
+});
+
 gulp.task('scripts', function() {
     return gulp.src([ // Get all nedest libraries
         'app/libs/jquery/dist/jquery.js', // Get jQuery
@@ -36,15 +45,6 @@ gulp.task('css-libs', ['sass'], function() {
         .pipe(cssnano())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('app/css'));
-});
-
-gulp.task('browser-sync', function() { //Creating new task
-    browserSync({ // Perform browser Sync(reloading page)
-        server: { //define servers options
-            baseDir: 'app' // Directory for the server - app
-        },
-        notify: false // Disable notify
-    });
 });
 
 gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function() {

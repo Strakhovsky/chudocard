@@ -61,7 +61,7 @@ $("#modal-menu").on('hide.bs.modal', function () {
       $('div.point-box1').removeClass("point-box-1");
       $('div.point-box1').addClass('point-test');
     }, 2000);
-    alert(3000);
+    alert(4000);
     $("div.point-box1").removeClass("point-box-1");
     $("div.point-box2").removeClass("point-box-1");
     $("div.point-box2").removeClass("point-box-1");
@@ -71,7 +71,8 @@ $("#modal-menu").on('hide.bs.modal', function () {
     $("div.point-box6").removeClass("point-box-1");
     $("div.point-box7").removeClass("point-box-1");
     $("div.point-box8").removeClass("point-box-1");
-    $("div.point-box9").removeClass("point-box-1");
+    
     
   
 });
+

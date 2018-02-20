@@ -8172,9 +8172,6 @@ button.close {
 .modal-menu .modal-header {
   border: none; }
 
-.modal-menu .glyphicon {
-  background: transparent; }
-
 .modal-transparent {
   background: transparent; }
 
@@ -8240,8 +8237,7 @@ button.close {
   transition: all .9s ease-out;
   -webkit-transform: scale(0.95);
       -ms-transform: scale(0.95);
-          transform: scale(0.95);
-  opacity: 0; }
+          transform: scale(0.95); }
 
 .fade.in .point-box-1 {
   -webkit-transition: all .9s ease-out;

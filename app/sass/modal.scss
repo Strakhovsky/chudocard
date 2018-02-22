@@ -72,7 +72,7 @@
     }
 
 
-// Styles only for modal-menu block
+// Styles only for modal background
 
 .modal-transparent {
     background: transparent;
@@ -88,6 +88,37 @@
     opacity: .8;
 }
 
+.fade {
+    .modal-gradient {
+        transition: all .9s ease-out;
+        transform: scale(0.95);
+        opacity: 0;
+    }
+}
+
+.fade.in {
+    .modal-gradient {
+        position: absolute;
+        left: 50%;
+        bottom: 20%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        box-shadow: 1px 1px 250px 270px #4b387d;
+
+        transition: all .3s ease-out 1.6s;
+        transform: scale(1);
+        opacity: 0.4;
+       // animation: shadow 5s infinite alternate;
+      }
+     // @keyframes shadow {
+       // from {
+       //   box-shadow: 0 0 200px 100px #4b387d;
+       // }
+//to {
+      //    box-shadow: 0 0 220px 110px #4b387d;
+      //  }
+   // }
+}
 
 .modal-open {.affix-top {padding-right: 17px;}} // I am clearly tsar. I fixed moving right affix block when modal window open.
 

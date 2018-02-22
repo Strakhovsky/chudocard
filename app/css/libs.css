@@ -8237,6 +8237,65 @@ button.close {
   transition: opacity 0.4s ease-out;
   opacity: .8; }
 
+.fade.in .modal-gradient1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(72, 50, 121, 0.65);
+  /* Old Browsers */
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(72, 50, 121, 0.65)), color-stop(100%, rgba(0, 0, 0, 0.04)));
+  /* Chrome, Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(72, 50, 121, 0.65) 0%, rgba(0, 0, 0, 0.04) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, rgba(72, 50, 121, 0.65) 0%, rgba(0, 0, 0, 0.04) 100%);
+  /* Opera 11.10+ */
+  /* IE 10+ */
+  background: -webkit-radial-gradient(center, ellipse, rgba(72, 50, 121, 0.65) 0%, rgba(0, 0, 0, 0.04) 100%);
+  background: -o-radial-gradient(center, ellipse, rgba(72, 50, 121, 0.65) 0%, rgba(0, 0, 0, 0.04) 100%);
+  background: radial-gradient(ellipse at center, rgba(72, 50, 121, 0.65) 0%, rgba(0, 0, 0, 0.04) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#483279', endColorstr='#000000', GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
+
+.fade.in .modal-gradient2 {
+  position: absolute;
+  width: 100%;
+  height: 102%;
+  background-image: url(../img/modal-gradient-background.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center; }
+
+.fade .modal-gradient {
+  -webkit-transition: all .9s ease-out;
+  -o-transition: all .9s ease-out;
+  transition: all .9s ease-out;
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
+  opacity: 0; }
+
+.fade.in .modal-gradient {
+  position: absolute;
+  left: 50%;
+  bottom: 20%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-box-shadow: 1px 1px 250px 270px #4b387d;
+          box-shadow: 1px 1px 250px 270px #4b387d;
+  -webkit-transition: all .3s ease-out 1.6s;
+  -o-transition: all .3s ease-out 1.6s;
+  transition: all .3s ease-out 1.6s;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  opacity: 0.4; }
+
 .modal-open .affix-top {
   padding-right: 17px; }
 

@@ -17,7 +17,7 @@ $(".modal-menu").on('show.bs.modal', function () {
   setTimeout( function() {
     $(".modal-backdrop").addClass("modal-backdrop-transparent");
   }, 0);
-
+/*
   setTimeout( function() {
     $("div.point-box1").addClass('point-box-1');
   }, 400);
@@ -53,15 +53,16 @@ $(".modal-menu").on('show.bs.modal', function () {
   setTimeout( function() {
     $("div.point-box9").addClass('point-box-1');
   }, 2000);
-
+*/
 });
 
 $("#modal-menu").on('hide.bs.modal', function () {
+    /*
     setTimeout(function() {
       $('div.point-box1').removeClass("point-box-1");
       $('div.point-box1').addClass('point-test');
     }, 2000);
-    alert(4000);
+    alert(1000);
     $("div.point-box1").removeClass("point-box-1");
     $("div.point-box2").removeClass("point-box-1");
     $("div.point-box2").removeClass("point-box-1");
@@ -71,8 +72,6 @@ $("#modal-menu").on('hide.bs.modal', function () {
     $("div.point-box6").removeClass("point-box-1");
     $("div.point-box7").removeClass("point-box-1");
     $("div.point-box8").removeClass("point-box-1");
-    
-    
-  
+    */
 });
 

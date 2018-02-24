@@ -11,15 +11,17 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/carousel.css">
         <link rel="stylesheet" href="css/modal.css">        
+        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="css/registration.css">                        
     </head>
 
     <body>
-        <!-- = Modal Menu End = -->
+        <!-- = Modal Menu Start = -->
 
         <div class="modal-menu">
 
             <div class="modal modal-transparent fade" id="modal-menu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-gradient"></div>
+                <div class="modal-gradient"></div>
                 <div class="modal-dialog modal-lg-custom">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -134,6 +136,60 @@
         </div>
 
         <!-- = Modal Menu End = -->
+        <!-- = Modal Login Start = -->
+
+        <div class="modal-login">
+
+            <div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                
+                <div class="modal-dialog modal-size-login">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="img/login-close.png" alt=""></button>
+                            <div class="login-logo"><img src="img/login-logo.png" alt=""></div>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="login-tittle">
+                                    <h2>Вход в систему</h2>
+                                </div>
+                                <form class="form-horizontal">
+                                    <div class="forgotten"><a href="#" class=""><p>Забыли пароль</p></a></div>
+                                    <div class="form-group">
+                                       
+                                        <div class="col-sm-12">
+                                            <input type="email" class="form-control form-email" id="inputEmail3" placeholder="Введите ваш e-mail">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+
+                                        <div class="col-sm-12">
+                                            <input type="password" class="form-control" id="inputPassword3" placeholder="Введите пароль">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class=" btn-login-form">Войти<span><img src="img/login-form-arrow.png" alt=""></span></button>
+                                    </div>
+                                </form>
+
+                               
+                                    <div class="login-registration">
+                                        <p>Еще нет аккаунта? <a href="#" class="">Зарегистрироваться</a></p>
+                                    </div>
+                                
+
+                            </div>
+                        </div> <!-- modal-body -->
+
+                    </div> <!-- modal-content -->
+                </div> <!-- modal-dialog -->
+
+            </div>
+
+        </div>
+
+        <!-- = Modal Login End = -->        
         <!-- ======================= Top Bar Begin ============================ -->
         
         <div class="top-bar">
@@ -199,7 +255,7 @@
                                         <div class="top-pulsate1"></div>
                                     </div>
                                 </button>
-                                <button class="btn-login">Вход</button>
+                                <button class="btn-login" data-toggle="modal" data-target="#modal-login">Вход</button>
                             </div>
                         </div>
                     </div>
@@ -778,6 +834,181 @@
         </div>
 
         <!-- = Press End = -->
+        <!-- = Registration Begin = -->
+
+        <div class="registration">
+            <div class="container">
+
+                <div class="registration-header">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="registration-logo">
+                                <img src="img/registration-logo.png" alt="">
+                                <h2>Регистрация</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="registration-checkbox">
+                                <div class="checkbox-reg">
+                                        <input type="checkbox" value="None" id="checkbox-reg" name="check">
+                                        <label for="checkbox-reg"></label>
+                                </div>
+                                <p>У меня уже есть карта</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-ready">
+                    <div class="col-md-6">
+                            <form class="form-horizontal">
+
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input type="name" class="form-control" id="inputName3" placeholder="Ваше имя, фамилия и отчество">
+                                    </div>
+                                </div>
+
+                                
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input type="card-number" class="form-control" id="inputCardNumber3" placeholder="Номер карточки">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                    <input type="email" class="form-control" id="inputEmail3" placeholder="E-mail">
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-default" type="submit">Далее</button>
+
+                            </form>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="tabs">
+                            <ul class="nav nav-tabs nav-tabs-custom">
+                                <li class="active"><a href="#tab-1" data-toggle="tab">Информация о вас</a></li>
+                                <li><a href="#tab-2" data-toggle="tab">Адрес доставки карты</a></li>
+                                <li><a href="#tab-3" data-toggle="tab">Подтвердить данные</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="tab-content">
+
+                        <div class="tab-pane fade in active" id="tab-1">
+                            
+                            <div class="col-md-6">
+                                    <form class="form-horizontal">
+                                        
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+                                                <input type="name" class="form-control" id="inputName3" placeholder="Ваше имя, фамилия и отчество">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+                                                <input type="birthday" class="form-control" id="inputBirthday3" placeholder="День рождения">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+                                            <input type="email" class="form-control" id="inputEmail3" placeholder="E-mail">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+                                            <input type="phone-number" class="form-control" id="inputPhoneNumber3" placeholder="Номер телефона">
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-default" type="submit">Далее</button>
+
+                                    </form>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="registration-stuff-1">
+                                    <img src="img/registration-stuff-1.png" alt="">
+                                    <p>Эти и другие призы из каталога <br/> Чудо©Card можно заказывать <br/> 
+                                        бесплатно  за свои <br/>
+                                        привычные покупки
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="tab-pane fade" id="tab-2">
+                            <div class="col-md-6">
+                                <form class="form-horizontal">
+                                        
+                                    <div class="form-group">
+                                        <div class="col-sm-12">
+                                            <input type="country" class="form-control" id="inputCountry3" placeholder="Страна">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-sm-12">
+                                            <input type="city" class="form-control" id="inputCity3" placeholder="Город (населённый пункт)">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-sm-12">
+                                        <input type="street" class="form-control" id="inputStreet3" placeholder="Улица">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-sm-12">
+                                        <input type="house" class="form-control" id="inputHouse3" placeholder="Дом, квартира">
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-default" type="submit">Далее</button>
+
+                                </form>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="registration-stuff-2">
+                                    <img src="img/registration-stuff-2.png" alt="">
+                                    <img src="img/registration-stuff-2-1.png" alt="">                                    
+                                    <p>Это номер вашей персональной<br/> карты Чудо©Card. На отправленной <br/> 
+                                        карте ваше имя и фамилия будут<br/>
+                                        написаны транслитом
+                                    </p>
+                                </div>
+                            </div>    
+                        </div>
+
+                        <div class="tab-pane fade" id="tab-3">
+                            <div class="col-md-12">
+                                <div class="registration-stuff-2">
+                                    <img src="img/registration-stuff-3.png" alt="">
+                                    <img src="img/registration-stuff-3-small.png" alt="">
+                                    <img src="img/registration-stuff-3-1.png" alt="">
+                                    <img src="img/registration-stuff-3-2.png" alt="">
+                                </div>
+                            </div>    
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- = Registration End = -->
         <!-- = Footer Begin = -->
 
         <div class="footer">
@@ -823,12 +1054,13 @@
                 <div class="row">
                     <div class="long-line"></div>
                     <div class="footer-bottom">
-                        <div class="col-md-6 col-sm-6 col-xs-6">
+                        <div class="col-md-3 col-sm-6 col-xs-6">
                             <p class="chudocard-right">2018© «Чудо®Card»</p>
                         </div>
-                        <div class="col-md-6 col-sm-6 col-xs-6">
-                            <a class="popel-logo" href="#"><img src="img/popel-logo.png" alt=""></a>
-                            <a class="popel-logo-mini" href="#"><img src="img/popel-logo-mini.png" alt=""></a>
+                        <div class="col-md-offset-6 col-md-3 col-sm-offset-2 col-sm-4 col-xs-6">
+                            <div class="design-by">
+                                <p>Design by <a href="https://www.facebook.com/dmitriymaruschack">Dmitry Marushchak</a></p>
+                            </div>
                         </div>
                     </div>
 

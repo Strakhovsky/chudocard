@@ -1,0 +1,122 @@
+.card-ready {
+  display: none; }
+
+.registration {
+  background: url(../img/registration-bg.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffffff;
+  font-family: "MyriadProLight"; }
+
+.registration-header {
+  margin-top: 75px; }
+
+.registration-logo img {
+  display: none; }
+
+.registration-logo h2 {
+  font-size: 40px;
+  display: block;
+  text-align: center; }
+
+.registration-checkbox {
+  font-size: 20px;
+  margin-bottom: 17px; }
+  .registration-checkbox p {
+    padding-left: 34px;
+    margin: 0px; }
+
+.checkbox-reg {
+  width: 28px;
+  height: 28px;
+  position: relative;
+  background: transparent; }
+  .checkbox-reg label {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    left: 0px;
+    top: 32px;
+    background: transparent;
+    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    -webkit-background-clip: padding-box;
+            background-clip: padding-box; }
+    .checkbox-reg label:after {
+      content: '';
+      width: 26px;
+      height: 14px;
+      position: absolute;
+      top: -3px;
+      left: -1px;
+      -webkit-transform: rotate(-50deg);
+          -ms-transform: rotate(-50deg);
+              transform: rotate(-50deg);
+      border: 2px solid #ffffff;
+      border-top: none;
+      border-right: none;
+      background: transparent;
+      opacity: 0; }
+    .checkbox-reg label:hover::after {
+      opacity: 0.3; }
+  .checkbox-reg input[type=checkbox] {
+    visibility: hidden; }
+    .checkbox-reg input[type=checkbox]:checked + label:after {
+      opacity: 1; }
+
+.nav-tabs-custom {
+  margin-bottom: 55px;
+  border: none; }
+
+.nav-tabs-custom > li.active > a {
+  color: #7fffb5;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #7fffb5;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  padding-left: 20px;
+  -webkit-border-radius: 0px;
+          border-radius: 0px; }
+  .nav-tabs-custom > li.active > a:hover, .nav-tabs-custom > li.active > a:focus {
+    color: #7fffb5;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #7fffb5;
+    border-bottom: none;
+    border-left: none;
+    border-right: none; }
+  .nav-tabs-custom > li.active > a:active {
+    color: #7fffb5;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #7fffb5;
+    border-bottom: none;
+    border-left: none;
+    border-right: none; }
+
+.nav-tabs-custom li {
+  width: 200px; }
+  .nav-tabs-custom li a {
+    color: #406d79;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #406d79;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding-left: 0px;
+    -webkit-border-radius: 0px;
+            border-radius: 0px; }
+    .nav-tabs-custom li a:hover, .nav-tabs-custom li a:focus {
+      color: #7fffb5;
+      background-color: transparent;
+      border: 1px solid #7fffb5;
+      border-bottom: none;
+      border-left: none;
+      border-right: none; }

@@ -32,20 +32,15 @@
     text-shadow: none;
     margin-right: 6px;
     outline: none; }
-  .modal-header .close-glyph:hover {
+  .modal-header .close-glyph:hover, .modal-header .close-glyph:focus {
     color: #c04242;
-    -webkit-transition: -webkit-transform .3s ease-out;
-    transition: -webkit-transform .3s ease-out;
-    -o-transition: transform .3s ease-out;
-    transition: transform .3s ease-out;
-    transition: transform .3s ease-out, -webkit-transform .3s ease-out;
-    -webkit-transform: scale(1.3);
-        -ms-transform: scale(1.3);
-            transform: scale(1.3); }
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2); }
   .modal-header .close-glyph:active {
-    -webkit-transform: scale(0.01);
-        -ms-transform: scale(0.01);
-            transform: scale(0.01); }
+    -webkit-transform: scale(0.85);
+        -ms-transform: scale(0.85);
+            transform: scale(0.85); }
 
 .fade.in .close-in {
   -webkit-transition: -webkit-transform .4s ease-out .2s;

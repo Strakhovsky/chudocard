@@ -1,0 +1,141 @@
+.modal-open .affix {
+  padding-right: 17px; }
+
+.fade.in .modal-content {
+  -webkit-transition: all .3s ease-out .1s;
+  -o-transition: all .3s ease-out .1s;
+  transition: all .3s ease-out .1s;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  opacity: 1; }
+
+.modal-login {
+  font-family: "AkzidenzGroteskProRegular"; }
+  .modal-login .modal-content {
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 0; }
+  .modal-login .modal-content {
+    border: none;
+    -webkit-border-radius: 0%;
+            border-radius: 0%;
+    margin: 0 auto;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding-left: 20px; }
+  .modal-login .modal-size-login {
+    width: 280px;
+    margin: 105px auto 0; }
+  .modal-login .modal-header {
+    padding-left: 0px; }
+  .modal-login .modal-body {
+    padding-left: 0px;
+    margin-top: 10px; }
+  .modal-login .container-fluid {
+    padding-left: 0px; }
+  .modal-login .close {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 15px;
+    margin: 0px;
+    border-left: 1px #f3f0f9 solid;
+    border-bottom: 1px #f3f0f9 solid;
+    line-height: 0; }
+    .modal-login .close:hover, .modal-login .close:focus {
+      border-left: 1px #d1d0d4 solid;
+      border-bottom: 1px #d1d0d4 solid; }
+      .modal-login .close:hover img, .modal-login .close:focus img {
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2); }
+    .modal-login .close:active {
+      border-left: 1px #b0afb2 solid;
+      border-bottom: 1px #b0afb2 solid; }
+      .modal-login .close:active img {
+        -webkit-transform: scale(0.9);
+            -ms-transform: scale(0.9);
+                transform: scale(0.9); }
+  .modal-login .login-logo {
+    padding-top: 35px; }
+  .modal-login h2 {
+    margin: 0px 0px 25px 0px;
+    font-size: 24px; }
+  .modal-login .form-control {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-bottom: 1px solid #ccc;
+    -webkit-border-radius: 0px;
+            border-radius: 0px;
+    padding: 5px 100px 5px 0px;
+    font-size: 16px; }
+  .modal-login .form-email {
+    padding: 5px 0px 5px 0px; }
+  .modal-login .forgotten {
+    position: absolute;
+    z-index: 1;
+    top: 122px;
+    left: 135px; }
+    .modal-login .forgotten a {
+      color: #6200ea; }
+  .modal-login .btn-login-form {
+    background-color: transparent;
+    display: block;
+    float: right;
+    color: #6200ea;
+    font-size: 24px;
+    border: none;
+    -webkit-border-radius: none;
+            border-radius: none;
+    text-decoration: none;
+    outline: none;
+    line-height: 17px;
+    margin-top: 15px;
+    padding-right: 0px;
+    padding-left: 0px; }
+    .modal-login .btn-login-form span {
+      padding-left: 5px; }
+    .modal-login .btn-login-form:hover, .modal-login .btn-login-form:focus {
+      -webkit-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+              transform: scale(1.05); }
+    .modal-login .btn-login-form:active {
+      -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+              transform: scale(1); }
+  .modal-login .login-registration {
+    color: #9a9a9e;
+    font-size: 16px;
+    margin-top: 45px;
+    margin-bottom: 30px; }
+    .modal-login .login-registration a {
+      color: #6200ea; }
+
+@media screen and (min-width: 480px) {
+  .modal-login .modal-content {
+    padding-left: 40px; }
+  .modal-login .modal-size-login {
+    width: 400px; }
+  .modal-login .modal-body {
+    padding-right: 40px; }
+  .modal-login h2 {
+    margin: 31px 0px 21px 0px; }
+  .modal-login .forgotten {
+    top: 149px;
+    left: 211px; }
+  .modal-login .login-registration {
+    margin-top: 52px; } }
+
+@font-face {
+  font-family: "AkzidenzGroteskProRegular";
+  src: url("../fonts/AkzidenzGroteskProRegular.woff2") format("woff2"), url("../fonts/AkzidenzGroteskProRegular.ttf") format("truetype"), url("../fonts/AkzidenzGroteskProRegular.woff") format("woff"), url("../fonts/AkzidenzGroteskProRegular.otf") format("onetype");
+  font-style: normal;
+  font-weight: normal; }

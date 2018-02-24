@@ -7245,7 +7245,7 @@ button.close {
   -webkit-background-size: cover;
           background-size: cover;
   background-position: center;
-  color: white;
+  color: #f5f7f7;
   font-family: "MyriadProLight";
   font-size: 16px; }
   .footer .footer-body {
@@ -7295,10 +7295,10 @@ button.close {
 .footer-bottom {
   margin-top: 20px;
   font-size: 13px; }
-  .footer-bottom .popel-logo {
-    display: none; }
-  .footer-bottom .popel-logo-mini {
-    float: right; }
+  .footer-bottom .design-by {
+    padding-right: 10px; }
+    .footer-bottom .design-by a {
+      color: #ffffff; }
 
 .long-line {
   position: absolute;
@@ -8181,20 +8181,15 @@ button.close {
     text-shadow: none;
     margin-right: 6px;
     outline: none; }
-  .modal-header .close-glyph:hover {
+  .modal-header .close-glyph:hover, .modal-header .close-glyph:focus {
     color: #c04242;
-    -webkit-transition: -webkit-transform .3s ease-out;
-    transition: -webkit-transform .3s ease-out;
-    -o-transition: transform .3s ease-out;
-    transition: transform .3s ease-out;
-    transition: transform .3s ease-out, -webkit-transform .3s ease-out;
-    -webkit-transform: scale(1.3);
-        -ms-transform: scale(1.3);
-            transform: scale(1.3); }
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2); }
   .modal-header .close-glyph:active {
-    -webkit-transform: scale(0.01);
-        -ms-transform: scale(0.01);
-            transform: scale(0.01); }
+    -webkit-transform: scale(0.85);
+        -ms-transform: scale(0.85);
+            transform: scale(0.85); }
 
 .fade.in .close-in {
   -webkit-transition: -webkit-transform .4s ease-out .2s;
@@ -8959,3 +8954,268 @@ button.close {
   src: url("../fonts/UniSansHeavyCaps.woff2") format("woff2"), url("../fonts/UniSansHeavyCaps.ttf") format("truetype"), url("../fonts/UniSansHeavyCaps.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+
+.modal-open .affix {
+  padding-right: 17px; }
+
+.fade.in .modal-content {
+  -webkit-transition: all .3s ease-out .1s;
+  -o-transition: all .3s ease-out .1s;
+  transition: all .3s ease-out .1s;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  opacity: 1; }
+
+.modal-login {
+  font-family: "AkzidenzGroteskProRegular"; }
+  .modal-login .modal-content {
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 0; }
+  .modal-login .modal-content {
+    border: none;
+    -webkit-border-radius: 0%;
+            border-radius: 0%;
+    margin: 0 auto;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding-left: 20px; }
+  .modal-login .modal-size-login {
+    width: 280px;
+    margin: 105px auto 0; }
+  .modal-login .modal-header {
+    padding-left: 0px; }
+  .modal-login .modal-body {
+    padding-left: 0px;
+    margin-top: 10px; }
+  .modal-login .container-fluid {
+    padding-left: 0px; }
+  .modal-login .close {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 15px;
+    margin: 0px;
+    border-left: 1px #f3f0f9 solid;
+    border-bottom: 1px #f3f0f9 solid;
+    line-height: 0; }
+    .modal-login .close:hover, .modal-login .close:focus {
+      border-left: 1px #d1d0d4 solid;
+      border-bottom: 1px #d1d0d4 solid; }
+      .modal-login .close:hover img, .modal-login .close:focus img {
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2); }
+    .modal-login .close:active {
+      border-left: 1px #b0afb2 solid;
+      border-bottom: 1px #b0afb2 solid; }
+      .modal-login .close:active img {
+        -webkit-transform: scale(0.9);
+            -ms-transform: scale(0.9);
+                transform: scale(0.9); }
+  .modal-login .login-logo {
+    padding-top: 35px; }
+  .modal-login h2 {
+    margin: 0px 0px 25px 0px;
+    font-size: 24px; }
+  .modal-login .form-control {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-bottom: 1px solid #ccc;
+    -webkit-border-radius: 0px;
+            border-radius: 0px;
+    padding: 5px 100px 5px 0px;
+    font-size: 16px; }
+  .modal-login .form-email {
+    padding: 5px 0px 5px 0px; }
+  .modal-login .forgotten {
+    position: absolute;
+    z-index: 1;
+    top: 122px;
+    left: 135px; }
+    .modal-login .forgotten a {
+      color: #6200ea; }
+  .modal-login .btn-login-form {
+    background-color: transparent;
+    display: block;
+    float: right;
+    color: #6200ea;
+    font-size: 24px;
+    border: none;
+    -webkit-border-radius: none;
+            border-radius: none;
+    text-decoration: none;
+    outline: none;
+    line-height: 17px;
+    margin-top: 15px;
+    padding-right: 0px;
+    padding-left: 0px; }
+    .modal-login .btn-login-form span {
+      padding-left: 5px; }
+    .modal-login .btn-login-form:hover, .modal-login .btn-login-form:focus {
+      -webkit-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+              transform: scale(1.05); }
+    .modal-login .btn-login-form:active {
+      -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+              transform: scale(1); }
+  .modal-login .login-registration {
+    color: #9a9a9e;
+    font-size: 16px;
+    margin-top: 45px;
+    margin-bottom: 30px; }
+    .modal-login .login-registration a {
+      color: #6200ea; }
+
+@media screen and (min-width: 480px) {
+  .modal-login .modal-content {
+    padding-left: 40px; }
+  .modal-login .modal-size-login {
+    width: 400px; }
+  .modal-login .modal-body {
+    padding-right: 40px; }
+  .modal-login h2 {
+    margin: 31px 0px 21px 0px; }
+  .modal-login .forgotten {
+    top: 149px;
+    left: 211px; }
+  .modal-login .login-registration {
+    margin-top: 52px; } }
+
+@font-face {
+  font-family: "AkzidenzGroteskProRegular";
+  src: url("../fonts/AkzidenzGroteskProRegular.woff2") format("woff2"), url("../fonts/AkzidenzGroteskProRegular.ttf") format("truetype"), url("../fonts/AkzidenzGroteskProRegular.woff") format("woff"), url("../fonts/AkzidenzGroteskProRegular.otf") format("onetype");
+  font-style: normal;
+  font-weight: normal; }
+
+.card-ready {
+  display: none; }
+
+.registration {
+  background: url(../img/registration-bg.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffffff;
+  font-family: "MyriadProLight"; }
+
+.registration-header {
+  margin-top: 75px; }
+
+.registration-logo img {
+  display: none; }
+
+.registration-logo h2 {
+  font-size: 40px;
+  display: block;
+  text-align: center; }
+
+.registration-checkbox {
+  font-size: 20px;
+  margin-bottom: 17px; }
+  .registration-checkbox p {
+    padding-left: 34px;
+    margin: 0px; }
+
+.checkbox-reg {
+  width: 28px;
+  height: 28px;
+  position: relative;
+  background: transparent; }
+  .checkbox-reg label {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    left: 0px;
+    top: 32px;
+    background: transparent;
+    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    -webkit-background-clip: padding-box;
+            background-clip: padding-box; }
+    .checkbox-reg label:after {
+      content: '';
+      width: 26px;
+      height: 14px;
+      position: absolute;
+      top: -3px;
+      left: -1px;
+      -webkit-transform: rotate(-50deg);
+          -ms-transform: rotate(-50deg);
+              transform: rotate(-50deg);
+      border: 2px solid #ffffff;
+      border-top: none;
+      border-right: none;
+      background: transparent;
+      opacity: 0; }
+    .checkbox-reg label:hover::after {
+      opacity: 0.3; }
+  .checkbox-reg input[type=checkbox] {
+    visibility: hidden; }
+    .checkbox-reg input[type=checkbox]:checked + label:after {
+      opacity: 1; }
+
+.nav-tabs-custom {
+  margin-bottom: 55px;
+  border: none; }
+
+.nav-tabs-custom > li.active > a {
+  color: #7fffb5;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #7fffb5;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  padding-left: 20px;
+  -webkit-border-radius: 0px;
+          border-radius: 0px; }
+  .nav-tabs-custom > li.active > a:hover, .nav-tabs-custom > li.active > a:focus {
+    color: #7fffb5;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #7fffb5;
+    border-bottom: none;
+    border-left: none;
+    border-right: none; }
+  .nav-tabs-custom > li.active > a:active {
+    color: #7fffb5;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #7fffb5;
+    border-bottom: none;
+    border-left: none;
+    border-right: none; }
+
+.nav-tabs-custom li {
+  width: 200px; }
+  .nav-tabs-custom li a {
+    color: #406d79;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #406d79;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding-left: 0px;
+    -webkit-border-radius: 0px;
+            border-radius: 0px; }
+    .nav-tabs-custom li a:hover, .nav-tabs-custom li a:focus {
+      color: #7fffb5;
+      background-color: transparent;
+      border: 1px solid #7fffb5;
+      border-bottom: none;
+      border-left: none;
+      border-right: none; }

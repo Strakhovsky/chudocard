@@ -358,7 +358,7 @@
     background-size: cover;
     background-position: center;
 
-    color: white;
+    color: #f5f7f7;
     font-family: "MyriadProLight";
     font-size: 16px;
 
@@ -429,9 +429,13 @@
 .footer-bottom {
     margin-top: 20px;
     font-size: 13px;
-    
-    .popel-logo {display: none;}
-    .popel-logo-mini {float: right;}
+
+    .design-by {
+        //text-align: right;
+        padding-right: 10px;
+        
+        a {color: #ffffff;}
+    }
 }
 
 .long-line {

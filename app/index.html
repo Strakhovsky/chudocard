@@ -735,105 +735,6 @@
         </div>
 
         <!-- ======================= Partners Begin ============================== -->
-        <!-- ======================= Press Begin ============================== -->
-
-        <div class="press">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1>Отзывы в прессе</h1>
-                    </div>
-                </div>
-            </div>
-
-            <div id="carousel-press" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-press" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-press" data-slide-to="1"></li>
-                    <li data-target="#carousel-press" data-slide-to="2"></li>
-                </ol>
-
-            
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                
-                    <div class=" item active">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-4 col-sm-4">
-                                    <div class="press-logo">
-                                        <img src="img/press1.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-8 col-sm-8">
-                                    <div class="press-review">
-                                        <p>Потенциал у Чудокард хороший, по такому принципу 
-                                            бонусных карточек уже давно работают в Турции — I love bonus, 
-                                            в Англии — Nectar, в России - Малина. 
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=" item ">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-4 col-sm-4 ">
-                                    <div class="press-logo">
-                                        <img src="img/press2.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-8 col-sm-8">
-                                    <div class="press-review">
-                                        <p>Как независимое информационно-аналитическое издание 
-                                            считаем, что Чудоcard — отличный сервис с безграничными 
-                                            возможностями. Новая реальность для активных потребителей!  </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=" item ">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-4 col-sm-4">
-                                    <div class="press-logo">
-                                        <img src="img/press3.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-8 col-sm-8">
-                                    <div class="press-review">
-                                        <p>Отличный сервис с безграничными возможностями. 
-                                            Чудоcard — новая реальность для активных потребителей! 
-                                            10 из 10 от издания Marketing media review!</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            
-                <!-- Controls -->
-                <a class="left carousel-control" href="#carousel-press" role="button" data-slide="prev">
-                    <span class="" aria-hidden="true"></span>
-                    <img class="leftarrow" src="img/leftarrow2.png" alt="">
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#carousel-press" role="button" data-slide="next">
-                    <span class="" aria-hidden="true"></span>
-                    <img class="rightarrow" src="img/rightarrow2.png" alt="">
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-
-        </div>
-
-        <!-- = Press End = -->
         <!-- = Registration Begin = -->
 
         <div class="registration">
@@ -888,14 +789,16 @@
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="tabs">
-                            <ul class="nav nav-tabs nav-tabs-custom">
-                                <li class="active"><a href="#tab-1" data-toggle="tab">Информация о вас</a></li>
-                                <li><a href="#tab-2" data-toggle="tab">Адрес доставки карты</a></li>
-                                <li><a href="#tab-3" data-toggle="tab">Подтвердить данные</a></li>
-                            </ul>
+                <div class="registration-tab-panel">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="tabs">
+                                <ul class="nav nav-tabs nav-tabs-custom">
+                                    <li class="active"><a href="#tab-1" data-toggle="tab">Информация о вас</a></li>
+                                    <li><a href="#tab-2" data-toggle="tab">Адрес доставки карты</a></li>
+                                    <li><a href="#tab-3" data-toggle="tab">Подтвердить данные</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -905,7 +808,7 @@
 
                         <div class="tab-pane fade in active" id="tab-1">
                             
-                            <div class="col-md-6">
+                            <div class="col-xs-12 col-sm-6 col-md-6">
                                     <form class="form-horizontal">
                                         
                                         <div class="form-group">
@@ -931,12 +834,13 @@
                                             <input type="phone-number" class="form-control" id="inputPhoneNumber3" placeholder="Номер телефона">
                                             </div>
                                         </div>
-                                        <button class="btn btn-default" type="submit">Далее</button>
-
+                                        
+                                            <button class="btn-next" type="submit">Далее</button>
+                                            
                                     </form>
                             </div>
 
-                            <div class="col-md-6">
+                            <div class="col-xs-12 col-sm-6 col-md-6">
                                 <div class="registration-stuff-1">
                                     <img src="img/registration-stuff-1.png" alt="">
                                     <p>Эти и другие призы из каталога <br/> Чудо©Card можно заказывать <br/> 
@@ -949,7 +853,7 @@
                         </div>
 
                         <div class="tab-pane fade" id="tab-2">
-                            <div class="col-md-6">
+                            <div class="col-xs-12 col-sm-6 col-md-6">
                                 <form class="form-horizontal">
                                         
                                     <div class="form-group">
@@ -975,14 +879,18 @@
                                         <input type="house" class="form-control" id="inputHouse3" placeholder="Дом, квартира">
                                         </div>
                                     </div>
-                                    <button class="btn btn-default" type="submit">Далее</button>
+                                    <button class="btn-next" type="submit">Далее</button>
 
                                 </form>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-xs-12 col-sm-6 col-md-6">
                                 <div class="registration-stuff-2">
-                                    <img src="img/registration-stuff-2.png" alt="">
-                                    <img src="img/registration-stuff-2-1.png" alt="">                                    
+                                    <img class="stuff-2-card" src="img/registration-stuff-2.png" alt="">
+                                    <img class="stuff-2-point" src="img/registration-stuff-2-1.png" alt="">
+                                    <div class="item-point-stuff-2">
+                                        <div class="top-pulsate"></div>
+                                        <div class="top-pulsate1"></div>
+                                    </div>                                    
                                     <p>Это номер вашей персональной<br/> карты Чудо©Card. На отправленной <br/> 
                                         карте ваше имя и фамилия будут<br/>
                                         написаны транслитом
@@ -993,11 +901,23 @@
 
                         <div class="tab-pane fade" id="tab-3">
                             <div class="col-md-12">
-                                <div class="registration-stuff-2">
-                                    <img src="img/registration-stuff-3.png" alt="">
-                                    <img src="img/registration-stuff-3-small.png" alt="">
-                                    <img src="img/registration-stuff-3-1.png" alt="">
-                                    <img src="img/registration-stuff-3-2.png" alt="">
+                                <div class="registration-stuff-3">
+                                    <img class="stuff-3" src="img/registration-stuff-3.png" alt="">
+                                    <img class="stuff-3-small" src="img/registration-stuff-3-small.png" alt="">
+                                    <img class="stuff-3-card" src="img/registration-stuff-3-1.png" alt="">
+                                    <img class="stuff-3-point" src="img/registration-stuff-3-2.png" alt="">
+                                    <div class="item-point-stuff-3">
+                                        <div class="top-pulsate"></div>
+                                        <div class="top-pulsate1"></div>
+                                    </div>
+                                    <p> Если все верно, ваша карта будет<br/> 
+                                        отправлена по этому адресу.<br/> 
+                                        Проверьте, пожалуйста, свой адрес.<br/> 
+                                        Будет обидно, если она попадёт не туда.</p>
+                                </div>
+                                <div class="registration-stuff-3-btn">
+                                    <button class="btn-stuff-1" type="submit">Изменить адрес</button>
+                                    <button class="btn-stuff-2" type="submit">Отправить карту</button>
                                 </div>
                             </div>    
                         </div>
@@ -1009,6 +929,105 @@
         </div>
 
         <!-- = Registration End = -->
+        <!-- ======================= Press Begin ============================== -->
+
+        <div class="press">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>Отзывы в прессе</h1>
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="carousel-press" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-press" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-press" data-slide-to="1"></li>
+                        <li data-target="#carousel-press" data-slide-to="2"></li>
+                    </ol>
+    
+                
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                    
+                        <div class=" item active">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4">
+                                        <div class="press-logo">
+                                            <img src="img/press1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-8">
+                                        <div class="press-review">
+                                            <p>Потенциал у Чудокард хороший, по такому принципу 
+                                                бонусных карточек уже давно работают в Турции — I love bonus, 
+                                                в Англии — Nectar, в России - Малина. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class=" item ">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4 ">
+                                        <div class="press-logo">
+                                            <img src="img/press2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-8">
+                                        <div class="press-review">
+                                            <p>Как независимое информационно-аналитическое издание 
+                                                считаем, что Чудоcard — отличный сервис с безграничными 
+                                                возможностями. Новая реальность для активных потребителей!  </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class=" item ">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4">
+                                        <div class="press-logo">
+                                            <img src="img/press3.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-8">
+                                        <div class="press-review">
+                                            <p>Отличный сервис с безграничными возможностями. 
+                                                Чудоcard — новая реальность для активных потребителей! 
+                                                10 из 10 от издания Marketing media review!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-press" role="button" data-slide="prev">
+                        <span class="" aria-hidden="true"></span>
+                        <img class="leftarrow" src="img/leftarrow2.png" alt="">
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-press" role="button" data-slide="next">
+                        <span class="" aria-hidden="true"></span>
+                        <img class="rightarrow" src="img/rightarrow2.png" alt="">
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+    
+            </div>
+    
+            <!-- = Press End = -->
         <!-- = Footer Begin = -->
 
         <div class="footer">

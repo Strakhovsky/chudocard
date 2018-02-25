@@ -275,7 +275,7 @@
     margin: 0 auto; }
 
 .press-review {
-  margin: 20px 30px 40px 30px; }
+  margin: 20px 20px 70px 20px; }
   .press-review p {
     font-family: "MyriadProLight";
     font-size: 16px;
@@ -284,7 +284,7 @@
 
 .press .carousel-indicators {
   position: absolute;
-  bottom: -8px;
+  bottom: -5px;
   left: 50%;
   z-index: 15;
   width: auto;
@@ -360,7 +360,7 @@
       text-align: center;
       height: 110px; }
   .press .carousel-indicators {
-    bottom: -8px; }
+    bottom: 5px; }
   .press .carousel-indicators li {
     width: 13px;
     height: 13px; }
@@ -462,13 +462,13 @@
     margin: 0px auto;
     width: 60%; }
   .press-review {
-    margin: 0px 40px 0px 0px; }
+    margin: 0px 40px 40px 0px; }
     .press-review p {
       font-size: 18px;
       text-align: left;
       height: 135px; }
   .press .carousel-indicators {
-    bottom: -8px; }
+    bottom: 5px; }
   .press .carousel-indicators li {
     width: 15px;
     height: 15px; }

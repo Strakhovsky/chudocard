@@ -334,7 +334,7 @@
 }
 
 .press-review {
-    margin: 20px 30px 40px 30px;
+    margin: 20px 20px 70px 20px;
 
     p {
         font-family: "MyriadProLight";
@@ -348,7 +348,7 @@
 
     .carousel-indicators {
         position: absolute;
-        bottom: -8px;
+        bottom: -5px;
         left: 50%;
         z-index: 15;
         width: auto;
@@ -474,7 +474,7 @@
 
 .press {
 
-    .carousel-indicators {bottom: -8px;}
+    .carousel-indicators {bottom: 5px;}
     
     .carousel-indicators li {
         width: 13px;
@@ -654,7 +654,7 @@
     }
     
     .press-review {
-        margin: 0px 40px 0px 0px;
+        margin: 0px 40px 40px 0px;
     
         p {
             font-size: 18px;
@@ -665,7 +665,7 @@
     
     .press {
 
-        .carousel-indicators {bottom: -8px;}
+        .carousel-indicators {bottom: 5px;}
 
         .carousel-indicators li {
             width: 15px;

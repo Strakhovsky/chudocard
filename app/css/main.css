@@ -630,7 +630,7 @@
 
 @font-face {
   font-family: "MyriadProLight";
-  src: url("../fonts/MyriadProLight.woff2") format("woff2"), url("../fonts/MyriadProLight.ttf") format("truetype"), url("../fonts/MyriadProLight.woff") format("woff");
+  src: url("../fonts/MyriadProLight.woff2") format("woff2"), url("../fonts/MyriadProLight.otf") format("otf"), url("../fonts/MyriadProLight.ttf") format("truetype"), url("../fonts/MyriadProLight.woff") format("woff");
   font-style: normal;
   font-weight: normal; }
 

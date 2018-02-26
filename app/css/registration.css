@@ -1,4 +1,23 @@
 .card-ready {
+  display: block; }
+  .card-ready .input-line {
+    width: 100%;
+    height: 1px;
+    background-color: #7fffb5; }
+  .card-ready input[type=text]:focus {
+    padding-bottom: 20px; }
+    .card-ready input[type=text]:focus + div {
+      height: 2px;
+      -webkit-box-shadow: 0px 0px 40px 1px rgba(127, 255, 181, 0.72);
+              box-shadow: 0px 0px 40px 1px rgba(127, 255, 181, 0.72); }
+  .card-ready input[type=text]:hover {
+    padding-bottom: 20px; }
+    .card-ready input[type=text]:hover + div {
+      height: 2px;
+      -webkit-box-shadow: 0px 0px 40px 1px rgba(127, 255, 181, 0.72);
+              box-shadow: 0px 0px 40px 1px rgba(127, 255, 181, 0.72); }
+
+.card-not-ready {
   display: none; }
 
 .registration {
@@ -83,7 +102,7 @@
   border-bottom: none;
   border-left: none;
   border-right: none;
-  padding-left: 20px;
+  padding-left: 0px;
   -webkit-border-radius: 0px;
           border-radius: 0px; }
   .nav-tabs-custom > li.active > a:hover, .nav-tabs-custom > li.active > a:focus {
@@ -104,7 +123,7 @@
     border-right: none; }
 
 .nav-tabs-custom li {
-  width: 200px; }
+  width: 100%; }
   .nav-tabs-custom li a {
     color: #406d79;
     cursor: pointer;
@@ -138,7 +157,7 @@
   border-right: none;
   -webkit-box-shadow: none;
           box-shadow: none;
-  border-bottom: 1px solid #7fffbf;
+  border-bottom: none;
   -webkit-border-radius: 0px;
           border-radius: 0px;
   padding: 22px 0px 21px 0px;
@@ -149,10 +168,10 @@
   margin-top: 0px;
   background-color: transparent; }
   .registration .form-control:active, .registration .form-control:hover, .registration .form-control:focus {
-    border-bottom: 2px solid #7fffbf;
-    padding-bottom: 20px;
-    -webkit-box-shadow: 0px 19px 36px -16px rgba(127, 255, 191, 0.45);
-            box-shadow: 0px 19px 36px -16px rgba(127, 255, 191, 0.45); }
+    border-bottom: none;
+    padding-bottom: 21px;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
 
 .registration input::-webkit-input-placeholder {
   color: white;
@@ -197,6 +216,12 @@
   /* w3c */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c4dff', endColorstr='#9937b1',GradientType=0 );
   /* ie6-9 */ }
+  .registration .btn-next:active {
+    -webkit-transform: scale(0.98);
+        -ms-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-box-shadow: none;
+            box-shadow: none; }
 
 .registration-stuff-1 {
   height: 291px; }

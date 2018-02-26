@@ -1,4 +1,32 @@
-.card-ready {display: none;}
+.card-ready {
+    display: block;
+
+    .input-line {
+        width: 100%;
+        height: 1px;
+        background-color: #7fffb5;
+
+    }
+    input[type=text]:focus {
+    padding-bottom: 20px;
+
+    + div {
+        height: 2px;
+        box-shadow: 0px 0px 40px 1px rgba(127,255,181,0.72);
+        }    
+    }
+
+    input[type=text]:hover {
+        padding-bottom: 20px;
+    
+        + div {
+            height: 2px;
+            box-shadow: 0px 0px 40px 1px rgba(127,255,181,0.72);
+            }    
+        }
+}
+
+.card-not-ready {display: none;}
 
 .registration {
     background:url(../img/registration-bg.jpg);
@@ -108,7 +136,7 @@ border: none;
     border-bottom: none;
     border-left: none;
     border-right: none;
-    padding-left: 20px;
+    padding-left: 0px;
     border-radius: 0px;
     
   
@@ -133,7 +161,7 @@ border: none;
     }
 }
 .nav-tabs-custom li  {
-    width: 200px; //140px try on 480
+    width: 100%; //140px try on 480
     
     a {
         color: #406d79;
@@ -175,7 +203,7 @@ border: none;
         border-right: none;
         box-shadow: none;
 
-        border-bottom: 1px solid #7fffbf;
+        border-bottom: none;    //border-bottom: 1px solid #7fffbf;
         border-radius: 0px;
         padding: 22px 0px 21px 0px;
         font-size: 20px;
@@ -187,9 +215,9 @@ border: none;
         background-color: transparent;
 
         &:active, &:hover, &:focus {
-            border-bottom: 2px solid #7fffbf;
-            padding-bottom: 20px;
-            box-shadow:0px 19px 36px -16px rgba(127,255,191,0.45);;   
+            border-bottom: none;    //border-bottom: 2px solid #7fffbf;
+            padding-bottom: 21px;
+            box-shadow: none;    //box-shadow:0px 19px 36px -16px rgba(127,255,191,0.45);;   
         }
 
     }
@@ -223,6 +251,12 @@ border: none;
         background: -ms-linear-gradient(75deg, rgba(153,55,177,1) 0%, rgba(124,77,255,1) 100%); /* ie10+ */
         background: linear-gradient(15deg, rgba(153,55,177,1) 0%, rgba(124,77,255,1) 100%); /* w3c */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c4dff', endColorstr='#9937b1',GradientType=0 ); /* ie6-9 */
+
+        &:active {
+            transform: scale(.98); // Уменьшение кнопки через скайл
+            box-shadow: none;
+            
+        }
 
     }
 }

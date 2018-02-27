@@ -159,9 +159,7 @@
   margin-bottom: 16px; }
 
 .registration .form-control {
-  border-top: none;
-  border-left: none;
-  border-right: none;
+  border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
   border-bottom: none;
@@ -174,11 +172,6 @@
   margin-bottom: 0px;
   margin-top: 0px;
   background-color: transparent; }
-  .registration .form-control:active, .registration .form-control:hover, .registration .form-control:focus {
-    border-bottom: none;
-    padding-bottom: 21px;
-    -webkit-box-shadow: none;
-            box-shadow: none; }
 
 .registration input::-webkit-input-placeholder {
   color: white;
@@ -195,6 +188,25 @@
 .registration input::placeholder {
   color: white;
   opacity: 0.8; }
+
+.registration .card-not-ready .input-line {
+  width: 100%;
+  height: 1px;
+  background-color: #7fffb5; }
+
+.registration .card-not-ready input[type=text]:focus {
+  padding-bottom: 20px; }
+  .registration .card-not-ready input[type=text]:focus + div {
+    height: 2px;
+    -webkit-box-shadow: 0px 0px 40px 1px rgba(127, 255, 181, 0.72);
+            box-shadow: 0px 0px 40px 1px rgba(127, 255, 181, 0.72); }
+
+.registration .card-not-ready input[type=text]:hover {
+  padding-bottom: 20px; }
+  .registration .card-not-ready input[type=text]:hover + div {
+    height: 2px;
+    -webkit-box-shadow: 0px 0px 40px 1px rgba(127, 255, 181, 0.72);
+            box-shadow: 0px 0px 40px 1px rgba(127, 255, 181, 0.72); }
 
 .registration .btn-next {
   font-family: "MyriadProLight";
@@ -452,6 +464,13 @@
   background: transparent;
   border: 1px solid #ffffff;
   margin-right: 14px; }
+
+@media screen and (min-width: 480px) {
+  .registration-tab-panel .tabs {
+    margin: 10px auto 0px;
+    width: 432px; }
+  .nav-tabs-custom li {
+    width: 140px; } }
 
 @media screen and (min-width: 768px) {
   .registration-logo img {

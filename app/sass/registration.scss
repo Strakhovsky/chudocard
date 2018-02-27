@@ -1,5 +1,14 @@
 .card-ready {
-    display: block;
+    display: none;
+
+    .form-horizontal {
+        margin: 65px auto 0px; // in 480 add margin left and right 20
+        width: 100%;
+        max-width: 400px;
+        .btn-next {
+            margin-bottom: 213px; 
+        }
+    }
 
     .input-line {
         width: 100%;
@@ -13,7 +22,7 @@
     + div {
         height: 2px;
         box-shadow: 0px 0px 40px 1px rgba(127,255,181,0.72);
-        }    
+        }
     }
 
     input[type=text]:hover {
@@ -26,7 +35,7 @@
         }
 }
 
-.card-not-ready {display: none;}
+.card-not-ready {display: block;}
 
 .registration {
     background:url(../img/registration-bg.jpg);
@@ -39,19 +48,17 @@
     font-family: "MyriadProLight";
 }
 
-.registration-header {margin-top: 54px;
-                margin-bottom: 7px;}
+.registration-header {margin-top: 55px;
+                margin-bottom: 0px;}
 
 .registration-logo {
     img {
         display: none;
-        //width: 130px;    //width: 179px;
-        //height: 30px;   //height: 41px; 
+
     }
     
     h2 {
         font-size: 40px;
-       // line-height: 44px;
         display: block;
         text-align: center;
     }
@@ -59,11 +66,11 @@
 
 .registration-checkbox {
     font-size: 20px;
-    //float: right;
-    margin-bottom: 17px;
+    width: 220px;
+    margin: 0 auto 11px;
 
     p {padding-left: 34px;
-    margin: 0px;}
+    margin:7px 0px 0px 0px;}
 }
 
 .checkbox-reg {
@@ -78,7 +85,7 @@
         cursor: pointer;
         position: absolute;
         left: 0px;
-        top: 32px;
+        top: 37px;
         background: transparent;
         border: 1px solid rgb(255, 255, 255);
         border: 1px solid rgba(255, 255, 255, 0.5);
@@ -506,4 +513,45 @@ border: none;
     background:transparent;
     border: 1px solid #ffffff;
     margin-right: 14px;
+}
+
+@media screen and (min-width:480px) {
+
+}
+
+@media screen and (min-width:768px) {
+
+    .registration-logo {
+        img {
+            display: inline-block;
+            padding-bottom: 16px; 
+            padding-right: 32px; 
+        }
+        
+        h2 {
+            font-size: 40px;
+            display: inline-block;
+        }
+    }
+
+    .registration-checkbox {
+        font-size: 20px;
+        width: 220px;
+        margin: 0 0 11px;
+        float: right;
+    }
+
+}
+
+@media screen and (min-width:992px) {
+
+    .registration-header {
+        width: 940px;
+        margin: 55px auto 0px;
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+
 }

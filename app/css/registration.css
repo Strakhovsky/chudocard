@@ -1,5 +1,11 @@
 .card-ready {
-  display: block; }
+  display: none; }
+  .card-ready .form-horizontal {
+    margin: 65px auto 0px;
+    width: 100%;
+    max-width: 400px; }
+    .card-ready .form-horizontal .btn-next {
+      margin-bottom: 213px; }
   .card-ready .input-line {
     width: 100%;
     height: 1px;
@@ -18,7 +24,7 @@
               box-shadow: 0px 0px 40px 1px rgba(127, 255, 181, 0.72); }
 
 .card-not-ready {
-  display: none; }
+  display: block; }
 
 .registration {
   background: url(../img/registration-bg.jpg);
@@ -31,8 +37,8 @@
   font-family: "MyriadProLight"; }
 
 .registration-header {
-  margin-top: 54px;
-  margin-bottom: 7px; }
+  margin-top: 55px;
+  margin-bottom: 0px; }
 
 .registration-logo img {
   display: none; }
@@ -44,10 +50,11 @@
 
 .registration-checkbox {
   font-size: 20px;
-  margin-bottom: 17px; }
+  width: 220px;
+  margin: 0 auto 11px; }
   .registration-checkbox p {
     padding-left: 34px;
-    margin: 0px; }
+    margin: 7px 0px 0px 0px; }
 
 .checkbox-reg {
   width: 28px;
@@ -60,7 +67,7 @@
     cursor: pointer;
     position: absolute;
     left: 0px;
-    top: 32px;
+    top: 37px;
     background: transparent;
     border: 1px solid white;
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -445,3 +452,22 @@
   background: transparent;
   border: 1px solid #ffffff;
   margin-right: 14px; }
+
+@media screen and (min-width: 768px) {
+  .registration-logo img {
+    display: inline-block;
+    padding-bottom: 16px;
+    padding-right: 32px; }
+  .registration-logo h2 {
+    font-size: 40px;
+    display: inline-block; }
+  .registration-checkbox {
+    font-size: 20px;
+    width: 220px;
+    margin: 0 0 11px;
+    float: right; } }
+
+@media screen and (min-width: 992px) {
+  .registration-header {
+    width: 940px;
+    margin: 55px auto 0px; } }

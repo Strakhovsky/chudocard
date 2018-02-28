@@ -474,7 +474,7 @@
   .nav-tabs-custom li {
     width: 144px; }
   .card-not-ready .form-horizontal {
-    margin: 65px auto 20px;
+    margin: 0px auto 20px;
     width: 100%;
     max-width: 432px; }
   .registration-stuff-1 img {
@@ -503,6 +503,10 @@
       width: 240px; }
     .registration-tab-panel .tabs .tab-indent {
       margin-right: 20px; }
+    .registration-tab-panel .tabs .tab-not-indent {
+      margin-right: 0px; }
+    .registration-tab-panel .tabs .nav-tabs-custom li {
+      width: 300px; }
   .registration-logo img {
     display: inline-block;
     padding-bottom: 16px;
@@ -515,6 +519,8 @@
     width: 220px;
     margin: 0 0 11px;
     float: right; }
+  .card-not-ready .form-horizontal {
+    margin: 0px 0px 20px; }
   .registration-stuff-1 img {
     width: 300px;
     height: 300px;
@@ -544,9 +550,36 @@
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
-    top: 235px; } }
+    top: 235px; }
+  .registration-stuff-3 {
+    position: relative; }
+    .registration-stuff-3 .stuff-3-small {
+      display: none; }
+    .registration-stuff-3 .stuff-3 {
+      display: block; }
+    .registration-stuff-3 .stuff-3-point {
+      top: 112px;
+      left: 410px;
+      -webkit-transform: none;
+          -ms-transform: none;
+              transform: none; }
+    .registration-stuff-3 .item-point-stuff-3 {
+      top: 178px;
+      left: 417px;
+      -webkit-transform: none;
+          -ms-transform: none;
+              transform: none; }
+    .registration-stuff-3 p {
+      top: 30px;
+      left: 486px;
+      -webkit-transform: none;
+          -ms-transform: none;
+              transform: none; } }
 
 @media screen and (min-width: 992px) {
+  .card-not-ready {
+    width: 940px;
+    margin: 0 auto; }
   .registration-header {
     width: 940px;
     margin: 55px auto 0px; } }

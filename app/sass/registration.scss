@@ -1,6 +1,22 @@
-.card-ready {
-    display: none;
+.registration {
+    .card-ready {
+        display: none;
+    }
+    .card-not-ready {
+        display: block;
+    }
 
+    &.ready {
+        .card-ready {
+            display: block;
+        }
+        .card-not-ready {
+            display: none;
+        }
+    }
+}
+
+.card-ready {
     .form-horizontal {
         margin: 65px auto 0px; // in 480 add margin left and right 20
         width: 100%;
@@ -34,8 +50,6 @@
             }    
         }
 }
-
-.card-not-ready {display: block;}
 
 .registration {
     background:url(../img/registration-bg.jpg);

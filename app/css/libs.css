@@ -9097,33 +9097,43 @@ button.close {
   font-style: normal;
   font-weight: normal; }
 
-.card-ready {
+.registration .card-ready {
   display: none; }
-  .card-ready .form-horizontal {
-    margin: 65px auto 0px;
-    width: 100%;
-    max-width: 400px; }
-    .card-ready .form-horizontal .btn-next {
-      margin-bottom: 213px; }
-  .card-ready .input-line {
-    width: 100%;
-    height: 1px;
-    background-color: #7fffb5; }
-  .card-ready input[type=text]:focus {
-    padding-bottom: 20px; }
-    .card-ready input[type=text]:focus + div {
-      height: 2px;
-      -webkit-box-shadow: 0px 0px 40px 1px rgba(127, 255, 181, 0.72);
-              box-shadow: 0px 0px 40px 1px rgba(127, 255, 181, 0.72); }
-  .card-ready input[type=text]:hover {
-    padding-bottom: 20px; }
-    .card-ready input[type=text]:hover + div {
-      height: 2px;
-      -webkit-box-shadow: 0px 0px 40px 1px rgba(127, 255, 181, 0.72);
-              box-shadow: 0px 0px 40px 1px rgba(127, 255, 181, 0.72); }
 
-.card-not-ready {
+.registration .card-not-ready {
   display: block; }
+
+.registration.ready .card-ready {
+  display: block; }
+
+.registration.ready .card-not-ready {
+  display: none; }
+
+.card-ready .form-horizontal {
+  margin: 65px auto 0px;
+  width: 100%;
+  max-width: 400px; }
+  .card-ready .form-horizontal .btn-next {
+    margin-bottom: 213px; }
+
+.card-ready .input-line {
+  width: 100%;
+  height: 1px;
+  background-color: #7fffb5; }
+
+.card-ready input[type=text]:focus {
+  padding-bottom: 20px; }
+  .card-ready input[type=text]:focus + div {
+    height: 2px;
+    -webkit-box-shadow: 0px 0px 40px 1px rgba(127, 255, 181, 0.72);
+            box-shadow: 0px 0px 40px 1px rgba(127, 255, 181, 0.72); }
+
+.card-ready input[type=text]:hover {
+  padding-bottom: 20px; }
+  .card-ready input[type=text]:hover + div {
+    height: 2px;
+    -webkit-box-shadow: 0px 0px 40px 1px rgba(127, 255, 181, 0.72);
+            box-shadow: 0px 0px 40px 1px rgba(127, 255, 181, 0.72); }
 
 .registration {
   background: url(../img/registration-bg.jpg);

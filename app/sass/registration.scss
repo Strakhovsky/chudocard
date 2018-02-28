@@ -279,10 +279,7 @@ border: none;
 
         &:active {
             transform: scale(.98); // Уменьшение кнопки через скайл
-            box-shadow: none;
-            
         }
-
     }
 }
 
@@ -325,9 +322,6 @@ border: none;
         top: 140px;
         left: 50%;
         transform: translateX(405%);
-
-
-
     }
 
     p {
@@ -525,6 +519,10 @@ border: none;
     background: -ms-linear-gradient(75deg, rgba(153,55,177,1) 0%, rgba(124,77,255,1) 100%); /* ie10+ */
     background: linear-gradient(15deg, rgba(153,55,177,1) 0%, rgba(124,77,255,1) 100%); /* w3c */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c4dff', endColorstr='#9937b1',GradientType=0 ); /* ie6-9 */
+
+    &:active {
+        transform: scale(.98); // Уменьшение кнопки через скайл
+    }
 }
 
 .btn-stuff-1 {
@@ -536,19 +534,64 @@ border: none;
 @media screen and (min-width:480px) {
     .registration-tab-panel {
         .tabs {
-            margin: 10px auto 0px;
+            margin: 10px auto 0px; // Here l end before leave a hostel !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
             width: 432px;
         }
         
     }
 
     .nav-tabs-custom li  {
-        width: 140px;
+        width: 144px;
     }
 
+    .card-not-ready {
+    
+        .form-horizontal {
+            margin: 65px auto 20px; // in 480 add margin left and right 20
+            width: 100%;
+            max-width: 432px;
+        }
+    }
+
+    .registration-stuff-1 {
+        img {
+            width: 335px;
+            height: 335px;
+            top: -25px;
+        }
+    
+        p {    
+            left: 50%;
+            transform: translateX(-40%);
+        }
+    }
+
+    .registration-stuff-2 {
+        p {    
+            transform: translateX(-40%);
+        }
+    }
+
+    .registration-stuff-3 {
+        p { 
+            left:50%;   
+            transform: translateX(-45%);
+        }
+    }
 }
 
 @media screen and (min-width:768px) {
+
+
+    .registration-tab-panel .tabs {
+        width: 100%;
+
+        li {width:240px;}
+        
+        .tab-indent {
+            margin-right: 20px;
+        }
+    }
 
     .registration-logo {
         img {
@@ -570,6 +613,44 @@ border: none;
         float: right;
     }
 
+    .registration-stuff-1 {
+         img {
+            width: 300px;
+            height: 300px;
+            top: 33px;
+        }
+
+        p {
+            left: 43%;
+            top: 85px;
+            -webkit-transform: translateX(-40%);
+            -ms-transform: translateX(-40%);
+            transform: none;
+            width: 185px;
+        }
+    }
+
+    .registration-stuff-2 { 
+        .stuff-2-card {
+            top: 65px;
+        }
+        .stuff-2-point {
+            top: 185px;
+            transform: none;
+            left: 255px;
+        }
+
+        .item-point-stuff-2 {
+            top: 185px;
+            transform: none;
+            left: 268px;
+        }
+
+        p {
+            transform: none;
+            top: 235px;
+        }
+    }
 }
 
 @media screen and (min-width:992px) {

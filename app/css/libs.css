@@ -9337,9 +9337,7 @@ button.close {
   .registration .btn-next:active {
     -webkit-transform: scale(0.98);
         -ms-transform: scale(0.98);
-            transform: scale(0.98);
-    -webkit-box-shadow: none;
-            box-shadow: none; }
+            transform: scale(0.98); }
 
 .registration-stuff-1 {
   height: 291px; }
@@ -9558,6 +9556,10 @@ button.close {
   /* w3c */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c4dff', endColorstr='#9937b1',GradientType=0 );
   /* ie6-9 */ }
+  .btn-stuff-1:active, .btn-stuff-2:active {
+    -webkit-transform: scale(0.98);
+        -ms-transform: scale(0.98);
+            transform: scale(0.98); }
 
 .btn-stuff-1 {
   background: transparent;
@@ -9569,9 +9571,37 @@ button.close {
     margin: 10px auto 0px;
     width: 432px; }
   .nav-tabs-custom li {
-    width: 140px; } }
+    width: 144px; }
+  .card-not-ready .form-horizontal {
+    margin: 65px auto 20px;
+    width: 100%;
+    max-width: 432px; }
+  .registration-stuff-1 img {
+    width: 335px;
+    height: 335px;
+    top: -25px; }
+  .registration-stuff-1 p {
+    left: 50%;
+    -webkit-transform: translateX(-40%);
+        -ms-transform: translateX(-40%);
+            transform: translateX(-40%); }
+  .registration-stuff-2 p {
+    -webkit-transform: translateX(-40%);
+        -ms-transform: translateX(-40%);
+            transform: translateX(-40%); }
+  .registration-stuff-3 p {
+    left: 50%;
+    -webkit-transform: translateX(-45%);
+        -ms-transform: translateX(-45%);
+            transform: translateX(-45%); } }
 
 @media screen and (min-width: 768px) {
+  .registration-tab-panel .tabs {
+    width: 100%; }
+    .registration-tab-panel .tabs li {
+      width: 240px; }
+    .registration-tab-panel .tabs .tab-indent {
+      margin-right: 20px; }
   .registration-logo img {
     display: inline-block;
     padding-bottom: 16px;
@@ -9583,7 +9613,37 @@ button.close {
     font-size: 20px;
     width: 220px;
     margin: 0 0 11px;
-    float: right; } }
+    float: right; }
+  .registration-stuff-1 img {
+    width: 300px;
+    height: 300px;
+    top: 33px; }
+  .registration-stuff-1 p {
+    left: 43%;
+    top: 85px;
+    -webkit-transform: translateX(-40%);
+    -ms-transform: translateX(-40%);
+    transform: none;
+    width: 185px; }
+  .registration-stuff-2 .stuff-2-card {
+    top: 65px; }
+  .registration-stuff-2 .stuff-2-point {
+    top: 185px;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    left: 255px; }
+  .registration-stuff-2 .item-point-stuff-2 {
+    top: 185px;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    left: 268px; }
+  .registration-stuff-2 p {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    top: 235px; } }
 
 @media screen and (min-width: 992px) {
   .registration-header {

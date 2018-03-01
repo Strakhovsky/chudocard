@@ -1,3 +1,11 @@
+.reg-footer-bg {
+    background:url(../img/registration-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 .registration {
     .card-ready {
         display: none;
@@ -52,11 +60,6 @@
 }
 
 .registration {
-    background:url(../img/registration-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
 
     color: #ffffff;
     font-family: "MyriadProLight";
@@ -65,12 +68,7 @@
 .registration-header {margin-top: 55px;
                 margin-bottom: 0px;}
 
-.registration-logo {
-    img {
-        display: none;
-
-    }
-    
+.registration-logo {   
     h2 {
         font-size: 40px;
         display: block;
@@ -609,21 +607,11 @@ border: none;
         .tab-not-indent {
             margin-right: 0px;
         }
-
-        .nav-tabs-custom li  {
-            width: 300px;
-        }
     }
 
 
 
     .registration-logo {
-        img {
-            display: inline-block;
-            padding-bottom: 16px; 
-            padding-right: 32px; 
-        }
-        
         h2 {
             font-size: 40px;
             display: inline-block;
@@ -726,6 +714,11 @@ border: none;
         margin: 55px auto 0px;
     }
 
+    .nav-tabs-custom { 
+        li  {
+            width: 300px;
+        }
+    }
 }
 
 @media screen and (min-width:1200px) {

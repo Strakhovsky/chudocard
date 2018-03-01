@@ -1,3 +1,32 @@
+// NEW FONTS 
+@font-face {
+    font-family: "MyriadProLight"; 
+    src: url('../fonts/MyriadProLight.woff2') format('woff2'),
+    url('../fonts/MyriadProLight.otf') format('otf'),
+    url("../fonts/MyriadProLight.ttf") format("truetype"),
+    url('../fonts/MyriadProLight.woff') format('woff');
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+@font-face {
+    font-family: "UniSansHeavyCaps";
+    src: url('../fonts/UniSansHeavyCaps.woff2') format('woff2'), 
+    url('../fonts/UniSansHeavyCaps.ttf')  format('truetype'),
+    url('../fonts/UniSansHeavyCaps.woff') format('woff'); 
+    font-weight: normal; 
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MyriadProBold";
+    src: url('../fonts/MyriadProBold.woff2') format('woff2'), 
+    url('../fonts/MyriadProBold.ttf')  format('truetype'),
+    url('../fonts/MyriadProBold.woff') format('woff'); 
+    font-weight: normal; 
+    font-style: normal;
+}
+
 // Styles only for blocks without the presence of a slider
 
 // TOP BAR BEGIN
@@ -353,10 +382,7 @@
 // FOOTER BEGIN
 
 .footer {
-    background:url(../img/footer-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background:none;
 
     color: #f5f7f7;
     font-family: "MyriadProLight";
@@ -771,6 +797,10 @@
 }
 
 @media screen and (min-width:992px) {
+    .max-size-div {
+        width: 970px;
+        margin: 0 auto;
+    }
 
 // PARTNERS BEGIN 
 
@@ -850,35 +880,4 @@
 
 // SCROLL BAR END
 
-}
-
-
-
-// NEW FONTS 
-@font-face {
-    font-family: "MyriadProLight"; 
-    src: url('../fonts/MyriadProLight.woff2') format('woff2'),
-    url('../fonts/MyriadProLight.otf') format('otf'),
-    url("../fonts/MyriadProLight.ttf") format("truetype"),
-    url('../fonts/MyriadProLight.woff') format('woff');
-    font-style: normal; 
-    font-weight: normal; 
-}
-
-@font-face {
-    font-family: "UniSansHeavyCaps";
-    src: url('../fonts/UniSansHeavyCaps.woff2') format('woff2'), 
-    url('../fonts/UniSansHeavyCaps.ttf')  format('truetype'),
-    url('../fonts/UniSansHeavyCaps.woff') format('woff'); 
-    font-weight: normal; 
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "MyriadProBold";
-    src: url('../fonts/MyriadProBold.woff2') format('woff2'), 
-    url('../fonts/MyriadProBold.ttf')  format('truetype'),
-    url('../fonts/MyriadProBold.woff') format('woff'); 
-    font-weight: normal; 
-    font-style: normal;
 }

@@ -81,6 +81,7 @@
 
 .help-number {
     display: none;
+    padding-right: 0px;
 }
 
 
@@ -802,6 +803,12 @@
         margin: 0 auto;
     }
 
+// TOP MENU BAR BEGIN
+
+    .help-number {padding-right: 30px;}
+
+// TOP MENU BAR END
+
 // PARTNERS BEGIN 
 
     .partners {
@@ -874,8 +881,8 @@
         }
 
     .item-point {
-        left: 210px;
-
+        top: 51px;
+        left: 110px;
     }
 
 // SCROLL BAR END

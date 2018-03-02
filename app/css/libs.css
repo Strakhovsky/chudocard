@@ -6980,7 +6980,8 @@ button.close {
     border-bottom: 1px dotted #936d6c; }
 
 .help-number {
-  display: none; }
+  display: none;
+  padding-right: 0px; }
 
 .phone-help {
   display: block;
@@ -7539,6 +7540,8 @@ button.close {
   .max-size-div {
     width: 970px;
     margin: 0 auto; }
+  .help-number {
+    padding-right: 30px; }
   .partners h1 {
     margin-top: 60px;
     margin-bottom: 25px;
@@ -7572,7 +7575,8 @@ button.close {
   .scroll-bar .top-more-info {
     margin-left: -60px; }
   .item-point {
-    left: 210px; } }
+    top: 51px;
+    left: 110px; } }
 
 .slide1 {
   background: url(../img/slide1-1.jpg); }

@@ -598,7 +598,7 @@ border: none;
     .registration-tab-panel .tabs {
         width: 100%;
 
-        li {width:240px;}
+        li {width:226px;}
         
         .tab-indent {
             margin-right: 20px;
@@ -672,6 +672,7 @@ border: none;
     }
 
     .registration-stuff-3 {
+        height: 100%;
         position: relative;
 
         .stuff-3-small {
@@ -700,6 +701,37 @@ border: none;
             transform: none;
         }
     }
+
+    .registration {
+
+        .btn-next {
+            margin-bottom: 93px;
+        }
+
+        .registration-stuff-3-btn {
+            width: 384px;
+        }
+
+        .btn-stuff-2 {
+            margin-top: 52px;
+            margin-bottom: 90px;
+            margin-left: 20px;
+            padding: 9px 16px; // 9 29
+        
+            line-height: 22px;
+            font-size: 20px; //20
+        }
+
+        .btn-stuff-1 {
+            margin-top: 52px;
+            margin-bottom: 90px;
+            margin-right: 20px;
+            padding: 8px 17px; // 9 29
+        
+            line-height: 22px;
+            font-size: 20px; //20
+        }
+    }
 }
 
 @media screen and (min-width:992px) {
@@ -714,11 +746,11 @@ border: none;
         margin: 55px auto 0px;
     }
 
-    .nav-tabs-custom { 
-        li  {
-            width: 300px;
-        }
+    .registration-tab-panel .tabs {
+        
+        li {width:300px;}
     }
+
 }
 
 @media screen and (min-width:1200px) {

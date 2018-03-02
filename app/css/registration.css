@@ -509,7 +509,7 @@
   .registration-tab-panel .tabs {
     width: 100%; }
     .registration-tab-panel .tabs li {
-      width: 240px; }
+      width: 226px; }
     .registration-tab-panel .tabs .tab-indent {
       margin-right: 20px; }
     .registration-tab-panel .tabs .tab-not-indent {
@@ -555,6 +555,7 @@
             transform: none;
     top: 235px; }
   .registration-stuff-3 {
+    height: 100%;
     position: relative; }
     .registration-stuff-3 .stuff-3-small {
       display: none; }
@@ -577,7 +578,25 @@
       left: 486px;
       -webkit-transform: none;
           -ms-transform: none;
-              transform: none; } }
+              transform: none; }
+  .registration .btn-next {
+    margin-bottom: 93px; }
+  .registration .registration-stuff-3-btn {
+    width: 384px; }
+  .registration .btn-stuff-2 {
+    margin-top: 52px;
+    margin-bottom: 90px;
+    margin-left: 20px;
+    padding: 9px 16px;
+    line-height: 22px;
+    font-size: 20px; }
+  .registration .btn-stuff-1 {
+    margin-top: 52px;
+    margin-bottom: 90px;
+    margin-right: 20px;
+    padding: 8px 17px;
+    line-height: 22px;
+    font-size: 20px; } }
 
 @media screen and (min-width: 992px) {
   .card-not-ready {
@@ -586,5 +605,5 @@
   .registration-header {
     width: 940px;
     margin: 55px auto 0px; }
-  .nav-tabs-custom li {
+  .registration-tab-panel .tabs li {
     width: 300px; } }

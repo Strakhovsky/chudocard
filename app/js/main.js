@@ -1,7 +1,7 @@
 // PopOver
 
-$.fn.modal.Constructor.TRANSITION_DURATION = 600
-$.fn.modal.Constructor.BACKDROP_TRANSITION_DURATION = 650
+$.fn.modal.Constructor.TRANSITION_DURATION = 60000
+$.fn.modal.Constructor.BACKDROP_TRANSITION_DURATION = 65000
 
 $(function() {
     // Включаем поповер везде, где есть атрибут data-toggle="popover"
@@ -36,8 +36,8 @@ $(document).on('change', '#checkbox-reg', function () {
 
   if ($(this).prop('checked')) {
     $('.registration').addClass('ready');
-  } else  {
-    $('.registration').removeClass('ready');
-  }
+    } else  {
+      $('.registration').removeClass('ready'); 
+    }
   
 })

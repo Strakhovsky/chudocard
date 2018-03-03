@@ -387,63 +387,111 @@
     transform: translate(0, 0);
 }
 
-.point-box1, .point-box2, .point-box3, .point-box4, .point-box5, .point-box6, .point-box7, .point-box8, .point-box9, {
-    transition: all .9s ease-out;
+.point-box1 {
+    transition: all .3s ease-out .2s;
+    transform: scale(0.95);
+    opacity: 0;
+}
+
+.point-box2 {
+    transition: all .3s ease-out .2s;
+    transform: scale(0.95);
+    opacity: 0;
+}
+
+.point-box3 {
+    transition: all .3s ease-out .2s;
+    transform: scale(0.95);
+    opacity: 0;
+}
+
+.point-box4 {
+    transition: all .3s ease-out .2s;
+    transform: scale(0.95);
+    opacity: 0;
+}
+
+.point-box5 {
+    transition: all .3s ease-out .2s;
+    transform: scale(0.95);
+    opacity: 0;
+}
+
+.point-box6 {
+    transition: all .3s ease-out .2s;
+    transform: scale(0.95);
+    opacity: 0;
+}
+
+.point-box7 {
+    transition: all .3s ease-out .2s;
+    transform: scale(0.95);
+    opacity: 0;
+}
+
+.point-box8 {
+    transition: all .3s ease-out .2s;
+    transform: scale(0.95);
+    opacity: 0;
+}
+
+.point-box9 {
+    transition: all .9s ease-out 4s;
     transform: scale(0.95);
     opacity: 0;
 }
 
 .fade.in {
     .point-box-1 {
-        transition: all .9s ease-out .2s;
+        transition: all .4s ease-out .2s;
         transform: scale(1);
         opacity: 1;
     }
 
     .point-box-2 {
-        transition: all .9s ease-out .4s;
+        transition: all .4s ease-out .4s;
         transform: scale(1);
         opacity: 1;
     }
 
     .point-box-3 {
-        transition: all .9s ease-out .6s;
+        transition: all .4s ease-out .6s;
         transform: scale(1);
         opacity: 1;
     }
 
     .point-box-6 {
-        transition: all .9s ease-out .8s;
+        transition: all .4s ease-out .8s;
         transform: scale(1);
         opacity: 1;
     }
 
     .point-box-5 {
-        transition: all .9s ease-out 1s;
+        transition: all .4s ease-out 1s;
         transform: scale(1);
         opacity: 1;
     }
 
     .point-box-4 {
-        transition: all .9s ease-out 1.2s;
+        transition: all .4s ease-out 1.2s;
         transform: scale(1);
         opacity: 1;
     }
 
     .point-box-7 {
-        transition: all .9s ease-out 1.4s;
+        transition: all .4s ease-out 1.4s;
         transform: scale(1);
         opacity: 1;
     }
 
     .point-box-8 {
-        transition: all .9s ease-out 1.6s;
+        transition: all .4s ease-out 1.6s;
         transform: scale(1);
         opacity: 1;
     }
 
     .point-box-9 {
-        transition: all .9s ease-out 1.8s;
+        transition: all .4s ease-out 1.8s;
         transform: scale(1);
         opacity: 1;
     }

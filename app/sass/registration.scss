@@ -8,18 +8,35 @@
 
 .registration {
     .card-ready {
-        display: none;
+        display: block;
+        transform:translate(-9999px);
+        opacity: 0;
+        position: absolute;
     }
+
     .card-not-ready {
         display: block;
+        position: static;
+        transition: opacity .3s ease-out;
+        transform:translate(0);
+        opacity: 1;
     }
 
     &.ready {
         .card-ready {
-            display: block;
+        display: block;
+        position: static;
+        transition: opacity .3s ease-out;
+        transform:translate(0);
+        opacity: 1;
         }
+
         .card-not-ready {
-            display: none;
+        display: block;
+        position: absolute;
+            
+            transform:translate(-9999px);
+            opacity: 0;
         }
     }
 }
@@ -30,7 +47,7 @@
         width: 100%;
         max-width: 400px;
         .btn-next {
-            margin-bottom: 213px; 
+            margin-bottom: 219px; 
         }
     }
 
@@ -60,6 +77,11 @@
 }
 
 .registration {
+
+    .form-group {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
     color: #ffffff;
     font-family: "MyriadProLight";
@@ -157,7 +179,7 @@ border: none;
     border-right: none;
     padding-left: 0px;
     border-radius: 0px;
-    
+
   
     &:hover, &:focus {
         color: #7fffb5;
@@ -262,6 +284,31 @@ border: none;
                 box-shadow: 0px 0px 40px 1px rgba(127,255,181,0.72);
                 }    
             }
+    }
+
+    .btn-previously {
+        font-family: "MyriadProLight";
+        margin-top: 27px;
+        margin-bottom: 27px; // Далеее сделать 98px
+        margin-right: 10px;
+        
+        display: block;
+        float: right;
+        padding: 9px 18px;
+        border: 1px solid #ffffff;
+        border-radius: 50px;
+        outline: none !important;
+
+        line-height: 22px;
+        text-align: center;
+        color: #ffffff;
+        font-size: 20px;
+
+        background: transparent;
+
+        &:active {
+            transform: scale(.98); // Уменьшение кнопки через скайл
+        }
     }
 
     .btn-next {
@@ -565,6 +612,10 @@ border: none;
         }
     }
 
+    .registration {
+        .btn-previously {margin-right: 20px; }
+    }
+
     .registration-stuff-1 {
         img {
             width: 335px;
@@ -683,8 +734,14 @@ border: none;
             display: block;
         }
 
+        .stuff-3-card {
+            transform: none;
+            top: 26px;
+            left: -50px;
+        }
+
         .stuff-3-point {
-            top: 112px;
+            top: 114px;
             left: 410px;
             transform: none;
         }
@@ -714,7 +771,7 @@ border: none;
 
         .btn-stuff-2 {
             margin-top: 52px;
-            margin-bottom: 90px;
+            margin-bottom: 78px;
             margin-left: 20px;
             padding: 9px 16px; // 9 29
         
@@ -724,7 +781,7 @@ border: none;
 
         .btn-stuff-1 {
             margin-top: 52px;
-            margin-bottom: 90px;
+            margin-bottom: 78px;
             margin-right: 20px;
             padding: 8px 17px; // 9 29
         
@@ -749,6 +806,51 @@ border: none;
     .registration-tab-panel .tabs {
         
         li {width:300px;}
+    }
+
+    .registration-stuff-1 {
+        img {
+            width: 420px;
+            height: 420px;
+            top: -70px;
+        }
+
+         p {
+            left: 260px;
+            top: 20px;
+         }
+    }
+    .registration-stuff-2 {
+         .stuff-2-point {
+            left: 310px;
+        }
+        .item-point-stuff-2 {
+            left: 323px;
+        }
+    }
+
+    .registration-stuff-3 {
+
+        .stuff-3 {
+            margin-left: 180px;
+        }
+
+        .stuff-3-card {
+            left: 130px;
+        }
+
+         .stuff-3-point {
+            left: 590px;
+        }
+
+        .item-point-stuff-3 {
+            left: 597px;
+        }
+
+        p {
+            top: 86px;
+            left: 675px;
+        }
     }
 
 }

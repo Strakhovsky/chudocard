@@ -7573,7 +7573,7 @@ button.close {
 
 @media screen and (min-width: 1200px) {
   .scroll-bar .top-more-info {
-    margin-left: -60px; }
+    margin-left: 0px; }
   .item-point {
     top: 51px;
     left: 110px; } }
@@ -8471,91 +8471,163 @@ button.close {
       -ms-transform: translate(0, 0);
           transform: translate(0, 0); }
 
-.point-box1, .point-box2, .point-box3, .point-box4, .point-box5, .point-box6, .point-box7, .point-box8, .point-box9 {
-  -webkit-transition: all .9s ease-out;
-  -o-transition: all .9s ease-out;
-  transition: all .9s ease-out;
+.point-box1 {
+  -webkit-transition: all .3s ease-out .2s;
+  -o-transition: all .3s ease-out .2s;
+  transition: all .3s ease-out .2s;
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
+  opacity: 0; }
+
+.point-box2 {
+  -webkit-transition: all .3s ease-out .2s;
+  -o-transition: all .3s ease-out .2s;
+  transition: all .3s ease-out .2s;
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
+  opacity: 0; }
+
+.point-box3 {
+  -webkit-transition: all .3s ease-out .2s;
+  -o-transition: all .3s ease-out .2s;
+  transition: all .3s ease-out .2s;
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
+  opacity: 0; }
+
+.point-box4 {
+  -webkit-transition: all .3s ease-out .2s;
+  -o-transition: all .3s ease-out .2s;
+  transition: all .3s ease-out .2s;
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
+  opacity: 0; }
+
+.point-box5 {
+  -webkit-transition: all .3s ease-out .2s;
+  -o-transition: all .3s ease-out .2s;
+  transition: all .3s ease-out .2s;
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
+  opacity: 0; }
+
+.point-box6 {
+  -webkit-transition: all .3s ease-out .2s;
+  -o-transition: all .3s ease-out .2s;
+  transition: all .3s ease-out .2s;
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
+  opacity: 0; }
+
+.point-box7 {
+  -webkit-transition: all .3s ease-out .2s;
+  -o-transition: all .3s ease-out .2s;
+  transition: all .3s ease-out .2s;
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
+  opacity: 0; }
+
+.point-box8 {
+  -webkit-transition: all .3s ease-out .2s;
+  -o-transition: all .3s ease-out .2s;
+  transition: all .3s ease-out .2s;
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
+  opacity: 0; }
+
+.point-box9 {
+  -webkit-transition: all .9s ease-out 4s;
+  -o-transition: all .9s ease-out 4s;
+  transition: all .9s ease-out 4s;
   -webkit-transform: scale(0.95);
       -ms-transform: scale(0.95);
           transform: scale(0.95);
   opacity: 0; }
 
 .fade.in .point-box-1 {
-  -webkit-transition: all .9s ease-out .2s;
-  -o-transition: all .9s ease-out .2s;
-  transition: all .9s ease-out .2s;
+  -webkit-transition: all .4s ease-out .2s;
+  -o-transition: all .4s ease-out .2s;
+  transition: all .4s ease-out .2s;
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
   opacity: 1; }
 
 .fade.in .point-box-2 {
-  -webkit-transition: all .9s ease-out .4s;
-  -o-transition: all .9s ease-out .4s;
-  transition: all .9s ease-out .4s;
+  -webkit-transition: all .4s ease-out .4s;
+  -o-transition: all .4s ease-out .4s;
+  transition: all .4s ease-out .4s;
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
   opacity: 1; }
 
 .fade.in .point-box-3 {
-  -webkit-transition: all .9s ease-out .6s;
-  -o-transition: all .9s ease-out .6s;
-  transition: all .9s ease-out .6s;
+  -webkit-transition: all .4s ease-out .6s;
+  -o-transition: all .4s ease-out .6s;
+  transition: all .4s ease-out .6s;
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
   opacity: 1; }
 
 .fade.in .point-box-6 {
-  -webkit-transition: all .9s ease-out .8s;
-  -o-transition: all .9s ease-out .8s;
-  transition: all .9s ease-out .8s;
+  -webkit-transition: all .4s ease-out .8s;
+  -o-transition: all .4s ease-out .8s;
+  transition: all .4s ease-out .8s;
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
   opacity: 1; }
 
 .fade.in .point-box-5 {
-  -webkit-transition: all .9s ease-out 1s;
-  -o-transition: all .9s ease-out 1s;
-  transition: all .9s ease-out 1s;
+  -webkit-transition: all .4s ease-out 1s;
+  -o-transition: all .4s ease-out 1s;
+  transition: all .4s ease-out 1s;
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
   opacity: 1; }
 
 .fade.in .point-box-4 {
-  -webkit-transition: all .9s ease-out 1.2s;
-  -o-transition: all .9s ease-out 1.2s;
-  transition: all .9s ease-out 1.2s;
+  -webkit-transition: all .4s ease-out 1.2s;
+  -o-transition: all .4s ease-out 1.2s;
+  transition: all .4s ease-out 1.2s;
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
   opacity: 1; }
 
 .fade.in .point-box-7 {
-  -webkit-transition: all .9s ease-out 1.4s;
-  -o-transition: all .9s ease-out 1.4s;
-  transition: all .9s ease-out 1.4s;
+  -webkit-transition: all .4s ease-out 1.4s;
+  -o-transition: all .4s ease-out 1.4s;
+  transition: all .4s ease-out 1.4s;
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
   opacity: 1; }
 
 .fade.in .point-box-8 {
-  -webkit-transition: all .9s ease-out 1.6s;
-  -o-transition: all .9s ease-out 1.6s;
-  transition: all .9s ease-out 1.6s;
+  -webkit-transition: all .4s ease-out 1.6s;
+  -o-transition: all .4s ease-out 1.6s;
+  transition: all .4s ease-out 1.6s;
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
   opacity: 1; }
 
 .fade.in .point-box-9 {
-  -webkit-transition: all .9s ease-out 1.8s;
-  -o-transition: all .9s ease-out 1.8s;
-  transition: all .9s ease-out 1.8s;
+  -webkit-transition: all .4s ease-out 1.8s;
+  -o-transition: all .4s ease-out 1.8s;
+  transition: all .4s ease-out 1.8s;
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
@@ -9109,23 +9181,49 @@ button.close {
   background-attachment: fixed; }
 
 .registration .card-ready {
-  display: none; }
+  display: block;
+  -webkit-transform: translate(-9999px);
+      -ms-transform: translate(-9999px);
+          transform: translate(-9999px);
+  opacity: 0;
+  position: absolute; }
 
 .registration .card-not-ready {
-  display: block; }
+  display: block;
+  position: static;
+  -webkit-transition: opacity .3s ease-out;
+  -o-transition: opacity .3s ease-out;
+  transition: opacity .3s ease-out;
+  -webkit-transform: translate(0);
+      -ms-transform: translate(0);
+          transform: translate(0);
+  opacity: 1; }
 
 .registration.ready .card-ready {
-  display: block; }
+  display: block;
+  position: static;
+  -webkit-transition: opacity .3s ease-out;
+  -o-transition: opacity .3s ease-out;
+  transition: opacity .3s ease-out;
+  -webkit-transform: translate(0);
+      -ms-transform: translate(0);
+          transform: translate(0);
+  opacity: 1; }
 
 .registration.ready .card-not-ready {
-  display: none; }
+  display: block;
+  position: absolute;
+  -webkit-transform: translate(-9999px);
+      -ms-transform: translate(-9999px);
+          transform: translate(-9999px);
+  opacity: 0; }
 
 .card-ready .form-horizontal {
   margin: 65px auto 0px;
   width: 100%;
   max-width: 400px; }
   .card-ready .form-horizontal .btn-next {
-    margin-bottom: 213px; }
+    margin-bottom: 219px; }
 
 .card-ready .input-line {
   width: 100%;
@@ -9149,6 +9247,9 @@ button.close {
 .registration {
   color: #ffffff;
   font-family: "MyriadProLight"; }
+  .registration .form-group {
+    padding-left: 15px;
+    padding-right: 15px; }
 
 .registration-header {
   margin-top: 55px;
@@ -9318,6 +9419,28 @@ button.close {
     height: 2px;
     -webkit-box-shadow: 0px 0px 40px 1px rgba(127, 255, 181, 0.72);
             box-shadow: 0px 0px 40px 1px rgba(127, 255, 181, 0.72); }
+
+.registration .btn-previously {
+  font-family: "MyriadProLight";
+  margin-top: 27px;
+  margin-bottom: 27px;
+  margin-right: 10px;
+  display: block;
+  float: right;
+  padding: 9px 18px;
+  border: 1px solid #ffffff;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  outline: none !important;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  background: transparent; }
+  .registration .btn-previously:active {
+    -webkit-transform: scale(0.98);
+        -ms-transform: scale(0.98);
+            transform: scale(0.98); }
 
 .registration .btn-next {
   font-family: "MyriadProLight";
@@ -9588,6 +9711,8 @@ button.close {
     margin: 0px auto 20px;
     width: 100%;
     max-width: 432px; }
+  .registration .btn-previously {
+    margin-right: 20px; }
   .registration-stuff-1 img {
     width: 335px;
     height: 335px;
@@ -9663,8 +9788,14 @@ button.close {
       display: none; }
     .registration-stuff-3 .stuff-3 {
       display: block; }
+    .registration-stuff-3 .stuff-3-card {
+      -webkit-transform: none;
+          -ms-transform: none;
+              transform: none;
+      top: 26px;
+      left: -50px; }
     .registration-stuff-3 .stuff-3-point {
-      top: 112px;
+      top: 114px;
       left: 410px;
       -webkit-transform: none;
           -ms-transform: none;
@@ -9687,14 +9818,14 @@ button.close {
     width: 384px; }
   .registration .btn-stuff-2 {
     margin-top: 52px;
-    margin-bottom: 90px;
+    margin-bottom: 78px;
     margin-left: 20px;
     padding: 9px 16px;
     line-height: 22px;
     font-size: 20px; }
   .registration .btn-stuff-1 {
     margin-top: 52px;
-    margin-bottom: 90px;
+    margin-bottom: 78px;
     margin-right: 20px;
     padding: 8px 17px;
     line-height: 22px;
@@ -9708,4 +9839,26 @@ button.close {
     width: 940px;
     margin: 55px auto 0px; }
   .registration-tab-panel .tabs li {
-    width: 300px; } }
+    width: 300px; }
+  .registration-stuff-1 img {
+    width: 420px;
+    height: 420px;
+    top: -70px; }
+  .registration-stuff-1 p {
+    left: 260px;
+    top: 20px; }
+  .registration-stuff-2 .stuff-2-point {
+    left: 310px; }
+  .registration-stuff-2 .item-point-stuff-2 {
+    left: 323px; }
+  .registration-stuff-3 .stuff-3 {
+    margin-left: 180px; }
+  .registration-stuff-3 .stuff-3-card {
+    left: 130px; }
+  .registration-stuff-3 .stuff-3-point {
+    left: 590px; }
+  .registration-stuff-3 .item-point-stuff-3 {
+    left: 597px; }
+  .registration-stuff-3 p {
+    top: 86px;
+    left: 675px; } }

@@ -26,21 +26,40 @@
   padding-bottom: 0px;
   border: none; }
   .modal-header .close {
-    font-size: 32px;
-    opacity: 1;
-    color: white;
-    text-shadow: none;
-    margin-right: 6px;
-    outline: none; }
-  .modal-header .close-glyph:hover, .modal-header .close-glyph:focus {
-    color: #c04242;
-    -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-            transform: scale(1.2); }
-  .modal-header .close-glyph:active {
-    -webkit-transform: scale(0.85);
-        -ms-transform: scale(0.85);
-            transform: scale(0.85); }
+    position: relative;
+    width: 32px;
+    height: 32px;
+    padding: 0px;
+    border: none;
+    margin-right: 7px; }
+  .modal-header .close-cross {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.7; }
+    .modal-header .close-cross:hover {
+      opacity: 1; }
+    .modal-header .close-cross:active {
+      -webkit-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+              transform: scale(1.2); }
+    .modal-header .close-cross:before, .modal-header .close-cross:after {
+      position: absolute;
+      left: 15px;
+      content: ' ';
+      height: 33px;
+      width: 2px;
+      background-color: #ffffff; }
+    .modal-header .close-cross:before {
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg); }
+    .modal-header .close-cross:after {
+      -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
 
 .fade.in .close-in {
   -webkit-transition: -webkit-transform .4s ease-out .2s;

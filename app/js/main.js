@@ -31,6 +31,7 @@ $(document).on('click', '[data-click]', function (e) {
   $(targetSelector).trigger('click');
 });
 
+
 $(document).on('change', '#checkbox-reg', function () {
   console.log($(this).prop('checked'));
 
@@ -39,5 +40,34 @@ $(document).on('change', '#checkbox-reg', function () {
     } else  {
       $('.registration').removeClass('ready'); 
     }
-  
+})
+
+//ORDER DATA
+
+$(function(){
+  var $getData = $('#getData');
+  var $stepBack = $('#stepBack');
+  var $dataOrder = $('.data-order');
+
+  $getData.on('click', function(e){
+
+    var $name = $("#inputName3:input:text").val();
+    var $date = $("#inputBirthday3:input:text").val();
+    var $email = $("#inputEmail3:input:text").val();
+    var $phone = $("#inputPhoneNumber3:input:text").val();
+
+    var $country = $("#inputCountry3:input:text").val();
+    var $city = $("#inputCity3:input:text").val();
+    var $street = $("#inputStreet3:input:text").val();
+    var $house = $("#inputHouse3:input:text").val();
+    
+    $dataOrder.append('<p class="customer-data">' + $name + '</br>' + 'ул. ' + $street + $house + ', ' + $city + ', ' + $country + '</p>');
+
+    console.log($country);
+  });
+
+  $stepBack.on('click', function(e){
+    $( ".customer-data" ).remove();
+  })
+
 })

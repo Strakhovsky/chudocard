@@ -35,25 +35,37 @@
     border:none;
 
     .close {
-        font-size: 32px;
-        opacity: 1;
-        color: white;
-        text-shadow: none;
-        margin-right: 6px;
-        outline: none;
+        position: relative;
+        width: 32px;
+        height: 32px;
+        padding: 0px;
+        border: none;
+        margin-right: 7px; 
     }
 
-    .close-glyph{
+    .close-cross {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 32px;
+        height: 32px;
+        opacity: 0.7;
 
-        &:hover,
-        &:focus {
-            color: #c04242;
-            transform: scale(1.2);
+        &:hover {opacity: 1;}
+        &:active {transform: scale(1.2)}        
+
+        &:before, &:after {
+        position: absolute;
+        left: 15px;
+        content: ' ';
+        height: 33px;
+        width: 2px;
+        background-color: #ffffff;
         }
 
-        &:active {
-            transform: scale(0.85);
-        }
+        &:before {transform: rotate(45deg);}
+        
+        &:after {transform: rotate(-45deg);}
     }
 }
 

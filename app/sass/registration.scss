@@ -143,6 +143,7 @@
             
         &:hover::after {
             opacity: 0.3;
+            transition: opacity .4s ease-out;
         }
     }
 
@@ -150,6 +151,7 @@
         visibility: hidden;
 
         &:checked + label:after {
+            transition: opacity .4s ease-out;
             opacity: 1;
         }    
     }
@@ -179,6 +181,7 @@ border: none;
     border-right: none;
     padding-left: 0px;
     border-radius: 0px;
+    transition: all .3s ease-out;
 
   
     &:hover, &:focus {
@@ -199,6 +202,7 @@ border: none;
         border-bottom: none;
         border-left: none;
         border-right: none;
+        
     }
 }
 .nav-tabs-custom li  {
@@ -227,6 +231,7 @@ border: none;
             border-bottom: none;
             border-left: none;
             border-right: none;
+            transition: all .3s ease-out;
         }
     }
 }
@@ -453,6 +458,29 @@ border: none;
 
 .registration-stuff-3 {
     height: 350px;
+    position: relative;
+
+    .data-order {
+        position: absolute;
+        top: 113px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: transparent;
+        width: 172px;
+        height: 82px;
+
+        p {
+            top: 0px;
+            left: 0px;
+            width: 170px;
+            transform: none;
+
+            color: #000000;
+            font-size: 14px;
+            font-style: normal;
+        }
+    }
+
     .stuff-3 {
         display: none;
     }
@@ -468,7 +496,6 @@ border: none;
         top: -25px;
         left: 50%;
         transform: translateX(-82%);
-            
     }
 
     .stuff-3-point {
@@ -636,6 +663,19 @@ border: none;
     }
 
     .registration-stuff-3 {
+        position: relative;
+
+        .data-order {
+            top: 113px;
+            left:50%;
+            transform: translateX(-50%);
+
+            p {
+                top: 0px;
+                left: 0px;
+                transform: none;
+            }
+        }
         p { 
             left:50%;   
             transform: translateX(-45%);
@@ -725,6 +765,18 @@ border: none;
     .registration-stuff-3 {
         height: 100%;
         position: relative;
+
+        .data-order {
+            top: 113px;
+            left:255px;
+            transform: none;
+            p {
+                top: 0px;
+                left: 0px;
+                transform: none;
+            }
+        }
+        
 
         .stuff-3-small {
             display: none;
@@ -830,6 +882,16 @@ border: none;
     }
 
     .registration-stuff-3 {
+
+        .data-order {
+            top: 115px;
+            left:433px;
+            p {
+                top: 0px;
+                left: 0px;
+                transform: none;
+            }
+        }
 
         .stuff-3 {
             margin-left: 180px;

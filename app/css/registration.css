@@ -127,10 +127,16 @@
       background: transparent;
       opacity: 0; }
     .checkbox-reg label:hover::after {
-      opacity: 0.3; }
+      opacity: 0.3;
+      -webkit-transition: opacity .4s ease-out;
+      -o-transition: opacity .4s ease-out;
+      transition: opacity .4s ease-out; }
   .checkbox-reg input[type=checkbox] {
     visibility: hidden; }
     .checkbox-reg input[type=checkbox]:checked + label:after {
+      -webkit-transition: opacity .4s ease-out;
+      -o-transition: opacity .4s ease-out;
+      transition: opacity .4s ease-out;
       opacity: 1; }
 
 .registration-tab-panel {
@@ -149,7 +155,10 @@
   border-right: none;
   padding-left: 0px;
   -webkit-border-radius: 0px;
-          border-radius: 0px; }
+          border-radius: 0px;
+  -webkit-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out; }
   .nav-tabs-custom > li.active > a:hover, .nav-tabs-custom > li.active > a:focus {
     color: #7fffb5;
     cursor: pointer;
@@ -191,7 +200,10 @@
       border: 1px solid #7fffb5;
       border-bottom: none;
       border-left: none;
-      border-right: none; }
+      border-right: none;
+      -webkit-transition: all .3s ease-out;
+      -o-transition: all .3s ease-out;
+      transition: all .3s ease-out; }
 
 .registration .form-group {
   margin-bottom: 16px; }
@@ -399,7 +411,28 @@
               animation-delay: 0s; }
 
 .registration-stuff-3 {
-  height: 350px; }
+  height: 350px;
+  position: relative; }
+  .registration-stuff-3 .data-order {
+    position: absolute;
+    top: 113px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    background-color: transparent;
+    width: 172px;
+    height: 82px; }
+    .registration-stuff-3 .data-order p {
+      top: 0px;
+      left: 0px;
+      width: 170px;
+      -webkit-transform: none;
+          -ms-transform: none;
+              transform: none;
+      color: #000000;
+      font-size: 14px;
+      font-style: normal; }
   .registration-stuff-3 .stuff-3 {
     display: none; }
   .registration-stuff-3 .stuff-3-small {
@@ -552,11 +585,25 @@
     -webkit-transform: translateX(-40%);
         -ms-transform: translateX(-40%);
             transform: translateX(-40%); }
-  .registration-stuff-3 p {
-    left: 50%;
-    -webkit-transform: translateX(-45%);
-        -ms-transform: translateX(-45%);
-            transform: translateX(-45%); } }
+  .registration-stuff-3 {
+    position: relative; }
+    .registration-stuff-3 .data-order {
+      top: 113px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%); }
+      .registration-stuff-3 .data-order p {
+        top: 0px;
+        left: 0px;
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none; }
+    .registration-stuff-3 p {
+      left: 50%;
+      -webkit-transform: translateX(-45%);
+          -ms-transform: translateX(-45%);
+              transform: translateX(-45%); } }
 
 @media screen and (min-width: 768px) {
   .registration-tab-panel .tabs {
@@ -610,6 +657,18 @@
   .registration-stuff-3 {
     height: 100%;
     position: relative; }
+    .registration-stuff-3 .data-order {
+      top: 113px;
+      left: 255px;
+      -webkit-transform: none;
+          -ms-transform: none;
+              transform: none; }
+      .registration-stuff-3 .data-order p {
+        top: 0px;
+        left: 0px;
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none; }
     .registration-stuff-3 .stuff-3-small {
       display: none; }
     .registration-stuff-3 .stuff-3 {
@@ -677,6 +736,15 @@
     left: 310px; }
   .registration-stuff-2 .item-point-stuff-2 {
     left: 323px; }
+  .registration-stuff-3 .data-order {
+    top: 115px;
+    left: 433px; }
+    .registration-stuff-3 .data-order p {
+      top: 0px;
+      left: 0px;
+      -webkit-transform: none;
+          -ms-transform: none;
+              transform: none; }
   .registration-stuff-3 .stuff-3 {
     margin-left: 180px; }
   .registration-stuff-3 .stuff-3-card {

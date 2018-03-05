@@ -1,4 +1,4 @@
-.reg-footer-bg {
+#reg-footer-bg {
     background:url(../img/registration-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -222,6 +222,7 @@ border: none;
         padding-bottom: 8px;        
         font-size: 14px;
         line-height: 16px;
+        pointer-events: none;
         
         &:hover, &:focus {
             color: #7fffb5;

@@ -31,7 +31,8 @@
     height: 32px;
     padding: 0px;
     border: none;
-    margin-right: 7px; }
+    margin-right: 7px;
+    outline: none; }
   .modal-header .close-cross {
     position: absolute;
     right: 0px;

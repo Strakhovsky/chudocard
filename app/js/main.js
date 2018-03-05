@@ -61,7 +61,7 @@ $(function(){
     var $street = $("#inputStreet3:input:text").val();
     var $house = $("#inputHouse3:input:text").val();
     
-    $dataOrder.append('<p class="customer-data">' + $name + '</br>' + 'ул. ' + $street + $house + ', ' + $city + ', ' + $country + '</p>');
+    $dataOrder.append('<p class="customer-data">' + $name + '</br>' + 'ул. ' + $street + ' ' + $house + ', ' + $city + ', ' + $country + '</p>');
 
     console.log($country);
   });

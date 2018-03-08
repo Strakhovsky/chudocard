@@ -87,19 +87,19 @@
 
 // Styles only for modal background
 
-.modal-transparent {
-    background: transparent;
-}
+.modal-transparent {background: transparent;}
 .modal-transparent .modal-content {background: transparent;}
 
 .modal-backdrop.modal-backdrop-transparent {
     transition: opacity 0.9s ease-out;
     opacity: 0;
 }
+
 .modal-backdrop.modal-backdrop-transparent.in {
     transition: opacity 0.4s ease-out;
     opacity: .8;
 }
+
 .fade.in {
     .modal-gradient1 {
         position: absolute;

@@ -33,6 +33,7 @@ gulp.task('scripts', function() {
         'app/libs/jquery/dist/jquery.js', // Get jQuery
         // 'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js', // Get Magnific Popup
         'app/libs/bootstrap/dist/js/bootstrap.js',
+        'app/libs/particles.js/particles.js',        
         'app/js/main.js'
     ])
     .pipe(concat('libs.min.js')) // Collect them in one file(libs.min.js)

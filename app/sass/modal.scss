@@ -132,7 +132,14 @@
 }
 .fade {
     .modal-gradient {
-        transition: all .9s ease-out;
+        position: absolute;
+        left: 50%;
+        bottom: 20%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        box-shadow: 1px 1px 250px 270px #4b387d;
+
+        transition: all 1.2s ease-out .6s;
         transform: scale(0.95);
         opacity: 0;
     }
@@ -147,7 +154,7 @@
         border-radius: 50%;
         box-shadow: 1px 1px 250px 270px #4b387d;
 
-        transition: all .3s ease-out 1.6s;
+        transition: all 1.2s ease-out .6s;
         transform: scale(1);
         opacity: 0.4;
        // animation: shadow 5s infinite alternate;
@@ -400,59 +407,68 @@
     transform: translate(0, 0);
 }
 
-.point-box1 {
-    transition: all .3s ease-out .2s;
-    transform: scale(0.95);
-    opacity: 0;
+.modal-menu {
+    .fade.in {
+        transition: opacity .15s linear;
+    }
+    .fade {
+        transition: opacity .15s linear 2s;
+    }
 }
 
-.point-box2 {
-    transition: all .3s ease-out .2s;
-    transform: scale(0.95);
-    opacity: 0;
-}
+        .point-box1 {
+            transition: all .3s ease-out 1.8s;
+            transform: scale(0.95);
+            opacity: 0;
+        }
 
-.point-box3 {
-    transition: all .3s ease-out .2s;
-    transform: scale(0.95);
-    opacity: 0;
-}
+        .point-box2 {
+            transition: all .3s ease-out 1.6s;
+            transform: scale(0.95);
+            opacity: 0;
+        }
 
-.point-box4 {
-    transition: all .3s ease-out .2s;
-    transform: scale(0.95);
-    opacity: 0;
-}
+        .point-box3 {
+            transition: all .3s ease-out 1.4s;
+            transform: scale(0.95);
+            opacity: 0;
+        }
 
-.point-box5 {
-    transition: all .3s ease-out .2s;
-    transform: scale(0.95);
-    opacity: 0;
-}
+        .point-box4 {
+            transition: all .3s ease-out 1.2s;
+            transform: scale(0.95);
+            opacity: 0;
+        }
 
-.point-box6 {
-    transition: all .3s ease-out .2s;
-    transform: scale(0.95);
-    opacity: 0;
-}
+        .point-box5 {
+            transition: all .3s ease-out 1s;
+            transform: scale(0.95);
+            opacity: 0;
+        }
 
-.point-box7 {
-    transition: all .3s ease-out .2s;
-    transform: scale(0.95);
-    opacity: 0;
-}
+        .point-box6 {
+            transition: all .3s ease-out .8s;
+            transform: scale(0.95);
+            opacity: 0;
+        }
 
-.point-box8 {
-    transition: all .3s ease-out .2s;
-    transform: scale(0.95);
-    opacity: 0;
-}
+        .point-box7 {
+            transition: all .3s ease-out .6s;
+            transform: scale(0.95);
+            opacity: 0;
+        }
 
-.point-box9 {
-    transition: all .9s ease-out 4s;
-    transform: scale(0.95);
-    opacity: 0;
-}
+        .point-box8 {
+            transition: all .3s ease-out .4s;
+            transform: scale(0.95);
+            opacity: 0;
+        }
+
+        .point-box9 {
+            transition: all .3s ease-out .2s;
+            transform: scale(0.95);
+            opacity: 0;
+        }
 
 .fade.in {
     .point-box-1 {

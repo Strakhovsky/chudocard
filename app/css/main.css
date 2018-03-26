@@ -1,3 +1,10 @@
+.notUniqPart {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -1; }
+
 @font-face {
   font-family: "MyriadProLight";
   src: url("../fonts/MyriadProLight.woff2") format("woff2"), url("../fonts/MyriadProLight.otf") format("otf"), url("../fonts/MyriadProLight.ttf") format("truetype"), url("../fonts/MyriadProLight.woff") format("woff");

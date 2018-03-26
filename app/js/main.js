@@ -1,3 +1,117 @@
+// Particles option
+
+var particlesOptions = {
+  "particles": {
+    "number": {
+      "value": 60,
+      "density": {
+        "enable": true,
+        "value_area": 600
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": false,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 6,
+      "direction": "none",
+      "random": true,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": false,
+        "mode": "repulse"
+      },
+      "onclick": {
+        "enable": false,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+}
+particlesJS('particles-js', particlesOptions)
+
 // PopOver
 
 $.fn.modal.Constructor.TRANSITION_DURATION = 60000
@@ -69,136 +183,29 @@ $(function(){
 
 })
 
-//bootstrap event
-$('#carousel-top').on('slide.bs.carousel', function (e) { // Ивент, который срабатывает когда листается слайд
+//particles-JS in carousel
+$('#carousel-top').on('slid.bs.carousel', function (e) {                                                       // Ивент, который срабатывает когда листается слайд
   console.log(e.direction);
-  var $nextItem // Обьявили переменную в котую ниже с помощью if esle мы закидываем селекторы, которые определяем с помощью direction
-  var $particles =  $($('.item.active .btn')[0]).clone(); // testing if real we added elements на примере кнопки. Мы тут огорнули в два селектора что бы сделать масив из всех кнопок и добавить только первую [0]
+  var $nextItem = $('#carousel-top .item.active')
+  var now = new Date();   
+  var id = 'particles-' + now.getTime();                                                                              // Обьявили переменную в котую ниже с помощью if esle мы закидываем селекторы, которые определяем с помощью direction
+  var $particles = $('<div class="notUniqPart" id="' + id + '"></div>');                                             // testing if real we added elements на примере кнопки. Мы тут огорнули в два селектора что бы сделать масив из всех кнопок и добавить только первую [0]
 
-  if (e.direction == 'right') { // проверили смена слайда уходит в право мы получаем значение 'right' 
-    $nextItem = $('.item.active').prev(); // мы в переменную вносим селектор следующего итема который после активного
-    
-  } else { // в любом другом случае мы получаем значение 'left'
-    $nextItem = $('.item.active').next(); // мы в переменную вносим селектор следующего итема который перед активным
+  // if (e.direction == 'right') {                                                                                           // проверили смена слайда уходит в право мы получаем значение 'right' 
+  //   $nextItem = $('#carousel-top .item.active').prev();                                                                                           // мы в переменную вносим селектор следующего итема который после активного  
+  // } else {                                                                                          // в любом другом случае мы получаем значение 'left'
+  //   $nextItem = $('#carousel-top .item.active').next();                                                                                         // мы в переменную вносим селектор следующего итема который перед активным
+  // }
+  
+  if ($nextItem.find('.notUniqPart').length == 0) {
+    $nextItem.append($particles);
+    particlesJS(id.toString(), particlesOptions);
   }
 
-$nextItem.append($particles);  // к следующему после ктивного мы добавляем кнопку
-console.log($particles);
 })
 
-$('#carousel-top').on('slid.bs.carousel', function () { // ивент который срабатывает в момент, когда слайд перелистнулся
- // $('.item:not(.active) #particles-js').remove()
-})
+$('#carousel-top').on('slid.bs.carousel', function () {                               // ивент который срабатывает в момент, когда слайд перелистнулся
+    //$('.item:not(.active) #particles-js').remove();
 
-particlesJS('particles-js', blabla) // начинае пробовать обернуть это все в переменную задав параметр, так как потом мы будем каждый раз инициализировать новый партиклз
-var blabla =   
-{
-  "particles": {
-    "number": {
-      "value": 300,
-      "density": {
-        "enable": true,
-        "value_area": 1000
-      }
-    },
-    "color": {
-      "value": "#fff"
-    },
-    "shape": {
-      "type": "circle",
-      "stroke": {
-        "width": 0,
-        "color": "#000000"
-      },
-      "polygon": {
-        "nb_sides": 5
-      },
-      "image": {
-        "src": "img/github.svg",
-        "width": 100,
-        "height": 100
-      }
-    },
-    "opacity": {
-      "value": 0.5,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 1,
-        "opacity_min": 0.1,
-        "sync": false
-      }
-    },
-    "size": {
-      "value": 3,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 40,
-        "size_min": 0.1,
-        "sync": false
-      }
-    },
-    "line_linked": {
-      "enable": false,
-      "distance": 170,
-      "color": "#ffffff",
-      "opacity": 0.4,
-      "width": 2
-    },
-    "move": {
-      "enable": true,
-      "speed": 6,
-      "direction": "bottom",
-      "random": false,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
-        "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
-      }
-    }
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": false,
-        "mode": "bubble"
-      },
-      "onclick": {
-        "enable": false,
-        "mode": "repulse"
-      },
-      "resize": true
-    },
-    "modes": {
-      "grab": {
-        "distance": 400,
-        "line_linked": {
-          "opacity": 0.5
-        }
-      },
-      "bubble": {
-        "distance": 292.34779642848423,
-        "size": 1,
-        "duration": 0.3,
-        "opacity": 1,
-        "speed": 3
-      },
-      "repulse": {
-        "distance": 200,
-        "duration": 0.4
-      },
-      "push": {
-        "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
-      }
-    }
-  },
-  "retina_detect": true
-}
+})
+                                                        //  начинае пробовать обернуть это все в переменную задав параметр, так как потом мы будем каждый раз инициализировать новый партиклз

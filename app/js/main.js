@@ -1,6 +1,5 @@
 // Particles option
-
-var particlesOptions = {
+var particlesOptions = { //options for particles.js
   "particles": {
     "number": {
       "value": 60,
@@ -110,54 +109,37 @@ var particlesOptions = {
   },
   "retina_detect": true
 }
-particlesJS('particles-js', particlesOptions)
+particlesJS('particles-js', particlesOptions) //activate particles on the first slide
 
-// PopOver
+$.fn.modal.Constructor.TRANSITION_DURATION = 2000 //get more time for modal close
+$.fn.modal.Constructor.BACKDROP_TRANSITION_DURATION = 2000 //get more time for modal close
 
-$.fn.modal.Constructor.TRANSITION_DURATION = 60000
-$.fn.modal.Constructor.BACKDROP_TRANSITION_DURATION = 65000
-
+    // PopOver
 $(function() {
-    // Включаем поповер везде, где есть атрибут data-toggle="popover"
     $('[data-toggle="popover"]').popover({
       trigger: 'click'
     }); 
   })
 
-  /* $(".modal-menu").on('show.bs.modal', function () {
-    $("div.point-box1").addClass('point-box-1');  
-  });*/
-
-// Modal menu
-
-$("#modal-menu").on('hide.bs.modal', function () {
-
-});
-
+    //Button tab trigger
 $(document).on('click', '[data-click]', function (e) {
   e.preventDefault();
-
   var targetSelector = $(this).data('click');
-
-  console.log(targetSelector);
-  console.log($(targetSelector))
-
   $(targetSelector).trigger('click');
 });
 
-
+    //Checkbox trigger for registration-ready
 $(document).on('change', '#checkbox-reg', function () {
-  console.log($(this).prop('checked'));
 
   if ($(this).prop('checked')) {
     $('.registration').addClass('ready');
     } else  {
       $('.registration').removeClass('ready'); 
     }
+
 })
 
-//ORDER DATA
-
+    //Order data for registration
 $(function(){
   var $getData = $('#getData');
   var $stepBack = $('#stepBack');
@@ -174,7 +156,6 @@ $(function(){
     
     $dataOrder.append('<p class="customer-data">' + $name + '</br>' + 'ул. ' + $street + ' ' + $house + ', ' + $city + ', ' + $country + '</p>');
 
-    console.log($country);
   });
 
   $stepBack.on('click', function(e){
@@ -183,29 +164,89 @@ $(function(){
 
 })
 
-//particles-JS in carousel
-$('#carousel-top').on('slid.bs.carousel', function (e) {                                                       // Ивент, который срабатывает когда листается слайд
-  console.log(e.direction);
-  var $nextItem = $('#carousel-top .item.active')
-  var now = new Date();   
-  var id = 'particles-' + now.getTime();                                                                              // Обьявили переменную в котую ниже с помощью if esle мы закидываем селекторы, которые определяем с помощью direction
-  var $particles = $('<div class="notUniqPart" id="' + id + '"></div>');                                             // testing if real we added elements на примере кнопки. Мы тут огорнули в два селектора что бы сделать масив из всех кнопок и добавить только первую [0]
+    //Particles-JS in carousel
+$('#carousel-top').on('slid.bs.carousel', function (e) {
 
-  // if (e.direction == 'right') {                                                                                           // проверили смена слайда уходит в право мы получаем значение 'right' 
-  //   $nextItem = $('#carousel-top .item.active').prev();                                                                                           // мы в переменную вносим селектор следующего итема который после активного  
-  // } else {                                                                                          // в любом другом случае мы получаем значение 'left'
-  //   $nextItem = $('#carousel-top .item.active').next();                                                                                         // мы в переменную вносим селектор следующего итема который перед активным
-  // }
-  
-  if ($nextItem.find('.notUniqPart').length == 0) {
+  var $nextItem = $('#carousel-top .item.active');
+  var now = new Date();   
+  var id = 'particles-' + now.getTime(); //create uniq id for initialization particles-js at the same time in different elements
+  var $particles = $('<div class="notUniqPart-carousel" id="' + id + '"></div>');
+
+  if ($nextItem.find('.notUniqPart-carousel').length == 0) {
     $nextItem.append($particles);
     particlesJS(id.toString(), particlesOptions);
   }
 
-})
-
-$('#carousel-top').on('slid.bs.carousel', function () {                               // ивент который срабатывает в момент, когда слайд перелистнулся
-    //$('.item:not(.active) #particles-js').remove();
+  $('#carousel-top .item:not(.active) .notUniqPart-carousel').remove();
 
 })
-                                                        //  начинае пробовать обернуть это все в переменную задав параметр, так как потом мы будем каждый раз инициализировать новый партиклз
+
+    //Particles-JS on modal
+$('.modal-menu').on('show.bs.modal', function (e){
+  var $modalItem1 = $('.particlesPoint1');
+  var $modalItem2 = $('.particlesPoint2');
+  var $modalItem3 = $('.particlesPoint3');
+  var now = new Date();
+
+  var idOne = 'particles-' + now.getTime() + '-1';
+  var idTwo = 'particles-' + now.getTime() + '-2';
+  var idThree = 'particles-' + now.getTime() + '-3';
+
+  var $particles1 = $('<div class="notUniqPart-modal" id="' + idOne + '"></div>');
+  var $particles2 = $('<div class="notUniqPart-modal" id="' + idTwo + '"></div>');
+  var $particles3 = $('<div class="notUniqPart-modal" id="' + idThree + '"></div>');
+
+  if ($modalItem1.find('.notUniqPart-modal').length == 0) {
+    setTimeout( // particles-js work in modal window only with setTimeout
+      function(){
+        $modalItem1.append($particles1);
+        particlesJS(idOne.toString(), particlesOptions);
+
+        $modalItem2.append($particles2);
+        particlesJS(idTwo.toString(), particlesOptions);
+
+        $modalItem3.append($particles3);          
+        particlesJS(idThree.toString(), particlesOptions);
+      }, 500);
+      
+  }
+
+})
+
+
+    //Particles-JS on tab
+$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+  var $tabToggle = $(e.target); //get recent Tab
+  var $tab = $($tabToggle.data('target') || $tabToggle.attr('href')); 
+
+  var $previousTabToggle = $(e.relatedTarget) //get previous Tab
+  var $previousTab = $($previousTabToggle.data('target') || $previousTabToggle.attr('href'));
+
+  var now = new Date();   
+  var id = 'particles-' + now.getTime();
+  var $particles = $('<div class="notUniqPart-tab" id="' + id + '"></div>');
+
+      if ($tab.find('.notUniqPart-tab').length == 0) {
+        $tab.append($particles);
+        particlesJS(id.toString(), particlesOptions);
+      }
+
+       $previousTab.find('.notUniqPart-tab').remove();
+
+})
+
+    // Anchor links
+$(document).ready(function() {
+  $(document).on('click', '.page-scroll', function(event) {
+      event.preventDefault();
+      var id = $(this).attr('href'),
+          top = $(id).offset().top;
+      $('body,html').animate({ scrollTop: top }, 800);
+  });
+});
+
+$('#nav').affix({
+  offset: {
+    top: $('header').outerHeight()
+  }
+});

@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "AkzidenzGroteskProRegular";
+  src: url("../fonts/AkzidenzGroteskProRegular.woff2") format("woff2"), url("../fonts/AkzidenzGroteskProRegular.ttf") format("truetype"), url("../fonts/AkzidenzGroteskProRegular.woff") format("woff"), url("../fonts/AkzidenzGroteskProRegular.otf") format("onetype");
+  font-style: normal;
+  font-weight: normal; }
+
 .modal-open .affix {
   padding-right: 17px; }
 
@@ -133,9 +139,3 @@
     left: 211px; }
   .modal-login .login-registration {
     margin-top: 52px; } }
-
-@font-face {
-  font-family: "AkzidenzGroteskProRegular";
-  src: url("../fonts/AkzidenzGroteskProRegular.woff2") format("woff2"), url("../fonts/AkzidenzGroteskProRegular.ttf") format("truetype"), url("../fonts/AkzidenzGroteskProRegular.woff") format("woff"), url("../fonts/AkzidenzGroteskProRegular.otf") format("onetype");
-  font-style: normal;
-  font-weight: normal; }

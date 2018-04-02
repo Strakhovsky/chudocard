@@ -44,8 +44,6 @@
     background-image: none;
 }
 
-//
-
 .carousel-top {
 
     .carousel-indicators {
@@ -72,7 +70,6 @@
         text-indent: -999px;
         cursor: pointer;
         background-color: #ebebeb;
-        //background-color: rgba(0, 0, 0, 0);
         border-radius: 10px;
     }
 
@@ -134,21 +131,15 @@
 
         &:active {
             transform: scale(.98);
-            box-shadow: none;
-            
+            box-shadow: none; 
         }
     }
 
     img {display: none;}
 }
+//CAROUSEL TOP SLIDES END
 
-
-
-//-------------------------------CAROUSEL TOP SLIDES END -----------------------------------
-
-//-------------------------------CAROUSEL SPECIALS BEGIN -----------------------------------
-
-//--- Template style
+//CAROUSEL SPECIALS BEGIN
 .specials {
     background-color: #f5f7f7;
 
@@ -191,7 +182,7 @@
     background-color: transparent;
 
     &:active {
-        transform: scale(.98); // Уменьшение кнопки через скайл
+        transform: scale(.98);
         box-shadow: none;
         
     }
@@ -207,7 +198,6 @@
     margin-bottom: 30px;
 }
 
-
 .specials-box1 {
     display:block;   
     position:relative;
@@ -220,6 +210,7 @@
             height: 100%;
         }
 }
+
 .specials-text1  {
     display:block;
     position:absolute;
@@ -227,7 +218,7 @@
     padding: 0px 30px 0px 15px;
 }
 
-//--- Carousel syle ----
+//--- Carousel syle
 
 .carousel-control {
     
@@ -263,11 +254,11 @@
 
 .specials {
     
-        .carousel-control {
-            margin-top: 10px;
-            margin-bottom: 30px;
-        }
+    .carousel-control {
+        margin-top: 10px;
+        margin-bottom: 30px;
     }
+}
 
 .specials {
 
@@ -305,13 +296,9 @@
         border: none;
     }
 }
-
-
-
 // CAROUSEL SPECIALS END
 
 // PRESS BEGIN
-
 .press {
     background-color: #f5f7f7;
 
@@ -385,17 +372,13 @@
     
     .carousel-control {margin-bottom: 40px;}
 }
-
 // PRESS END 
 
 // @MEDIA QUERIES BEGIN
-
 @media screen and (min-width:480px) {
 
 // CAROUSEL-TOP BEGIN
-
 // slide content
-
 .slide-content-description {
     margin-top: 100px;
     
@@ -420,12 +403,10 @@
         margin:40px auto 0px;
     }
 }
-
 // CAROUSEL-TOP END
 
 
 // SPECIALS BEGIN
-
     .specials {
     
         h1 {font-size: 40px;}
@@ -439,13 +420,9 @@
     }
 
     .specials-btn {font-size: 16px;}
-
-
-
 // SPECIALS END
 
 // PRESS BEGIN
-
 .press {
     background-color: #f5f7f7;
 
@@ -493,7 +470,6 @@
 @media screen and (min-width:768px) {
 
 // CAROUSEL-TOP BEGIN
-
     .slide1-content-img {
         display:block;   
         position:relative;
@@ -582,11 +558,9 @@
             display: none;
         }
     }
-
 // CAROUSEL-TOP END
 
 // SPECIALS BEGIN
-
     .specials {
     
         h1 {
@@ -595,7 +569,6 @@
             margin-bottom: 10px;
         }
     }
-
 
     .specials-btn {        
         float: right;
@@ -631,12 +604,9 @@
                 height: 15px;
             }
         }
-    
-
 // SPECIALS END
 
 // PRESS BEGIN
-    
     .press {
     
         h1 {
@@ -677,19 +647,18 @@
             height: 15px;
         }
     }
-
 // PRESS END
+
 }
     
 @media screen and (min-width:992px) {
 
 // CAROUSEL-TOP BEGIN
-
     .carousel-top {
         
-            .carousel-indicators {
-                bottom: -32px;
-                padding: 13px 13px 13px 13px;
+        .carousel-indicators {
+            bottom: -32px;
+            padding: 13px 13px 13px 13px;
         }
 
         .carousel-indicators li {
@@ -704,7 +673,6 @@
     }
 
     // slide content
-
     .slide1-content-img {
         display:block;   
         position:relative;
@@ -779,11 +747,9 @@
 
     img {display: none;}
 }
-
 // CAROUSEL-TOP END
 
 // SPECIALS BEGIN
-
     .specials-bg1 {
         margin-top: 33px;
         margin-bottom: 110px;
@@ -818,11 +784,9 @@
             font-size: 16px;
             line-height: 17px;
     }
-
 // SPECIALS END   
 
 // PRESS BEGIN
-
     .press {
     
         h1 {
@@ -858,7 +822,6 @@
         
         .carousel-control {margin-bottom: 140px;}
     }
-
 // PRESS END
 }
     
@@ -866,7 +829,6 @@
  
 
 // SPECIALS BEGIN
-    
 .specials {
     
         h4 {
@@ -876,7 +838,6 @@
     
         p {font-size: 18px;}
     }
-
 // SPECIALS END
 }
     

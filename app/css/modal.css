@@ -905,15 +905,3 @@
     height: 140px; }
     .point9 .point9-img img {
       top: 50px; } }
-
-@font-face {
-  font-family: "MyriadProLight";
-  src: url("../fonts/MyriadProLight.woff2") format("woff2"), url("../fonts/MyriadProLight.ttf") format("truetype"), url("../fonts/MyriadProLight.woff") format("woff");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
-  font-family: "UniSansHeavyCaps";
-  src: url("../fonts/UniSansHeavyCaps.woff2") format("woff2"), url("../fonts/UniSansHeavyCaps.ttf") format("truetype"), url("../fonts/UniSansHeavyCaps.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }

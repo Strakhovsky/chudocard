@@ -1,11 +1,4 @@
-// Particles-JS
-.notUniqPart {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: -1;
-}
+// Styles only for blocks without the presence of a slider
 
 // NEW FONTS 
 @font-face {
@@ -36,10 +29,32 @@
     font-style: normal;
 }
 
-// Styles only for blocks without the presence of a slider
+// Particles-JS
+.notUniqPart-carousel {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.notUniqPart-modal {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.notUniqPart-tab {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
 
 // TOP BAR BEGIN
-
 .top-bar {
     background-color: #301259;
     height: 40px;
@@ -93,7 +108,6 @@
     padding-right: 0px;
 }
 
-
 .phone-help {
     display: block;
     margin: 2px auto 0px ;
@@ -118,17 +132,14 @@
         color: #f0cb91;
     }      
 }
-
 // TOP BAR END
 
 // SCROLL-BAR BEGIN
-
 .item-point {display: none;}
 
 .scroll-bar {
     width: 100%;
     z-index: 111;
-
 
     .logo {
         text-align: center;
@@ -193,8 +204,7 @@
 
             &:active {
                 transform: scale(.98); // Уменьшение кнопки через скайл
-                box-shadow: none;
-                
+                box-shadow: none; 
             }
         }
     }
@@ -253,8 +263,6 @@
         color: #ffffff;
         border: 1px solid #ffffff;
         transition: color 0.5s, border 0.5s;
-
-       
     }
 }
 
@@ -313,11 +321,9 @@
         transition: color 0.5s, border 0.5s;    
     }  
 }
-
 // SCROLL-BAR END
 
 // INFO LINE BEGIN
-
 .info-case {
     text-align: center;
     margin-top: 40px;
@@ -338,11 +344,9 @@
 }
 
 .info-img {margin: 0 auto;}
-
 // INFO LINE END
 
 // PARTNERS BEGIN
-
 .partners {
     
     h1{
@@ -382,18 +386,16 @@
         background-color: transparent;
 
         &:active {
-            transform: scale(.98); // Уменьшение кнопки через скайл
+            transform: scale(.98);
             box-shadow: none;
             
         }
 }
-
 // PARTNERS END
-// FOOTER BEGIN
 
+// FOOTER BEGIN
 .footer {
     background:none;
-
     color: #f5f7f7;
     font-family: "MyriadProLight";
     font-size: 16px;
@@ -433,7 +435,6 @@
             text-decoration: none;
             color: #ffffff;
             border-bottom: 1px solid #ffffff;
-            
         }
     
         &:visited {color: #ffffff;}
@@ -449,7 +450,6 @@
 }
 
 .footer-social {
-
     width: 200px;
     margin: 25px auto 0px;
     text-align: center;
@@ -467,7 +467,6 @@
     font-size: 13px;
 
     .design-by {
-        //text-align: right;
         padding-right: 10px;
         
         a {color: #ffffff;}
@@ -476,114 +475,104 @@
 
 .long-line {
     position: absolute;
-    left: 0px; // непозволяет вылезти за пределы экрана    
+    left: 0px;
     width: 100%;
     height: 2px;
     opacity: 0.3;
 
     background-color: #ffffff;
 }
-
 // FOOTER END
-// @MEDIA QUERIES BEGIN
 
+// @MEDIA QUERIES BEGIN
 @media screen and (min-width:480px) {
 
 // SCROLL BAR BEGIN
-
-.btn-login {
-    margin: 0px 0px 0px 20px;
-} 
-.scroll-bar {
-.order {
-    padding: 10px 0px 10px 0px;
-}
-}
-
-.downsize {display:inline!important;}
-.downsize1 {display: none;}
-
-.affix-top {
-
-    .logo-v {
-        
-        display: block;
+    .btn-login {
+        margin: 0px 0px 0px 20px;
     }
 
-    .logo-w {
-
-        display: block;
+    .scroll-bar {
+        .order {
+            padding: 10px 0px 10px 0px;
+        }
     }
 
-    .logo-v-m {
-        display: none;
+    .downsize {display:inline!important;}
+    .downsize1 {display: none;}
+
+    .affix-top {
+
+        .logo-v {
+            
+            display: block;
+        }
+
+        .logo-w {
+
+            display: block;
+        }
+
+        .logo-v-m {
+            display: none;
+        }
+
+        .logo-w-m {
+            display: none;
+        }
     }
 
-    .logo-w-m {
-        display: none;
+    .affix {
+
+        .logo-v {
+
+            display: block;
+        }
+
+        .logo-w {
+            display: block;
+        }
+
+        .logo-v-m {
+            display: none;
+        }
+
+        .logo-w-m {
+            display: none;
+        }
     }
-}
-
-.affix {
-
-    .logo-v {
-
-        display: block;
-    }
-
-    .logo-w {
-        display: block;
-    }
-
-    .logo-v-m {
-        display: none;
-    }
-
-    .logo-w-m {
-        display: none;
-    }
-}
-
 // SCROLL BAR END
 
 // PARTNERS BEGIN
-
     .partners-btn {font-size: 16px;}
-
     .partners-logo {margin-bottom: 65px;}
-
 // PARTNERS END
+
 // FOOTER BEGIN
-.footer-body {margin-bottom: 40px}
+    .footer-body {margin-bottom: 40px}
 
-.footer-bottom {
-    
-    .popel-logo {
-        display: block;
-        float: right;
-        margin-right: 40px;
+    .footer-bottom {
+        
+        .popel-logo {
+            display: block;
+            float: right;
+            margin-right: 40px;
+        }
+
+        .chudocard-right {margin-left:40px;}
+        .popel-logo-mini {display: none;}    
     }
-
-    .chudocard-right {margin-left:40px;}
-
-    .popel-logo-mini {display: none;}    
-}
-
 // FOOTER END
-
 }
 
 @media screen and (min-width:768px) {
 
 // TOP BAR BEGIN
-
     .help-number {display: block;}  
-
     .phone-help {display: none;}
-
 // TOP BAR END
-// SCROLL BAR BEGIN
 
+// SCROLL BAR BEGIN
 .item-point {
     z-index: 222;
     position: absolute;
@@ -756,11 +745,9 @@
                 }
             }  
     }
+// SCROLL BAR END
 
-
-// SCROLL BAR END 
 // PARTNERS BEGIN
-
     .partners {
         
         h1{
@@ -777,33 +764,31 @@
         font-size: 16px;
         line-height: 17px;
     }
-
 // PARTNERS END
+
 // FOOTER BEGIN
-.footer-body {margin-bottom: 90px}
+    .footer-body {margin-bottom: 90px}
 
-.footer-list {
-    
-    text-align: left;
-    margin-top: 25px;
-    margin-left: 40px;
+    .footer-list {
+        
+        text-align: left;
+        margin-top: 25px;
+        margin-left: 40px;
 
-    a {font-size: 16px;}
-}
+        a {font-size: 16px;}
+    }
 
-.footer-phone {text-align:left;}
+    .footer-phone {text-align:left;}
 
-.footer-social {text-align: left;}
+    .footer-social {text-align: left;}
 
-.footer-bottom {
-    
-    .popel-logo {margin-right: 40px;}
+    .footer-bottom {
+        
+        .popel-logo {margin-right: 40px;}
 
-    .chudocard-right {margin-left:40px;}    
-}
-
+        .chudocard-right {margin-left:40px;}    
+    }
 // FOOTER END
-
 }
 
 @media screen and (min-width:992px) {
@@ -813,13 +798,10 @@
     }
 
 // TOP MENU BAR BEGIN
-
     .help-number {padding-right: 30px;}
-
 // TOP MENU BAR END
 
 // PARTNERS BEGIN 
-
     .partners {
         
         h1{
@@ -835,11 +817,9 @@
         font-size: 16px;
         line-height: 17px;
 }
-
 // PARTNERS END
 
 // SCROLL BAR BEGIN
-
     .item-point {
         top: 51px;
         left: 110px;
@@ -863,27 +843,23 @@
             }
         }
     }
-
 // SCROLL BAR END
+
 // FOOTER BEGIN
+    .footer-list {margin-left: 80px;}
 
-.footer-list {margin-left: 80px;}
+    .footer-bottom {
+        
+        .popel-logo {margin-right: 80px;}
 
-.footer-bottom {
-    
-    .popel-logo {margin-right: 80px;}
-
-    .chudocard-right {margin-left:80px;}    
-}
-
+        .chudocard-right {margin-left:80px;}    
+    }
 // FOOTER END
-   
 }
 
 @media screen and (min-width:1200px) {
 
 // SCROLL BAR BEGIN
-
     .scroll-bar {
         
         .top-more-info {margin-left: 0px;}
@@ -893,7 +869,5 @@
         top: 51px;
         left: 110px;
     }
-
 // SCROLL BAR END
-
 }

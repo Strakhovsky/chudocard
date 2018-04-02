@@ -6927,13 +6927,6 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
-.notUniqPart {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  z-index: -1; }
-
 @font-face {
   font-family: "MyriadProLight";
   src: url("../fonts/MyriadProLight.woff2") format("woff2"), url("../fonts/MyriadProLight.otf") format("otf"), url("../fonts/MyriadProLight.ttf") format("truetype"), url("../fonts/MyriadProLight.woff") format("woff");
@@ -6951,6 +6944,27 @@ button.close {
   src: url("../fonts/MyriadProBold.woff2") format("woff2"), url("../fonts/MyriadProBold.ttf") format("truetype"), url("../fonts/MyriadProBold.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+
+.notUniqPart-carousel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -1; }
+
+.notUniqPart-modal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 0; }
+
+.notUniqPart-tab {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -1; }
 
 .top-bar {
   background-color: #301259;
@@ -9066,16 +9080,10 @@ button.close {
       top: 50px; } }
 
 @font-face {
-  font-family: "MyriadProLight";
-  src: url("../fonts/MyriadProLight.woff2") format("woff2"), url("../fonts/MyriadProLight.ttf") format("truetype"), url("../fonts/MyriadProLight.woff") format("woff");
+  font-family: "AkzidenzGroteskProRegular";
+  src: url("../fonts/AkzidenzGroteskProRegular.woff2") format("woff2"), url("../fonts/AkzidenzGroteskProRegular.ttf") format("truetype"), url("../fonts/AkzidenzGroteskProRegular.woff") format("woff"), url("../fonts/AkzidenzGroteskProRegular.otf") format("onetype");
   font-style: normal;
   font-weight: normal; }
-
-@font-face {
-  font-family: "UniSansHeavyCaps";
-  src: url("../fonts/UniSansHeavyCaps.woff2") format("woff2"), url("../fonts/UniSansHeavyCaps.ttf") format("truetype"), url("../fonts/UniSansHeavyCaps.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
 
 .modal-open .affix {
   padding-right: 17px; }
@@ -9212,12 +9220,6 @@ button.close {
     left: 211px; }
   .modal-login .login-registration {
     margin-top: 52px; } }
-
-@font-face {
-  font-family: "AkzidenzGroteskProRegular";
-  src: url("../fonts/AkzidenzGroteskProRegular.woff2") format("woff2"), url("../fonts/AkzidenzGroteskProRegular.ttf") format("truetype"), url("../fonts/AkzidenzGroteskProRegular.woff") format("woff"), url("../fonts/AkzidenzGroteskProRegular.otf") format("onetype");
-  font-style: normal;
-  font-weight: normal; }
 
 #reg-footer-bg {
   background: url(../img/registration-bg.jpg);

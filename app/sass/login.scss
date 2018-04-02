@@ -1,3 +1,15 @@
+// Font
+@font-face {
+    font-family: "AkzidenzGroteskProRegular"; 
+    src: url('../fonts/AkzidenzGroteskProRegular.woff2') format('woff2'),
+    url("../fonts/AkzidenzGroteskProRegular.ttf") format("truetype"),
+    url('../fonts/AkzidenzGroteskProRegular.woff') format('woff'),
+    url("../fonts/AkzidenzGroteskProRegular.otf") format("onetype");    
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+//login modal-window style
 .modal-open {
     .affix {padding-right: 17px;}
 }
@@ -150,28 +162,4 @@
 
         .login-registration {margin-top: 52px;}
     }
-    
-}
-
-@media screen and (min-width:768px) {
-
-}
-
-@media screen and (min-width:992px) {
-
-}
-
-@media screen and (min-width:1200px) {
-
-}
-
-// Font
-@font-face {
-    font-family: "AkzidenzGroteskProRegular"; 
-    src: url('../fonts/AkzidenzGroteskProRegular.woff2') format('woff2'),
-    url("../fonts/AkzidenzGroteskProRegular.ttf") format("truetype"),
-    url('../fonts/AkzidenzGroteskProRegular.woff') format('woff'),
-    url("../fonts/AkzidenzGroteskProRegular.otf") format("onetype");    
-    font-style: normal; 
-    font-weight: normal; 
 }

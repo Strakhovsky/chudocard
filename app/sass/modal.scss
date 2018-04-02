@@ -1,4 +1,4 @@
-// Styles for modal grid system
+// Styles for modal-menu grid system
 .modal-menu {
     .row {
         padding-top: 0px;
@@ -28,7 +28,6 @@
 }
 
 // Styles for modal header
-
 .modal-header {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -86,7 +85,6 @@
 
 
 // Styles only for modal background
-
 .modal-transparent {background: transparent;}
 .modal-transparent .modal-content {background: transparent;}
 
@@ -103,8 +101,6 @@
 .fade.in {
     .modal-gradient1 {
         position: absolute;
-        //top:400px;
-        //left: 100px;
         width: 100%;
         height: 100%;
         background: rgba(72,50,121,0.65);/* Old Browsers */
@@ -121,7 +117,6 @@
 .fade.in {
     .modal-gradient2 {
         position: absolute;
-        //bottom: 0px;
         width: 100%;
         height: 102%;
         background-image:url(../img/modal-gradient-background.png);
@@ -157,23 +152,12 @@
         transition: all 1.2s ease-out .6s;
         transform: scale(1);
         opacity: 0.4;
-       // animation: shadow 5s infinite alternate;
       }
-      
-     // @keyframes shadow {
-       // from {
-       //   box-shadow: 0 0 200px 100px #4b387d;
-       // }
-//to {
-      //    box-shadow: 0 0 220px 110px #4b387d;
-      //  }
-   // }
 }
 
 .modal-open {.affix-top {padding-right: 17px;}} // I am clearly tsar. I fixed moving right affix block when modal window open.
 
 // Content Styles
-
 .point1 {
     .point1-title-bold {
         position: relative;
@@ -311,6 +295,7 @@
     .point6-img {
         position: relative;
         height: 80px;
+
         img {
             position: absolute;
             width: 60px;
@@ -371,6 +356,7 @@
     .point9-img {
         position: relative;
         height: 80px;
+
         img {
             position: absolute;
             width: 21px;
@@ -401,9 +387,8 @@
 }
 
 // Styles for modal animation
-
 .modal.fade .modal-dialog {
-    transition:         transform .3s ease-out;
+    transition: transform .3s ease-out;
     transform: translate(0, 0);
 }
 
@@ -416,59 +401,59 @@
     }
 }
 
-        .point-box1 {
-            transition: all .3s ease-out 1.8s;
-            transform: scale(0.95);
-            opacity: 0;
-        }
+.point-box1 {
+    transition: all .3s ease-out 1.8s;
+    transform: scale(0.95);
+    opacity: 0;
+}
 
-        .point-box2 {
-            transition: all .3s ease-out 1.6s;
-            transform: scale(0.95);
-            opacity: 0;
-        }
+.point-box2 {
+    transition: all .3s ease-out 1.6s;
+    transform: scale(0.95);
+    opacity: 0;
+}
 
-        .point-box3 {
-            transition: all .3s ease-out 1.4s;
-            transform: scale(0.95);
-            opacity: 0;
-        }
+.point-box3 {
+    transition: all .3s ease-out 1.4s;
+    transform: scale(0.95);
+    opacity: 0;
+}
 
-        .point-box4 {
-            transition: all .3s ease-out 1.2s;
-            transform: scale(0.95);
-            opacity: 0;
-        }
+.point-box4 {
+    transition: all .3s ease-out 1.2s;
+    transform: scale(0.95);
+    opacity: 0;
+}
 
-        .point-box5 {
-            transition: all .3s ease-out 1s;
-            transform: scale(0.95);
-            opacity: 0;
-        }
+.point-box5 {
+    transition: all .3s ease-out 1s;
+    transform: scale(0.95);
+    opacity: 0;
+}
 
-        .point-box6 {
-            transition: all .3s ease-out .8s;
-            transform: scale(0.95);
-            opacity: 0;
-        }
+.point-box6 {
+    transition: all .3s ease-out .8s;
+    transform: scale(0.95);
+    opacity: 0;
+}
 
-        .point-box7 {
-            transition: all .3s ease-out .6s;
-            transform: scale(0.95);
-            opacity: 0;
-        }
+.point-box7 {
+    transition: all .3s ease-out .6s;
+    transform: scale(0.95);
+    opacity: 0;
+}
 
-        .point-box8 {
-            transition: all .3s ease-out .4s;
-            transform: scale(0.95);
-            opacity: 0;
-        }
+.point-box8 {
+    transition: all .3s ease-out .4s;
+    transform: scale(0.95);
+    opacity: 0;
+}
 
-        .point-box9 {
-            transition: all .3s ease-out .2s;
-            transform: scale(0.95);
-            opacity: 0;
-        }
+.point-box9 {
+    transition: all .3s ease-out .2s;
+    transform: scale(0.95);
+    opacity: 0;
+}
 
 .fade.in {
     .point-box-1 {
@@ -527,7 +512,6 @@
 }
 
 //Styles for modal content
-
 .point1 {
     background-color: #7c42a6;
     height: 80px;
@@ -673,8 +657,6 @@
         
         .point2-img {
             display: none;
-            //top: 0px;
-            //left: 158px;
         }
     }
     
@@ -706,7 +688,6 @@
             img {
                 width: 48px;
                 height: 40px;
-
             }
         }
     }
@@ -883,7 +864,6 @@
             img {
                 width: 85px;
                 height: 70px;
-
             }
         }
     }
@@ -908,6 +888,7 @@
         .point6-img {
             display: block;
             height: 110px;
+
             img {
                 position: absolute;
                 width: 64px;
@@ -986,7 +967,6 @@
         }
 
     }
-
 
     .point3 {
         .point3-title-light {
@@ -1075,42 +1055,16 @@
     }
 
     .point9 {
-            .point9-title-light {
-                top: 37px;
-                left: 40px;
-    
-                p {font-size: 30px;}
-        }
+        .point9-title-light {
+            top: 37px;
+            left: 40px;
+
+            p {font-size: 30px;}
+    }
 
         .point9-img {
             height: 140px;
             img {top: 50px;}
         }
     }
-
 }
-
-@media screen and (min-width:1200px) {
-
-}
-
-    
-    
-    // NEW FONTS // Хммм, тут мы ведь удаляем эти шрифты????????????????????
-    @font-face {
-        font-family: "MyriadProLight"; 
-        src: url('../fonts/MyriadProLight.woff2') format('woff2'),
-        url("../fonts/MyriadProLight.ttf") format("truetype"),
-        url('../fonts/MyriadProLight.woff') format('woff');
-        font-style: normal; 
-        font-weight: normal; 
-    }
-    
-    @font-face {
-        font-family: "UniSansHeavyCaps";
-        src: url('../fonts/UniSansHeavyCaps.woff2') format('woff2'), 
-        url('../fonts/UniSansHeavyCaps.ttf')  format('truetype'),
-        url('../fonts/UniSansHeavyCaps.woff') format('woff'); 
-        font-weight: normal; 
-        font-style: normal;
-    }
